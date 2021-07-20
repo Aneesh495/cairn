@@ -1,0 +1,7 @@
+/bin/
+/build/
+/.runtime/
+/nimcache/
+*.out
+.DS_Store
+.codex/
