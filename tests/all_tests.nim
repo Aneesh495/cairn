@@ -1,5 +1,7 @@
+{.warning[UnusedImport]: off.} # Importing a test module registers its suites.
 import std/unittest
 import cairn/errors
+import test_binary
 
 suite "typed errors":
   test "category survives the exception boundary":
