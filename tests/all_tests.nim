@@ -4,6 +4,7 @@ import cairn/errors
 import test_binary
 import test_sha256
 import test_checksums
+import test_field
 
 suite "typed errors":
   test "category survives the exception boundary":
