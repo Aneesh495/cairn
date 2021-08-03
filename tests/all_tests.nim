@@ -5,6 +5,7 @@ import test_binary
 import test_sha256
 import test_checksums
 import test_field
+import test_erasure
 
 suite "typed errors":
   test "category survives the exception boundary":
