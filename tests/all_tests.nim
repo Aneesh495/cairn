@@ -7,6 +7,7 @@ import test_checksums
 import test_field
 import test_erasure
 import test_chunker
+import test_compression
 
 suite "typed errors":
   test "category survives the exception boundary":
