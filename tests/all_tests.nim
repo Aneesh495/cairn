@@ -8,6 +8,7 @@ import test_field
 import test_erasure
 import test_chunker
 import test_compression
+import test_capsule
 
 suite "typed errors":
   test "category survives the exception boundary":
