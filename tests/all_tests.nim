@@ -9,6 +9,8 @@ import test_erasure
 import test_chunker
 import test_compression
 import test_capsule
+import test_paths
+import test_manifest
 
 suite "typed errors":
   test "category survives the exception boundary":
