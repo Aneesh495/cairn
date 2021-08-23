@@ -1,7 +1,7 @@
 ## Advisory flock locks survive process termination without stale-lock
 ## guessing. The lock inode is permanent and must never be unlinked while a
 ## repository exists. Every library operation touching storage takes a lock.
-import std/[os, posix]
+import std/posix
 import cairn/[durable, errors, paths]
 
 type

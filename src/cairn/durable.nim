@@ -16,7 +16,7 @@ proc systemFailure(operation, path: string) {.noreturn.} =
   let code = osLastError()
   fail(ekIo, operation & " " & path & ": " & osErrorMsg(code))
 
-proc checkpoint*(name: string) =
+proc crashPoint*(name: string) =
   ## Explicit fault-injection hook for subprocess crash tests. Normal runs do
   ## not set CAIRN_CRASH_AT. SIGKILL prevents finally blocks from masking a
   ## durability defect with graceful cleanup.
@@ -88,9 +88,9 @@ proc writeAtomic*(path, data: string; replace = false) =
     if open: discard posix.close(stage.fd)
     if fileExists(stage.path): removeFile(stage.path)
   writeAll(stage.fd, data, stage.path)
-  checkpoint("file-written")
+  crashPoint("file-written")
   syncFd(stage.fd, stage.path)
-  checkpoint("file-synced")
+  crashPoint("file-synced")
   if posix.close(stage.fd) != 0: systemFailure("close", stage.path)
   open = false
   if replace:
@@ -100,9 +100,9 @@ proc writeAtomic*(path, data: string; replace = false) =
       if errno == EEXIST: fail(ekConflict, "immutable destination already exists: " & path)
       systemFailure("publish", path)
     removeFile(stage.path)
-  checkpoint("file-published")
+  crashPoint("file-published")
   syncDirectory(parent)
-  checkpoint("directory-synced")
+  crashPoint("directory-synced")
 
 proc ensureDirectory*(path: string) =
   require(not symlinkExists(path), ekUnsafe, "directory is a symlink: " & path)

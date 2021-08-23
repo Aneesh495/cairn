@@ -13,6 +13,7 @@ import test_paths
 import test_manifest
 import test_durable
 import test_locking
+import test_repository
 
 suite "typed errors":
   test "category survives the exception boundary":
