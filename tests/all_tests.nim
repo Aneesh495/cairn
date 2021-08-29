@@ -15,6 +15,7 @@ import test_durable
 import test_locking
 import test_repository
 import test_store
+import test_references
 
 suite "typed errors":
   test "category survives the exception boundary":
