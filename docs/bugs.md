@@ -11,3 +11,11 @@ are not counted as behavioral regressions.
 - Cause: managed-path validation rejected a system link above the caller's selected root
 - Correction: canonicalize that root once, then reject links in every relative component below it
 - Permanent check: `tests/test_paths.nim`, with both a real child and an internal symlink child
+
+## B002: low-level publication accepted an incomplete content graph
+
+- Reproduction: `make test`, `replicated snapshot roots / publishing an incomplete content graph must fail`
+- Observed failure: the expected exception was absent; a root named missing file content
+- Cause: publication validated the manifest schema without validating its chunk dependencies
+- Correction: reconstruct every referenced chunk, verify lengths, and recompute each file digest before publishing a root
+- Permanent check: `tests/test_references.nim`; the same fixture must fail before its data capsule is stored
