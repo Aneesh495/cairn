@@ -17,6 +17,7 @@ import test_repository
 import test_store
 import test_references
 import test_backup
+import test_restore
 
 suite "typed errors":
   test "category survives the exception boundary":

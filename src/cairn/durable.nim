@@ -23,7 +23,7 @@ proc crashPoint*(name: string) =
   if getEnv("CAIRN_CRASH_AT") == name:
     discard posix.kill(posix.getpid(), SIGKILL)
 
-proc syncFd(fd: cint; path: string) =
+proc syncFd*(fd: cint; path: string) =
   while posix.fsync(fd) != 0:
     if errno != EINTR: systemFailure("fsync", path)
 
