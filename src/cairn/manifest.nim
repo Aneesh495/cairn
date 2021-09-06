@@ -2,7 +2,7 @@
 ## It contains a complete tree, so restoring a snapshot never needs another
 ## snapshot's manifest or a chain of incremental updates.
 import std/[json, tables, os]
-import cairn/[errors, limits, paths, schema, sha256]
+import cairn/[errors, limits, paths, schema, sha256, linkgraph]
 
 type
   EntryKind* = enum
@@ -41,6 +41,7 @@ proc validate*(manifest: Manifest) =
   require(manifest.entries[0].path == "." and manifest.entries[0].kind == enDirectory,
           ekCorrupt, "manifest must start with its root directory")
   var parents = initTable[string, EntryKind]()
+  var links = initTable[string, string]()
   var previous = ""
   var refs = 0
   for entry in manifest.entries:
@@ -72,8 +73,11 @@ proc validate*(manifest: Manifest) =
     of enDirectory, enSymlink:
       require(entry.chunks.len == 0 and entry.size == 0 and entry.digest.len == 0,
               ekCorrupt, "non-file entry contains file content")
-      if entry.kind == enSymlink: validateLink(entry.path, entry.target)
+      if entry.kind == enSymlink:
+        validateLink(entry.path, entry.target)
+        links[entry.path] = entry.target
       else: require(entry.target.len == 0, ekCorrupt, "directory contains symlink target")
+  validateLinkGraph(links)
 
 proc toJson*(manifest: Manifest): JsonNode =
   result = %*{"version": FormatVersion, "label": manifest.label,

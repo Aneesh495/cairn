@@ -19,3 +19,11 @@ are not counted as behavioral regressions.
 - Cause: publication validated the manifest schema without validating its chunk dependencies
 - Correction: reconstruct every referenced chunk, verify lengths, and recompute each file digest before publishing a root
 - Permanent check: `tests/test_references.nim`; the same fixture must fail before its data capsule is stored
+
+## B003: chained symbolic links defeated lexical confinement
+
+- Reproduction: `make test`, `strict snapshot manifests / symbolic link chains cannot escape through an intermediate parent`
+- Observed failure: the manifest containing `link -> sub/up/..` and `sub/up -> ..` was accepted
+- Cause: each target stayed inside the tree when checked lexically, but actual chained resolution escaped
+- Correction: resolve the complete manifest link graph with POSIX parent semantics and a 40-link bound
+- Permanent checks: chained parent escape and cyclic links in `tests/test_manifest.nim`

@@ -11,11 +11,22 @@ proc tinyManifest*(): Manifest =
       digest: sha256("abc"), chunks: @[ChunkRef(id: objectId("data", "abc"), length: 3)])])
 
 suite "strict snapshot manifests":
+  test "symbolic link chains cannot escape through an intermediate parent":
+    let m = Manifest(label: "links", createdNs: 1, source: "fixture", entries: @[
+      Entry(path: ".", kind: enDirectory, mode: 0o755),
+      Entry(path: "link", kind: enSymlink, mode: 0o777, target: "sub/up/.."),
+      Entry(path: "sub", kind: enDirectory, mode: 0o755),
+      Entry(path: "sub/up", kind: enSymlink, mode: 0o777, target: "..")])
+    expect CairnError: discard m.encodeManifest
   test "canonical metadata round trip":
     let m = tinyManifest()
     check decodeManifest(encodeManifest(m)) == m
     check m.logicalBytes == 3
     check m.fileCount == 2
+  test "cyclic symbolic links reject":
+    var m = tinyManifest()
+    m.entries[2].target = "link"
+    expect CairnError: discard m.encodeManifest
   test "unknown fields, duplicates, noncanonical whitespace, and types reject":
     let original = tinyManifest().encodeManifest
     expect CairnError: discard decodeManifest(" " & original)
