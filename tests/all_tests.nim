@@ -18,6 +18,8 @@ import test_store
 import test_references
 import test_backup
 import test_restore
+import test_damage
+import test_repair
 
 suite "typed errors":
   test "category survives the exception boundary":
