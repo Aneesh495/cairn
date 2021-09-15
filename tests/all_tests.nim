@@ -21,6 +21,7 @@ import test_restore
 import test_damage
 import test_repair
 import test_planner
+import test_salvage
 
 suite "typed errors":
   test "category survives the exception boundary":
