@@ -23,6 +23,7 @@ import test_repair
 import test_planner
 import test_salvage
 import test_diff
+import test_retention
 
 suite "typed errors":
   test "category survives the exception boundary":
