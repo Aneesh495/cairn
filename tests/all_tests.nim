@@ -25,6 +25,7 @@ import test_salvage
 import test_diff
 import test_retention
 import test_gc
+import test_assemble
 
 suite "typed errors":
   test "category survives the exception boundary":

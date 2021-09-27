@@ -28,21 +28,17 @@ proc openRepository*(root: string): Repository =
   result.config = decodeConfig(readBounded(managedPath(result.root, "config.json"), 4096))
   require(fileExists(managedPath(result.root, ".lock")), ekCorrupt, "repository lock file is missing")
 
-proc initialize*(root: string; geometry = Geometry(data: 4, parity: 2);
-                 chunks = DefaultChunks): Repository =
-  geometry.validate
-  chunks.validate
+proc initializeWithConfig*(root: string; config: Config): Repository =
+  config.validate
   let absolute = absolutePath(root).normalizedPath
   require(not existsAny(absolute), ekConflict, "repository destination already exists: " & absolute)
   require(dirExists(parentDir(absolute)), ekMissing, "repository parent must exist")
   ensureDirectory(absolute)
   result.root = expandFilename(absolute)
-  var entropy = ""
-  for byte in urandom(32): entropy.add char(byte)
-  result.config = Config(repositoryId: sha256(entropy), geometry: geometry, chunks: chunks)
+  result.config = config
   writeAtomic(result.root / ".lock", "")
   ensureDirectory(result.root / "volumes")
-  for index in 0..<geometry.total:
+  for index in 0..<config.geometry.total:
     let volume = result.volumePath(index)
     ensureDirectory(volume)
     ensureDirectory(volume / "objects")
@@ -51,6 +47,14 @@ proc initialize*(root: string; geometry = Geometry(data: 4, parity: 2);
   crashPoint("init-volumes")
   writeAtomic(result.root / "config.json", result.config.encodeConfig)
   crashPoint("init-published")
+
+proc initialize*(root: string; geometry = Geometry(data: 4, parity: 2);
+                 chunks = DefaultChunks): Repository =
+  geometry.validate
+  chunks.validate
+  var entropy = ""
+  for byte in urandom(32): entropy.add char(byte)
+  initializeWithConfig(root, Config(repositoryId: sha256(entropy), geometry: geometry, chunks: chunks))
 
 proc verifyVolume*(repo: Repository; index: int): bool =
   let volume = repo.volumePath(index)
