@@ -5,7 +5,7 @@
 ## their writers or supply a filesystem snapshot as the source directory.
 import std/[os, posix, algorithm, sets, times]
 import cairn/[capsule, chunker, durable, erasure, errors, fsmeta, limits,
-  locking, manifest, paths, repository, references, sha256, snapshot, store]
+  locking, manifest, paths, repository, references, sha256, snapshot, store, glob]
 
 type
   SourceItem* = object
@@ -26,7 +26,7 @@ type
     snapshot*: Snapshot
     stats*: BackupStats
 
-proc enumerateSource*(source: string): seq[SourceItem] =
+proc enumerateSource*(source: string; rules: seq[IgnoreRule] = @[]): seq[SourceItem] =
   let root = expandFilename(source)
   require(stamp(root).kind == pcDir, ekInvalid, "backup source must be a directory")
   var items: seq[SourceItem]
@@ -34,6 +34,7 @@ proc enumerateSource*(source: string): seq[SourceItem] =
     require(depth <= MaxDepth and items.len < MaxEntries, ekLimit, "source tree exceeds manifest limits")
     validatePath(relative, allowRoot = true)
     let identity = stamp(absolute)
+    if relative != "." and rules.excluded(relative, identity.kind == pcDir): return
     items.add SourceItem(relative: relative, absolute: absolute, identity: identity)
     if identity.kind == pcDir:
       var children: seq[string]
@@ -78,7 +79,7 @@ proc readSourceFile*(item: SourceItem; config: ChunkConfig;
           ekConflict, "source changed while reading: " & item.relative)
   (hash.digest, total)
 
-proc backupUnlocked(repo: Repository; source, label: string): BackupResult =
+proc backupUnlocked(repo: Repository; source, label: string; exclusions: seq[string]): BackupResult =
   label.validateLabel
   repo.assertNewLabel(label)
   require(dirExists(source) and not symlinkExists(source), ekInvalid,
@@ -88,7 +89,7 @@ proc backupUnlocked(repo: Repository; source, label: string): BackupResult =
           ekUnsafe, "source and repository trees must be disjoint")
   for index in 0..<repo.config.geometry.total:
     require(repo.verifyVolume(index), ekMissing, "restore or repair missing volumes before backup")
-  let items = enumerateSource(root)
+  let items = enumerateSource(root, parseRules(exclusions))
   var manifest = Manifest(label: label, createdNs: timeNs(getTime()), source: extractFilename(root))
   var stats: BackupStats
   var seen = initHashSet[string]()
@@ -134,6 +135,6 @@ proc backupUnlocked(repo: Repository; source, label: string): BackupResult =
   let published = repo.publishSnapshot(manifest)
   BackupResult(snapshot: published, stats: stats)
 
-proc backup*(repo: Repository; source, label: string): BackupResult =
+proc backup*(repo: Repository; source, label: string; exclusions: seq[string] = @[]): BackupResult =
   withRepoLock(repo.root, lmExclusive):
-    result = backupUnlocked(repo, source, label)
+    result = backupUnlocked(repo, source, label, exclusions)

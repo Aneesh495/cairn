@@ -26,6 +26,7 @@ import test_diff
 import test_retention
 import test_gc
 import test_assemble
+import test_glob
 
 suite "typed errors":
   test "category survives the exception boundary":
