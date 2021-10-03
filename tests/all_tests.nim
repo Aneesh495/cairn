@@ -27,6 +27,7 @@ import test_retention
 import test_gc
 import test_assemble
 import test_glob
+import test_bundle
 
 suite "typed errors":
   test "category survives the exception boundary":
