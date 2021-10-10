@@ -13,8 +13,7 @@ proc loadSnapshot*(repo: Repository; label: string): Snapshot =
   result.manifest = decodeManifest(repo.loadObject(read.reference.manifestId, okManifest))
   require(result.manifest.label == label, ekCorrupt, "snapshot manifest label differs from root")
 
-proc publishSnapshot*(repo: Repository; manifest: Manifest): Snapshot =
-  repo.assertNewLabel(manifest.label)
+proc verifyContent*(repo: Repository; manifest: Manifest) =
   manifest.validate
   for entry in manifest.entries:
     if entry.kind != enFile: continue
@@ -25,6 +24,10 @@ proc publishSnapshot*(repo: Repository; manifest: Manifest): Snapshot =
       digest.update(bytes)
     require(digest.digest == entry.digest, ekCorrupt,
             "file digest does not match the content graph: " & entry.path)
+
+proc publishSnapshot*(repo: Repository; manifest: Manifest): Snapshot =
+  repo.assertNewLabel(manifest.label)
+  repo.verifyContent(manifest)
   let stored = repo.storeObject(okManifest, manifest.encodeManifest)
   crashPoint("manifest-stored")
   let reference = Reference(label: manifest.label, manifestId: stored.id,

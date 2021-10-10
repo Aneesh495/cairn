@@ -94,8 +94,10 @@ proc importBundle*(bundle, destination: string): BundleResult =
     transcript.record(frame)
   require(roots.len > 0, ekCorrupt, "bundle contains no snapshot roots")
   for label in roots:
-    let report = repo.assess(repo.loadSnapshot(label))
+    let snapshot = repo.loadSnapshot(label)
+    let report = repo.assess(snapshot)
     require(report.lostObjects == 0, ekUnrecoverable, "bundle content graph is incomplete")
+    repo.verifyContent(snapshot.manifest)
   result.snapshots = roots.len
   result.frames = transcript.count + 1
   result.bytes = input.consumed
