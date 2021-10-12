@@ -30,6 +30,7 @@ import test_glob
 import test_bundle
 import test_arguments
 import test_queries
+import test_survival
 
 suite "typed errors":
   test "category survives the exception boundary":
