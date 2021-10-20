@@ -20,6 +20,7 @@ verify: build test test-release
 	python3 tools/verify.py
 
 demo: build
+	@mkdir -p .runtime
 	./bin/cairn demo .runtime/demo
 
 bench: build

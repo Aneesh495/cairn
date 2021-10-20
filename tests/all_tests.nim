@@ -32,6 +32,7 @@ import test_arguments
 import test_queries
 import test_survival
 import test_htmlreport
+import test_statistics
 
 suite "typed errors":
   test "category survives the exception boundary":
