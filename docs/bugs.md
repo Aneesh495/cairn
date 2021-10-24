@@ -27,3 +27,11 @@ are not counted as behavioral regressions.
 - Cause: each target stayed inside the tree when checked lexically, but actual chained resolution escaped
 - Correction: resolve the complete manifest link graph with POSIX parent semantics and a 40-link bound
 - Permanent checks: chained parent escape and cyclic links in `tests/test_manifest.nim`
+
+## B004: one damaged volume identity blocked all healthy volumes
+
+- Reproduction: `make test`, `content capsule storage / damaged volume metadata is an erasure, not an archive-wide failure`
+- Observed failure: malformed `volume.json` raised before a readable capsule could use the other five volumes
+- Cause: volume identity decoding and foreign-volume detection shared the same unconditional failure path
+- Correction: unreadable identity metadata makes that volume unavailable; valid foreign identities still fail closed; explicit repair can recreate damaged identity metadata
+- Permanent check: `tests/test_store.nim`, including successful reconstruction and identity repair

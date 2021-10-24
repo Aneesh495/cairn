@@ -2,6 +2,15 @@ import std/[unittest, os, tempfiles, strutils]
 import cairn/[store, repository, capsule, errors, durable]
 
 suite "content capsule storage":
+  test "damaged volume metadata is an erasure, not an archive-wide failure":
+    let root = createTempDir("cairn-store-", "")
+    defer: removeDir(root)
+    let repo = initialize(root / "archive")
+    let stored = repo.storeObject(okData, "metadata resilience")
+    writeFile(repo.volumePath(0) / "volume.json", "damaged metadata")
+    check repo.loadObject(stored.id, okData) == "metadata resilience"
+    repo.ensureVolume(0)
+    check repo.verifyVolume(0)
   test "deduplication and catalog discovery":
     let root = createTempDir("cairn-store-", "")
     defer: removeDir(root)

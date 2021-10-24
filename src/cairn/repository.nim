@@ -59,10 +59,16 @@ proc initialize*(root: string; geometry = Geometry(data: 4, parity: 2);
 proc verifyVolume*(repo: Repository; index: int): bool =
   let volume = repo.volumePath(index)
   if not dirExists(volume): return false
-  let metadata = decodeVolume(readBounded(managedPath(repo.root,
-    volumeRelative(index) & "/volume.json"), 4096))
+  let path = managedPath(repo.root, volumeRelative(index) & "/volume.json")
+  if not fileExists(path): return false
+  var metadata: tuple[config: Config, index: int]
+  try:
+    metadata = decodeVolume(readBounded(path, 4096))
+  except CairnError as error:
+    if error.kind == ekUnsafe: raise
+    return false
   require(metadata.config == repo.config and metadata.index == index,
-          ekCorrupt, "volume belongs to a different repository or position")
+          ekConflict, "volume belongs to a different repository or position")
   true
 
 proc ensureVolume*(repo: Repository; index: int) =
@@ -71,4 +77,5 @@ proc ensureVolume*(repo: Repository; index: int) =
   ensureDirectory(volume)
   ensureDirectory(volume / "objects")
   ensureDirectory(volume / "refs")
-  writeAtomic(volume / "volume.json", encodeVolume(repo.config, index))
+  let metadata = volume / "volume.json"
+  writeAtomic(metadata, encodeVolume(repo.config, index), replace = existsAny(metadata))
