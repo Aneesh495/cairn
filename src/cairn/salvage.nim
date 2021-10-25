@@ -55,17 +55,23 @@ proc salvage*(repo: Repository; label, destination: string): SalvageResult =
       for chunk in entry.chunks:
         var range = %*{"offset": offset, "length": chunk.length, "id": chunk.id,
           "fragment": "", "error": ""}
+        var bytes: string
+        var readable = false
         try:
-          let bytes = repo.loadObject(chunk.id, okData)
+          bytes = repo.loadObject(chunk.id, okData)
           require(bytes.len == chunk.length, ekCorrupt, "chunk length mismatch")
+          readable = true
+        except CairnError as error:
+          complete = false
+          range["error"] = %error.msg
+        if readable:
+          # Destination failures must escape the recovery classification path.
+          # Otherwise ENOSPC/EFBIG would masquerade as missing source content.
           let fragment = fragmentRoot & "/" & $offset & ".part"
           writeAtomic(managedPath(stage, fragment), bytes)
           range["fragment"] = %fragment
           hash.update(bytes)
           recovered += int64(bytes.len)
-        except CairnError as error:
-          complete = false
-          range["error"] = %error.msg
         node["ranges"].add range
         offset += int64(chunk.length)
       if complete:

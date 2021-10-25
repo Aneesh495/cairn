@@ -35,3 +35,11 @@ are not counted as behavioral regressions.
 - Cause: volume identity decoding and foreign-volume detection shared the same unconditional failure path
 - Correction: unreadable identity metadata makes that volume unavailable; valid foreign identities still fail closed; explicit repair can recreate damaged identity metadata
 - Permanent check: `tests/test_store.nim`, including successful reconstruction and identity repair
+
+## B005: salvage misclassified destination I/O failures as source damage
+
+- Reproduction: `python3 tools/regression_io.py`, using a real 64 KiB `RLIMIT_FSIZE` and ignored `SIGXFSZ`
+- Observed failure: exit status 0 and a published salvage directory after fragment writes returned `EFBIG`
+- Cause: the source-recovery exception handler also surrounded destination writes
+- Correction: classify only archive reads inside that handler; destination publication failures now unwind the private tree
+- Permanent check: `tools/regression_io.py`, requiring a nonzero status and no published destination
