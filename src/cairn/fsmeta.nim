@@ -32,8 +32,13 @@ proc stamp*(info: Stat): SourceStamp =
   result.inode = uint64(info.st_ino)
   result.size = int64(info.st_size)
   result.mode = int(info.st_mode) and 0o777
-  result.mtimeNs = int64(info.st_mtim.tv_sec) * 1_000_000_000 + int64(info.st_mtim.tv_nsec)
-  result.ctimeNs = int64(info.st_ctim.tv_sec) * 1_000_000_000 + int64(info.st_ctim.tv_nsec)
+  require(info.st_mtim.tv_nsec >= 0 and info.st_mtim.tv_nsec < 1_000_000_000 and
+          info.st_ctim.tv_nsec >= 0 and info.st_ctim.tv_nsec < 1_000_000_000,
+          ekInvalid, "filesystem supplied an invalid nanosecond timestamp")
+  result.mtimeNs = timeNs(fromUnix(int64(info.st_mtim.tv_sec)) +
+    initDuration(nanoseconds = int64(info.st_mtim.tv_nsec)))
+  result.ctimeNs = timeNs(fromUnix(int64(info.st_ctim.tv_sec)) +
+    initDuration(nanoseconds = int64(info.st_ctim.tv_nsec)))
   if S_ISREG(info.st_mode): result.kind = pcFile
   elif S_ISDIR(info.st_mode): result.kind = pcDir
   elif S_ISLNK(info.st_mode): result.kind = pcLinkToFile

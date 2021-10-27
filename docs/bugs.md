@@ -43,3 +43,11 @@ are not counted as behavioral regressions.
 - Cause: the source-recovery exception handler also surrounded destination writes
 - Correction: classify only archive reads inside that handler; destination publication failures now unwind the private tree
 - Permanent check: `tools/regression_io.py`, requiring a nonzero status and no published destination
+
+## B006: out-of-range filesystem timestamps raised an arithmetic defect
+
+- Reproduction: `make test`, `filesystem metadata range checks / filesystem timestamps beyond the int64 nanosecond range reject safely`
+- Observed failure: `OverflowDefect` while converting a year beyond the nanosecond representation
+- Cause: raw `stat` seconds were multiplied before range validation
+- Correction: validate the timespec fraction and use the checked time conversion for both mtime and ctime
+- Permanent check: `tests/test_fsmeta.nim` with a 20-billion-second timestamp

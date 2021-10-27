@@ -33,6 +33,7 @@ import test_queries
 import test_survival
 import test_htmlreport
 import test_statistics
+import test_fsmeta
 
 suite "typed errors":
   test "category survives the exception boundary":
