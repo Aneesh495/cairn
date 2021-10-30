@@ -51,3 +51,11 @@ are not counted as behavioral regressions.
 - Cause: raw `stat` seconds were multiplied before range validation
 - Correction: validate the timespec fraction and use the checked time conversion for both mtime and ctime
 - Permanent check: `tests/test_fsmeta.nim` with a 20-billion-second timestamp
+
+## B007: surplus parity was not checked against decoded content
+
+- Reproduction: `make test`, `self-describing recovery capsules / surplus parity must agree with the recovered data`
+- Observed failure: a modified parity shard with recomputed packet checksums was accepted when the first k data shards were intact
+- Cause: decoding consumed k shards and checked the object digest but did not check surplus coding equations
+- Correction: re-encode the recovered encoded bytes and compare every supplied shard
+- Permanent check: `tests/test_capsule.nim`; this is an algebraic negative control beyond ordinary bit-corruption checks

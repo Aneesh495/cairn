@@ -7,6 +7,13 @@ proc resignHeader(bytes: var string) =
   bytes[HeaderBytes-4..<HeaderBytes] = check
 
 suite "self-describing recovery capsules":
+  test "surplus parity must agree with the recovered data":
+    var packets = makePackets(okData, "surplus parity consistency", Geometry(data: 2, parity: 2))
+    packets[^1].payload[0] = char(uint8(packets[^1].payload[0]) xor 1)
+    # Re-serialization supplies valid per-packet checksums. The algebraic
+    # inconsistency must still be caught at the complete-capsule boundary.
+    packets[^1] = parsePacket(packets[^1].serialize)
+    expect CairnError: discard recover(packets)
   let g = Geometry(data: 4, parity: 2)
   test "raw and compressed objects recover from parity":
     var rng = Prng(state: 91)

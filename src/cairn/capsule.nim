@@ -113,7 +113,12 @@ proc recover*(packets: openArray[Packet]): string =
     packet.validate
     require(compatible(first, packet), ekCorrupt, "inconsistent capsule headers")
     shards.add Shard(index: packet.index, bytes: packet.payload)
-  let encoded = initCode(first.geometry).decode(shards, first.encodedLength)
+  let code = initCode(first.geometry)
+  let encoded = code.decode(shards, first.encodedLength)
+  let expected = code.encode(encoded)
+  for shard in shards:
+    require(shard.bytes == expected[shard.index].bytes, ekCorrupt,
+            "surplus shard is inconsistent with the decoded capsule")
   result = decompress(first.codec, encoded, first.originalLength)
   require(objectId(first.kind.domain, result) == first.id,
           ekCorrupt, "reconstructed object SHA-256 mismatch")
