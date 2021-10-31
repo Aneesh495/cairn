@@ -1,7 +1,7 @@
 NIM ?= nim
 NIMFLAGS ?=
 
-.PHONY: all build test test-release verify clean demo bench
+.PHONY: all build test test-release campaign verify clean demo bench check acceptance verify-evidence replay-evidence bootstrap
 all: build
 
 build:
@@ -16,8 +16,25 @@ test-release:
 	@mkdir -p build
 	$(NIM) c -r --hints:off $(NIMFLAGS) -d:release -o:build/tests-release tests/all_tests.nim
 
-verify: build test test-release
+campaign:
+	@mkdir -p build/evidence
+	$(NIM) c --hints:off $(NIMFLAGS) -d:release -o:build/campaign tests/campaign.nim
+	./build/campaign > build/evidence/campaign.json
+	@cat build/evidence/campaign.json
+
+verify: build test test-release campaign
 	python3 tools/verify.py
+
+check: verify
+
+acceptance: verify
+	python3 tools/evidence.py freeze
+
+verify-evidence:
+	python3 tools/evidence.py verify
+
+replay-evidence:
+	python3 tools/evidence.py replay
 
 demo: build
 	@mkdir -p .runtime
