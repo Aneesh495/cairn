@@ -57,5 +57,5 @@ tests. Compilation errors are corrected before a checkpoint is accepted.
 - Fresh clone build and demonstration with no network at runtime
 - Source-bound raw verification report, with unavailable checks identified
 
-The requested code scale is a planning guide. Production mechanisms, useful
-tests, and maintainable examples take priority over repeated or generated code.
+Keep production mechanisms, useful tests, and examples maintainable. Avoid
+duplicated subsystems and generated source that obscures the recovery path.

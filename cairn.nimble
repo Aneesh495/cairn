@@ -5,6 +5,7 @@ license = "MIT"
 srcDir = "src"
 bin = @["cairn"]
 requires "nim >= 2.2.6"
+skipDirs = @["tests", "docs", "tools", "bench", "evidence", "examples", ".github"]
 
 task test, "Run the checked unit and integration suites":
   exec "make test"

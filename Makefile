@@ -1,4 +1,4 @@
-NIM ?= nim
+NIM ?= tools/nim
 NIMFLAGS ?=
 
 .PHONY: all build test test-release campaign verify clean demo bench check acceptance verify-evidence replay-evidence bootstrap
@@ -9,12 +9,14 @@ build:
 	$(NIM) c --hints:off $(NIMFLAGS) -d:release -o:bin/cairn src/cairn.nim
 
 test:
-	@mkdir -p build
-	$(NIM) c -r --hints:off $(NIMFLAGS) -o:build/tests tests/all_tests.nim
+	@mkdir -p build/evidence
+	$(NIM) c --hints:off $(NIMFLAGS) -o:build/tests tests/all_tests.nim
+	python3 tools/capture.py build/evidence/unit-debug.log ./build/tests
 
 test-release:
-	@mkdir -p build
-	$(NIM) c -r --hints:off $(NIMFLAGS) -d:release -o:build/tests-release tests/all_tests.nim
+	@mkdir -p build/evidence
+	$(NIM) c --hints:off $(NIMFLAGS) -d:release -o:build/tests-release tests/all_tests.nim
+	python3 tools/capture.py build/evidence/unit-release.log ./build/tests-release
 
 campaign:
 	@mkdir -p build/evidence
@@ -45,3 +47,6 @@ bench: build
 
 clean:
 	rm -rf bin build nimcache
+
+bootstrap:
+	python3 tools/bootstrap.py --bootstrap

@@ -19,6 +19,8 @@ import subprocess
 import sys
 import tempfile
 import time
+import tarfile
+from source_state import source_manifest as bound_source_manifest
 from oracle import inspect_archive, parse_packet, crc32c
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
@@ -43,17 +45,7 @@ def need(condition, message):
 
 
 def source_manifest():
-    result = {}
-    for path in sorted(ROOT.rglob('*')):
-        if not path.is_file():
-            continue
-        relative = path.relative_to(ROOT)
-        if relative.parts[0] in {'.git', 'build', 'bin', '.runtime', '.toolchain', 'evidence'}:
-            continue
-        if '__pycache__' in relative.parts:
-            continue
-        result[str(relative)] = sha(path.read_bytes())
-    return result
+    return bound_source_manifest(ROOT)
 
 
 def invoke(*args, expected=0, env=None, timeout=60):
@@ -81,6 +73,9 @@ def independent(repo, label, restored=None, exhaustive=False):
     report = inspect_archive(repo, restored, label, exhaustive)
     COUNTS['independent_decodes'] += report['decoded_objects']
     COUNTS['independent_subset_checks'] += report['subset_checks']
+    oracle_dir = EVIDENCE / 'oracles'
+    oracle_dir.mkdir(exist_ok=True)
+    (oracle_dir / f'{len(list(oracle_dir.glob("*.json"))):04d}.json').write_text(json.dumps(report, indent=2))
     return report
 
 
@@ -335,6 +330,18 @@ def crash_cases(root, source, repo):
 
 
 def main():
+    for directory in ('commands', 'oracles'):
+        path = EVIDENCE / directory
+        if path.exists():
+            shutil.rmtree(path)
+        path.mkdir()
+    failure = EVIDENCE / 'failure.json'
+    if failure.exists():
+        failure.unlink()
+    environment = dict(platform=sys.platform, python=sys.version.split()[0],
+                       compiler=subprocess.check_output([str(ROOT/'tools'/'nim'),'--version'],text=True),
+                       c_compiler=subprocess.check_output(['cc','--version'],text=True).splitlines()[0])
+    (EVIDENCE/'environment.json').write_text(json.dumps(environment,indent=2))
     frozen = source_manifest()
     (EVIDENCE / 'source-manifest.json').write_text(json.dumps(frozen, indent=2, sort_keys=True))
     with tempfile.TemporaryDirectory(prefix='cairn-acceptance-') as temporary:
@@ -342,6 +349,17 @@ def main():
         source, repo = fixture(root)
         print('acceptance: command surface and independent decoding', flush=True)
         first_id, _ = command_surface(root, source, repo)
+        with tarfile.open(EVIDENCE/'fixture.tar.gz','w:gz') as archive:
+            for path in [repo,*sorted(repo.rglob('*'))]:
+                info = archive.gettarinfo(str(path), arcname=str(path.relative_to(repo.parent)))
+                info.uid = info.gid = 0
+                info.uname = info.gname = ''
+                info.mtime = 0
+                if info.isfile():
+                    with path.open('rb') as data:
+                        archive.addfile(info,data)
+                else:
+                    archive.addfile(info)
         print('acceptance: streaming transport and corruption controls', flush=True)
         transport(root, repo)
         print('acceptance: all zero-, one-, and two-volume loss subsets', flush=True)
