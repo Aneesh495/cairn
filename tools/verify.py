@@ -183,6 +183,9 @@ def physical_damage(root, source, repo):
         packet.write_bytes(raw)
     check = invoke('check', damaged, 'second', expected=4)
     need(check['lost_objects'] == 0, 'two corrupt shards are erasures')
+    limited = invoke('repair', damaged, 'second', '--max-packets', 0, '--apply', expected=4)
+    need(limited['deferred_packets'] == 2, 'budget-limited repair must disclose remaining damage')
+    COUNTS['negative_controls'] += 1
     plan = invoke('repair', damaged, 'second')
     need(len(plan['actions']) == 2, 'physical repair target count')
     (case / 'repair.json').write_text(json.dumps(plan, separators=(',', ':')))

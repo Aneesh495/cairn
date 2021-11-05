@@ -206,6 +206,8 @@ proc execute*(argv: seq[string]): int =
       emit(%*{"packets_repaired": repaired.packets, "bytes_written": repaired.bytes,
         "references_repaired": repaired.references, "deferred_packets": plan.deferredPackets,
         "lost_objects": plan.lostObjects})
+      if plan.lostObjects.len > 0: return 3
+      if plan.deferredPackets > 0: return 4
     else: stdout.writeLine(plan.encodeRepairPlan)
   of "apply-repair":
     let args = parseArguments(tail, @[])
@@ -214,7 +216,10 @@ proc execute*(argv: seq[string]): int =
     let plan = decodeRepairPlan(readBounded(args.operands[1], MaxManifestBytes))
     let repaired = repo.applyRepair(plan)
     emit(%*{"packets_repaired": repaired.packets, "bytes_written": repaired.bytes,
-      "references_repaired": repaired.references})
+      "references_repaired": repaired.references, "deferred_packets": plan.deferredPackets,
+      "lost_objects": plan.lostObjects})
+    if plan.lostObjects.len > 0: return 3
+    if plan.deferredPackets > 0: return 4
   of "retention":
     let args = parseArguments(tail, @[option("last"), option("daily"), option("weekly"), option("monthly"),
       option("pin", repeatable = true)])

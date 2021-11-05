@@ -59,3 +59,11 @@ are not counted as behavioral regressions.
 - Cause: decoding consumed k shards and checked the object digest but did not check surplus coding equations
 - Correction: re-encode the recovered encoded bytes and compare every supplied shard
 - Permanent check: `tests/test_capsule.nim`; this is an algebraic negative control beyond ordinary bit-corruption checks
+
+## B008: a budget-limited repair exited with complete-success status
+
+- Reproduction: remove a volume, then run `cairn repair REPO LABEL --max-packets 0 --apply`
+- Observed failure: status 0 despite nonzero `deferred_packets`
+- Cause: the CLI reported plan application without reflecting the plan's remaining damage
+- Correction: bounded repairs with deferred packets return 4; plans containing lost objects return 3; saved-plan application reports the same fields
+- Permanent check: the bounded-repair negative control in `tools/verify.py`
