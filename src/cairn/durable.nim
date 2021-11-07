@@ -69,7 +69,7 @@ proc writeAll*(fd: cint; data: string; path: string) =
     require(count > 0, ekIo, "zero-length write: " & path)
     at += count
 
-proc privateStage*(parent: string): tuple[path: string, fd: cint] =
+proc privateStage*(parent: string): tuple[path: string; fd: cint] =
   for attempt in 0..<1000:
     inc stageCounter
     let path = parent / (".cairn-stage-" & $posix.getpid() & "-" & $stageCounter)

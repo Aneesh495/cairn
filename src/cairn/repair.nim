@@ -56,7 +56,8 @@ proc planRepair*(repo: Repository; snapshot: Snapshot; maxBytes = high(int64);
         inc result.deferredPackets
         continue
       result.actions.add RepairAction(id: obj.id, kind: obj.kind, volume: slot.index,
-        before: repo.packetFingerprint(obj.id, slot.index), after: sha256(serialized), bytes: serialized.len)
+        before: repo.packetFingerprint(obj.id, slot.index), after: sha256(serialized),
+            bytes: serialized.len)
       result.bytes += int64(serialized.len)
 
 proc payload(plan: RepairPlan): JsonNode =
@@ -65,7 +66,8 @@ proc payload(plan: RepairPlan): JsonNode =
     "lost_objects": plan.lostObjects, "actions": []}
   for action in plan.actions:
     result["actions"].add %*{"id": action.id, "kind": action.kind.domain,
-      "volume": action.volume, "before": action.before, "after": action.after, "bytes": action.bytes}
+      "volume": action.volume, "before": action.before, "after": action.after,
+      "bytes": action.bytes}
 
 proc encodeRepairPlan*(plan: RepairPlan): string =
   var node = plan.payload
@@ -123,7 +125,8 @@ proc applyRepair*(repo: Repository; plan: RepairPlan): RepairResult =
       require(repo.packetFingerprint(action.id, action.volume) == action.before,
               ekConflict, "repair plan is stale for " & target)
       if cachedId != action.id:
-        cachedPackets = makePackets(action.kind, repo.loadObject(action.id, action.kind), repo.config.geometry)
+        cachedPackets = makePackets(action.kind, repo.loadObject(action.id, action.kind),
+            repo.config.geometry)
         cachedId = action.id
       let packet = cachedPackets[action.volume]
       require(packet.kind == action.kind and sha256(packet.serialize) == action.after and
@@ -132,7 +135,8 @@ proc applyRepair*(repo: Repository; plan: RepairPlan): RepairResult =
     cachedId = ""
     for action in plan.actions:
       if cachedId != action.id:
-        cachedPackets = makePackets(action.kind, repo.loadObject(action.id, action.kind), repo.config.geometry)
+        cachedPackets = makePackets(action.kind, repo.loadObject(action.id, action.kind),
+            repo.config.geometry)
         cachedId = action.id
       let serialized = cachedPackets[action.volume].serialize
       repo.ensureVolume(action.volume)

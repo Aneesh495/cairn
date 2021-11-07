@@ -79,9 +79,12 @@ proc main() =
     except CairnError: discard
     inc counters.metadataMutations
   echo $(%*{"seed": "ca17ca17", "erasure_cases": counters.erasureCases,
-    "erasure_payload_bytes": counters.erasureBytes, "packet_single_bit_corruptions": counters.packetCorruptions,
-    "packet_fuzz_inputs": counters.packetFuzzInputs, "compression_round_trips": counters.compressionRoundTrips,
-    "compression_fuzz_inputs": counters.compressionFuzzInputs, "metadata_mutations": counters.metadataMutations,
+    "erasure_payload_bytes": counters.erasureBytes,
+    "packet_single_bit_corruptions": counters.packetCorruptions,
+    "packet_fuzz_inputs": counters.packetFuzzInputs,
+    "compression_round_trips": counters.compressionRoundTrips,
+    "compression_fuzz_inputs": counters.compressionFuzzInputs,
+    "metadata_mutations": counters.metadataMutations,
     "valid_canonical_metadata_mutations": counters.acceptedMetadataMutations,
     "cpu_seconds": cpuTime()-started})
 

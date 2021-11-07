@@ -28,9 +28,9 @@ proc scanCapsules*(root: string; maximumFiles = 1_000_000): ScanReport =
   var report: ScanReport
   proc visit(path: string; depth: int) =
     require(depth <= MaxDepth, ekLimit, "capsule scan exceeds directory depth limit")
-    var children: seq[tuple[kind: PathComponent, path: string]]
+    var children: seq[tuple[kind: PathComponent; path: string]]
     for kind, child in walkDir(path): children.add (kind, child)
-    children.sort(proc(a, b: tuple[kind: PathComponent, path: string]): int = cmp(a.path, b.path))
+    children.sort(proc(a, b: tuple[kind: PathComponent; path: string]): int = cmp(a.path, b.path))
     for (kind, child) in children:
       case kind
       of pcDir: visit(child, depth+1)
@@ -42,7 +42,8 @@ proc scanCapsules*(root: string; maximumFiles = 1_000_000): ScanReport =
           let bytes = readBounded(child, HeaderBytes + MaxObjectBytes)
           let packet = parsePacket(bytes)
           report.packets.add LocatedPacket(path: child, id: packet.id, kind: packet.kind,
-            index: packet.index, dataShards: packet.geometry.data, parityShards: packet.geometry.parity,
+            index: packet.index, dataShards: packet.geometry.data,
+            parityShards: packet.geometry.parity,
             originalBytes: packet.originalLength, fileBytes: bytes.len)
         except CairnError as error:
           report.errors.add ScanError(path: child, reason: error.msg)
@@ -56,6 +57,7 @@ proc toJson*(report: ScanReport): JsonNode =
     "packets": [], "errors": []}
   for packet in report.packets:
     result["packets"].add %*{"path": packet.path, "id": packet.id, "kind": packet.kind.domain,
-      "volume": packet.index, "data_shards": packet.dataShards, "parity_shards": packet.parityShards,
+      "volume": packet.index, "data_shards": packet.dataShards,
+      "parity_shards": packet.parityShards,
       "original_bytes": packet.originalBytes, "file_bytes": packet.fileBytes}
   for error in report.errors: result["errors"].add %*{"path": error.path, "reason": error.reason}

@@ -37,7 +37,8 @@ proc runDemo*(destination: string): JsonNode =
   writeAtomic(root / "repair.json", repair.encodeRepairPlan)
   let repaired = repo.applyRepair(repair)
   let restored = repo.restore("revision", root / "restored")
-  for relative in ["measurements/run-a.bin", "measurements/run-b.bin", "notes/readme.txt", "notes/events.log"]:
+  for relative in ["measurements/run-a.bin", "measurements/run-b.bin", "notes/readme.txt",
+      "notes/events.log"]:
     require(sha256(readFile(root / "source" / relative)) == sha256(readFile(root / "restored" / relative)),
             ekCorrupt, "demo restored byte comparison failed")
   result = %*{"root": root, "snapshots": ["baseline", "revision"],

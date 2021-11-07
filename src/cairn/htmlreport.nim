@@ -49,7 +49,8 @@ input,select{background:var(--bg);border:1px solid var(--line);border-radius:5px
     ($report.lostFiles, "files with missing dependencies", "lost"),
     ($report.degradedObjects, "degraded capsules", "degraded"),
     (humanBytes(report.logicalBytes), "logical file bytes", "")]:
-    result.add "<div class=kpi><strong class=\"" & class & "\">" & value & "</strong><span>" & label & "</span></div>"
+    result.add "<div class=kpi><strong class=\"" & class & "\">" & value & "</strong><span>" &
+        label & "</span></div>"
   result.add "</div><section><h2>Recovery media</h2>"
   if plan.feasible:
     result.add "<p>A sufficient set of inspected volumes costs " & $plan.cost & ". "
@@ -59,13 +60,17 @@ input,select{background:var(--bg);border:1px solid var(--line);border-radius:5px
     for volume in plan.volumes: result.add "<span class=pill>volume " & $volume & "</span>"
   else: result.add "<p class=lost>Some capsules have too few valid shards. Full recovery needs additional source data or surviving media.</p>"
   result.add "<p class=note>" & $plan.explored & " search states; " & $plan.constraints & " distinct shard constraints. Costs are operator inputs, not read-time predictions.</p></section>"
-  result.add "<section><div class=section-title><h2>File map</h2><span class=note>" & $report.files.len & " regular files</span></div>"
+  result.add "<section><div class=section-title><h2>File map</h2><span class=note>" &
+      $report.files.len & " regular files</span></div>"
   result.add "<div class=controls><input id=search type=search placeholder=\"Filter paths\" aria-label=\"Filter file paths\"><select id=state aria-label=\"Filter recovery state\"><option value=all>All states</option><option value=healthy>Healthy</option><option value=degraded>Degraded</option><option value=lost>Lost</option></select></div>"
   result.add "<div class=scroll><table><thead><tr><th>Path</th><th>State</th><th>Size</th><th>Surviving chunk bytes</th><th>Lost chunks</th></tr></thead><tbody>"
   for i, file in report.files:
     if i >= 5000: break
     let state = file.state.stateName
-    result.add "<tr class=file-row data-state=\"" & state & "\"><td class=path>" & htmlEscape(file.path) & "</td><td class=\"" & state & "\">" & state & "</td><td>" & humanBytes(file.size) & "</td><td>" & humanBytes(file.recoverableBytes) & "</td><td>" & $file.lostChunks.len & "</td></tr>"
+    result.add "<tr class=file-row data-state=\"" & state & "\"><td class=path>" & htmlEscape(
+        file.path) & "</td><td class=\"" & state & "\">" & state & "</td><td>" & humanBytes(
+        file.size) & "</td><td>" & humanBytes(file.recoverableBytes) & "</td><td>" &
+        $file.lostChunks.len & "</td></tr>"
   result.add "</tbody></table></div>"
   if report.files.len > 5000: result.add "<p class=note>Showing the first 5,000 paths. Use JSON output for the complete map.</p>"
   result.add "<p class=note>Surviving chunk bytes can include fragments of incomplete files. Salvage writes these as explicit ranges.</p></section>"
@@ -77,21 +82,28 @@ input,select{background:var(--bg);border:1px solid var(--line);border-radius:5px
   result.add "</tr></thead><tbody>"
   for i, obj in report.objects:
     if i >= 2000: break
-    result.add "<tr><td class=id title=\"" & htmlEscape(obj.id) & "\">" & htmlEscape(obj.id[0..<16]) & "</td><td class=\"" & obj.state.stateName & "\">" & obj.state.stateName & "</td><td>" & $obj.good & "/" & $obj.required & " required</td>"
+    result.add "<tr><td class=id title=\"" & htmlEscape(obj.id) & "\">" & htmlEscape(obj.id[
+        0..<16]) & "</td><td class=\"" & obj.state.stateName & "\">" & obj.state.stateName &
+        "</td><td>" & $obj.good & "/" & $obj.required & " required</td>"
     for slot in obj.slots:
       let state = case slot.state
         of psGood: "good"
         of psMissing: "missing"
         of psCorrupt: "corrupt"
-      result.add "<td><span class=\"slot " & state & "\" role=img aria-label=\"" & state & "\" title=\"" & htmlEscape(slot.reason) & "\"></span></td>"
+      result.add "<td><span class=\"slot " & state & "\" role=img aria-label=\"" & state &
+          "\" title=\"" & htmlEscape(slot.reason) & "\"></span></td>"
     result.add "</tr>"
   result.add "</tbody></table></div>"
   if report.objects.len > 2000: result.add "<p class=note>Showing the first 2,000 capsules. JSON output contains every capsule.</p>"
-  result.add "<p class=note>* selected by the recovery plan. " & (if report.verified: "Recovered object hashes were checked." else: "Only shard counts were assessed.") & "</p></section>"
+  result.add "<p class=note>* selected by the recovery plan. " & (
+      if report.verified: "Recovered object hashes were checked." else: "Only shard counts were assessed.") & "</p></section>"
   result.add "<section><h2>Additional volume loss</h2><p>Correlated loss cases are evaluated against the inspected shard map. This is a survivability envelope, not a reliability forecast.</p><div class=scroll><table><thead><tr><th>Volumes lost</th><th>Cases inspected</th><th>Damaging cases</th><th>Worst lost files</th><th>Minimum complete bytes</th></tr></thead><tbody>"
   for level in envelope.levels:
-    result.add "<tr><td>" & $level.losses & "</td><td>" & $level.cases & "</td><td>" & $level.damagingCases & "</td><td>" & $level.worstLostFiles & "</td><td>" & humanBytes(level.minimumCompleteBytes) & "</td></tr>"
-  result.add "</tbody></table></div><p class=note>" & (if envelope.complete: "All cases within the requested loss bound were enumerated." else: "Enumeration stopped at its case budget; the requested envelope is incomplete.") & "</p></section>"
+    result.add "<tr><td>" & $level.losses & "</td><td>" & $level.cases & "</td><td>" &
+        $level.damagingCases & "</td><td>" & $level.worstLostFiles & "</td><td>" & humanBytes(
+        level.minimumCompleteBytes) & "</td></tr>"
+  result.add "</tbody></table></div><p class=note>" & (
+      if envelope.complete: "All cases within the requested loss bound were enumerated." else: "Enumeration stopped at its case budget; the requested envelope is incomplete.") & "</p></section>"
   result.add """<div class=foot>Generated locally by cairn. No external resources are loaded. SHA-256 detects corruption; it does not authenticate a malicious archive writer.</div></main>
 <script>
 const search=document.getElementById('search'), state=document.getElementById('state');

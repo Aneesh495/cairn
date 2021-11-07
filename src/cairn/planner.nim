@@ -49,7 +49,7 @@ proc planRecovery*(report: DamageReport; costs: seq[int64]; maxStates = 1_000_00
   for cost in costs:
     require(cost >= 0 and cost <= 1_000_000_000, ekInvalid, "volume costs must be in 0..1000000000")
   var constraints: seq[Constraint]
-  var unique = initHashSet[tuple[mask: uint64, required: int]]()
+  var unique = initHashSet[tuple[mask: uint64; required: int]]()
   for obj in report.objects:
     require(obj.total == costs.len, ekInvalid, "volume costs differ from archive geometry")
     if obj.state == rvLost:

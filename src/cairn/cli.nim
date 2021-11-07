@@ -87,7 +87,8 @@ proc execute*(argv: seq[string]): int =
     args.arity(1)
     let g = Geometry(data: int(args.integer("data", 4, 1, MaxDataShards)),
       parity: int(args.integer("parity", 2, 1, MaxShards-1)))
-    let chunks = ChunkConfig(minimum: int(args.integer("chunk-min", DefaultMinChunk, 64, MaxObjectBytes)),
+    let chunks = ChunkConfig(minimum: int(args.integer("chunk-min", DefaultMinChunk, 64,
+        MaxObjectBytes)),
       average: int(args.integer("chunk-avg", DefaultAvgChunk, 64, MaxObjectBytes)),
       maximum: int(args.integer("chunk-max", DefaultMaxChunk, 64, MaxObjectBytes)))
     let repo = initialize(args.operands[0], g, chunks)
@@ -109,7 +110,8 @@ proc execute*(argv: seq[string]): int =
     withRepoLock(repo.root, lmShared):
       var node = newJArray()
       for info in repo.listSnapshots:
-        node.add %*{"label": info.label, "created_ns": info.createdNs, "manifest_id": info.manifestId}
+        node.add %*{"label": info.label, "created_ns": info.createdNs,
+            "manifest_id": info.manifestId}
       emit(node)
   of "inspect":
     let args = parseArguments(tail, @[])
@@ -175,7 +177,8 @@ proc execute*(argv: seq[string]): int =
     withRepoLock(repo.root, lmShared):
       let snapshot = repo.loadSnapshot(args.operands[1])
       if command == "simulate":
-        emit(repo.assess(snapshot, unavailable = unavailableFor(args, repo.config.geometry.total)).toJson)
+        emit(repo.assess(snapshot, unavailable = unavailableFor(args,
+            repo.config.geometry.total)).toJson)
       else:
         let report = repo.assess(snapshot)
         if command == "plan":
@@ -183,7 +186,8 @@ proc execute*(argv: seq[string]): int =
             maxStates = int(args.integer("max-states", 1_000_000, 1, 100_000_000))).toJson)
         else:
           let envelope = survivalEnvelope(snapshot, report,
-            int(args.integer("max-loss", repo.config.geometry.parity, 0, repo.config.geometry.total)),
+            int(args.integer("max-loss", repo.config.geometry.parity, 0,
+                repo.config.geometry.total)),
             int(args.integer("max-cases", 10000, 1, 1_000_000)))
           if command == "envelope": emit(envelope.toJson)
           else:
@@ -191,7 +195,8 @@ proc execute*(argv: seq[string]): int =
             require(not isWithin(destination, repo.root), ekUnsafe, "report must be outside the repository")
             let plan = planRecovery(report, costsFor(args, repo.config.geometry.total))
             writeAtomic(destination, reportHtml(snapshot, report, plan, envelope))
-            emit(%*{"report": destination, "objects": report.objects.len, "files": report.files.len})
+            emit(%*{"report": destination, "objects": report.objects.len,
+                "files": report.files.len})
   of "repair":
     let args = parseArguments(tail, @[option("max-bytes"), option("max-packets"), flag("apply")])
     args.arity(2)
@@ -221,12 +226,14 @@ proc execute*(argv: seq[string]): int =
     if plan.lostObjects.len > 0: return 3
     if plan.deferredPackets > 0: return 4
   of "retention":
-    let args = parseArguments(tail, @[option("last"), option("daily"), option("weekly"), option("monthly"),
+    let args = parseArguments(tail, @[option("last"), option("daily"), option("weekly"), option(
+        "monthly"),
       option("pin", repeatable = true)])
     args.arity(1)
     let repo = openRepository(args.operands[0])
     let policy = RetentionPolicy(last: int(args.integer("last", 7, 0, MaxEntries)),
-      daily: int(args.integer("daily", 0, 0, MaxEntries)), weekly: int(args.integer("weekly", 0, 0, MaxEntries)),
+      daily: int(args.integer("daily", 0, 0, MaxEntries)), weekly: int(args.integer("weekly", 0, 0,
+          MaxEntries)),
       monthly: int(args.integer("monthly", 0, 0, MaxEntries)), pinned: args.all("pin").toHashSet)
     withRepoLock(repo.root, lmShared): emit(planRetention(repo.listSnapshots, policy).toJson)
   of "forget":
@@ -254,7 +261,8 @@ proc execute*(argv: seq[string]): int =
     args.arity(1)
     let packet = parsePacket(readBounded(args.operands[0], HeaderBytes + MaxObjectBytes))
     emit(%*{"id": packet.id, "kind": packet.kind.domain, "codec": $packet.codec,
-      "volume": packet.index, "data_shards": packet.geometry.data, "parity_shards": packet.geometry.parity,
+      "volume": packet.index, "data_shards": packet.geometry.data,
+      "parity_shards": packet.geometry.parity,
       "original_bytes": packet.originalLength, "encoded_bytes": packet.encodedLength,
       "shard_bytes": packet.payload.len})
   of "assemble":
@@ -273,7 +281,8 @@ proc execute*(argv: seq[string]): int =
   of "export", "import":
     let args = parseArguments(tail, @[])
     args.arity(if command == "export": 3 else: 2)
-    if command == "export": emit(openRepository(args.operands[0]).exportBundle(args.operands[1], args.operands[2]).toJson)
+    if command == "export": emit(openRepository(args.operands[0]).exportBundle(args.operands[1],
+        args.operands[2]).toJson)
     else: emit(importBundle(args.operands[0], args.operands[1]).toJson)
   of "demo":
     let args = parseArguments(tail, @[])

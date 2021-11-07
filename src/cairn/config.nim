@@ -43,7 +43,7 @@ proc encodeVolume*(config: Config; index: int): string =
   require(index >= 0 and index < config.geometry.total, ekInvalid, "invalid volume number")
   $(%*{"volume": index, "config": config.toJson})
 
-proc decodeVolume*(bytes: string): tuple[config: Config, index: int] =
+proc decodeVolume*(bytes: string): tuple[config: Config; index: int] =
   let node = parseBounded(bytes, 4096)
   node.fields(["volume", "config"])
   result.config = decodeConfig($node["config"])

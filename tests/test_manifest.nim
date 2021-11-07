@@ -30,7 +30,8 @@ suite "strict snapshot manifests":
   test "unknown fields, duplicates, noncanonical whitespace, and types reject":
     let original = tinyManifest().encodeManifest
     expect CairnError: discard decodeManifest(" " & original)
-    expect CairnError: discard decodeManifest(original.replace("\"version\":1", "\"version\":1,\"version\":1"))
+    expect CairnError: discard decodeManifest(original.replace("\"version\":1",
+        "\"version\":1,\"version\":1"))
     var node = parseJson(original)
     node["extra"] = %true
     expect CairnError: discard decodeManifest($node)

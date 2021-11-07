@@ -50,7 +50,7 @@ proc enumerateSource*(source: string; rules: seq[IgnoreRule] = @[]): seq[SourceI
   items
 
 proc readSourceFile*(item: SourceItem; config: ChunkConfig;
-                     consume: ChunkConsumer): tuple[digest: string, size: int64] =
+                     consume: ChunkConsumer): tuple[digest: string; size: int64] =
   let fd = posix.open(item.absolute.cstring, O_RDONLY or NoFollow or O_NONBLOCK)
   require(fd >= 0, ekIo, "cannot open source file: " & item.relative)
   defer: discard posix.close(fd)
@@ -79,7 +79,8 @@ proc readSourceFile*(item: SourceItem; config: ChunkConfig;
           ekConflict, "source changed while reading: " & item.relative)
   (hash.digest, total)
 
-proc backupUnlocked(repo: Repository; source, label: string; exclusions: seq[string]): BackupResult =
+proc backupUnlocked(repo: Repository; source, label: string; exclusions: seq[
+    string]): BackupResult =
   label.validateLabel
   repo.assertNewLabel(label)
   require(dirExists(source) and not symlinkExists(source), ekInvalid,

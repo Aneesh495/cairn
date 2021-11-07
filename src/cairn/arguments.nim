@@ -67,4 +67,5 @@ proc integer*(args: Arguments; key: string; fallback, minimum, maximum: int64): 
   require(result >= minimum and result <= maximum, ekInvalid, "integer outside bounds for --" & key)
 
 proc arity*(args: Arguments; count: int) =
-  require(args.operands.len == count, ekInvalid, "expected " & $count & " operands, got " & $args.operands.len)
+  require(args.operands.len == count, ekInvalid, "expected " & $count & " operands, got " &
+      $args.operands.len)

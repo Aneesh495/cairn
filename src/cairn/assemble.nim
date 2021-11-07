@@ -49,7 +49,7 @@ proc assemble*(destination: string; volumes: seq[string]): AssemblyResult =
   require(not existsAny(target) and dirExists(parentDir(target)), ekConflict,
           "assembly destination must be new with an existing parent")
   var config: Config
-  var metadata: seq[tuple[root: string, index: int]]
+  var metadata: seq[tuple[root: string; index: int]]
   for volume in volumes:
     require(dirExists(volume) and not symlinkExists(volume), ekUnsafe, "assembly input must be a real directory")
     let root = expandFilename(volume)
@@ -65,7 +65,8 @@ proc assemble*(destination: string; volumes: seq[string]): AssemblyResult =
     for warning in scan.errors: result.warnings.add warning.path & ": " & warning.reason
     for located in scan.packets:
       require(located.index == index, ekConflict, "packet stored in the wrong detached volume")
-      if repo.importPacket(readBounded(located.path, HeaderBytes + MaxObjectBytes)): inc result.copiedPackets
+      if repo.importPacket(readBounded(located.path, HeaderBytes +
+          MaxObjectBytes)): inc result.copiedPackets
       else: inc result.duplicatePackets
     let refs = managedPath(root, "refs")
     if dirExists(refs):

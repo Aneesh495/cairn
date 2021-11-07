@@ -4,7 +4,7 @@ import std/[os, json]
 import cairn/[capsule, errors, glob, locking, manifest, paths, repository,
   retention, sha256, snapshot, store, streamio]
 
-proc lookup*(manifest: Manifest; path: string): tuple[found: bool, entry: Entry] =
+proc lookup*(manifest: Manifest; path: string): tuple[found: bool; entry: Entry] =
   validatePath(path, allowRoot = true)
   var low = 0
   var high = manifest.entries.len

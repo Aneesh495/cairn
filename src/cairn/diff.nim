@@ -70,4 +70,5 @@ proc toJson*(diff: SnapshotDiff): JsonNode =
   result = %*{"before": diff.before, "after": diff.after, "changes": []}
   for change in diff.changes:
     result["changes"].add %*{"kind": $change.kind, "path": change.path,
-      "old_path": change.oldPath, "before_bytes": change.beforeBytes, "after_bytes": change.afterBytes}
+      "old_path": change.oldPath, "before_bytes": change.beforeBytes,
+      "after_bytes": change.afterBytes}

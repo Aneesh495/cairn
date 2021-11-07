@@ -18,7 +18,8 @@ proc main() =
   var rng = Prng(state: 0xbec4'u64)
   let data = rng.bytes(4*1024*1024)
   let expectedHash = sha256(data)
-  var output = %*{"seed": "bec4", "timing": "wall clock; correctness assertions included", "measurements": []}
+  var output = %*{"seed": "bec4", "timing": "wall clock; correctness assertions included",
+      "measurements": []}
   output["measurements"].add measurement("sha256", data.len, proc() =
     doAssert sha256(data) == expectedHash)
   output["measurements"].add measurement("content_defined_chunking", data.len, proc() =

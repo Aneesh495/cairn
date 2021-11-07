@@ -38,7 +38,8 @@ proc salvage*(repo: Repository; label, destination: string): SalvageResult =
     ensureDirectory(stage / "complete")
     ensureDirectory(stage / "fragments")
     result.map = %*{"version": 1, "label": label, "manifest_id": snapshot.reference.manifestId,
-      "warning": "Incomplete files are fragments with offsets, never reconstructed placeholders", "files": [], "links": []}
+      "warning": "Incomplete files are fragments with offsets, never reconstructed placeholders",
+      "files": [], "links": []}
     for entry in snapshot.manifest.entries:
       if entry.kind == enSymlink:
         result.map["links"].add %*{"path": entry.path, "target": entry.target}

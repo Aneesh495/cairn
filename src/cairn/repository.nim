@@ -54,14 +54,15 @@ proc initialize*(root: string; geometry = Geometry(data: 4, parity: 2);
   chunks.validate
   var entropy = ""
   for byte in urandom(32): entropy.add char(byte)
-  initializeWithConfig(root, Config(repositoryId: sha256(entropy), geometry: geometry, chunks: chunks))
+  initializeWithConfig(root, Config(repositoryId: sha256(entropy), geometry: geometry,
+      chunks: chunks))
 
 proc verifyVolume*(repo: Repository; index: int): bool =
   let volume = repo.volumePath(index)
   if not dirExists(volume): return false
   let path = managedPath(repo.root, volumeRelative(index) & "/volume.json")
   if not fileExists(path): return false
-  var metadata: tuple[config: Config, index: int]
+  var metadata: tuple[config: Config; index: int]
   try:
     metadata = decodeVolume(readBounded(path, 4096))
   except CairnError as error:

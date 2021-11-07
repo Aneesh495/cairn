@@ -1,4 +1,4 @@
-## Storage accounting distinguishes logical bytes, uniqueBytes referenced chunk
+## Storage accounting distinguishes logical bytes, distinct referenced chunk
 ## bytes, and physical packet bytes, including redundancy and header overhead.
 ## Unreadable manifests are reported instead of contributing invented zeros.
 import std/[tables, json]
@@ -58,11 +58,13 @@ proc repositoryStats*(repo: Repository): JsonNode =
       if repo.verifyVolume(index): present.add index
       else: absent.add index
     result = %*{"repository_id": repo.config.repositoryId, "readable_snapshots": readable,
-      "unreadable_snapshots": unreadable, "accounting_complete": unreadable.len == 0 and unidentified.len == 0,
+      "unreadable_snapshots": unreadable, "accounting_complete": unreadable.len == 0 and
+        unidentified.len == 0 and absent.len == 0 and corrupt == 0,
       "logical_bytes_readable_snapshots": logical, "file_versions": files,
       "distinct_referenced_chunk_bytes": uniqueBytes, "distinct_referenced_chunks": chunks.len,
-      "discovered_objects": ids.len, "validated_packet_bytes": physical,
+      "discovered_objects": ids.len, "physical_packet_bytes_read": physical,
       "good_packets": good, "missing_packets": missing, "corrupt_packets": corrupt,
       "unidentified_objects": unidentified, "present_volumes": present, "absent_volumes": absent,
       "references": roots}
-    result["logical_to_distinct_ratio"] = if uniqueBytes > 0: %(float64(logical)/float64(uniqueBytes)) else: newJNull()
+    result["logical_to_distinct_ratio"] = if uniqueBytes > 0: %(float64(logical)/float64(
+        uniqueBytes)) else: newJNull()
