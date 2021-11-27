@@ -118,7 +118,8 @@ proc applyRepair*(repo: Repository; plan: RepairPlan): RepairResult =
     var cachedPackets: seq[Packet]
     var targets = initTable[string, bool]()
     for action in plan.actions:
-      require(action.volume < repo.config.geometry.total, ekCorrupt, "repair volume exceeds geometry")
+      require(action.volume >= 0 and action.volume < repo.config.geometry.total,
+        ekCorrupt, "repair volume exceeds geometry")
       let target = action.id & ":" & $action.volume
       require(not targets.hasKey(target), ekCorrupt, "duplicate repair target")
       targets[target] = true

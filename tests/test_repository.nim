@@ -2,6 +2,13 @@ import std/[unittest, os, tempfiles, json]
 import cairn/[repository, config, chunker, erasure, errors]
 
 suite "repository creation and volume identity":
+  test "all lookup helpers reject positions outside configured volumes":
+    let root = createTempDir("cairn-repo-", "")
+    defer: removeDir(root)
+    let repo = initialize(root / "archive")
+    for position in [-1, 6]:
+      expect CairnError: discard repo.packetPath(repo.config.repositoryId, position)
+      expect CairnError: discard repo.referencePath("sample", position)
   test "configuration is replicated and immutable":
     let root = createTempDir("cairn-repo-", "")
     defer: removeDir(root)

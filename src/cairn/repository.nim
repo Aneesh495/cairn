@@ -15,10 +15,14 @@ proc volumePath*(repo: Repository; index: int): string =
   managedPath(repo.root, volumeRelative(index))
 
 proc packetPath*(repo: Repository; id: string; index: int): string =
+  require(index >= 0 and index < repo.config.geometry.total,
+    ekInvalid, "invalid repository packet position")
   require(validId(id), ekInvalid, "invalid object lookup ID")
   managedPath(repo.root, volumeRelative(index) & "/objects/" & id[0..1] & "/" & id & ".cap")
 
 proc referencePath*(repo: Repository; label: string; index: int): string =
+  require(index >= 0 and index < repo.config.geometry.total,
+    ekInvalid, "invalid repository reference position")
   label.validateLabel
   managedPath(repo.root, volumeRelative(index) & "/refs/" & label & ".json")
 

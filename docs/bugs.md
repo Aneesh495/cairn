@@ -67,3 +67,11 @@ are not counted as behavioral regressions.
 - Cause: the CLI reported plan application without reflecting the plan's remaining damage
 - Correction: bounded repairs with deferred packets return 4; plans containing lost objects return 3; saved-plan application reports the same fields
 - Permanent check: the bounded-repair negative control in `tools/verify.py`
+
+## B009: low-level path helpers accepted invalid shard positions
+
+- Reproduction: `make test`, `repository creation and volume identity / all lookup helpers reject positions outside configured volumes`
+- Observed failure: negative and out-of-range positions produced managed paths instead of rejecting
+- Cause: packet/reference path helpers checked IDs and labels but relied on callers to check the position
+- Correction: validate both position bounds at each public path helper and repair application boundary
+- Permanent check: `tests/test_repository.nim` for both helper families and both invalid bounds

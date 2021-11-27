@@ -6,21 +6,21 @@ all: build
 
 build:
 	@mkdir -p bin build
-	$(NIM) c --hints:off $(NIMFLAGS) -d:release -o:bin/cairn src/cairn.nim
+	$(NIM) c --nimcache:build/nimcache/app --hints:off $(NIMFLAGS) -d:release -o:bin/cairn src/cairn.nim
 
 test:
 	@mkdir -p build/evidence
-	$(NIM) c --hints:off $(NIMFLAGS) -o:build/tests tests/all_tests.nim
+	$(NIM) c --nimcache:build/nimcache/unit-debug --hints:off $(NIMFLAGS) -o:build/tests tests/all_tests.nim
 	python3 tools/capture.py build/evidence/unit-debug.log ./build/tests
 
 test-release:
 	@mkdir -p build/evidence
-	$(NIM) c --hints:off $(NIMFLAGS) -d:release -o:build/tests-release tests/all_tests.nim
+	$(NIM) c --nimcache:build/nimcache/unit-release --hints:off $(NIMFLAGS) -d:release -o:build/tests-release tests/all_tests.nim
 	python3 tools/capture.py build/evidence/unit-release.log ./build/tests-release
 
 campaign:
 	@mkdir -p build/evidence
-	$(NIM) c --hints:off $(NIMFLAGS) -d:release -o:build/campaign tests/campaign.nim
+	$(NIM) c --nimcache:build/nimcache/campaign --hints:off $(NIMFLAGS) -d:release -o:build/campaign tests/campaign.nim
 	./build/campaign > build/evidence/campaign.json
 	@cat build/evidence/campaign.json
 
@@ -43,7 +43,7 @@ demo: build
 	./bin/cairn demo .runtime/demo
 
 bench: build
-	$(NIM) c -r --hints:off -d:release -o:build/bench bench/bench.nim
+	$(NIM) c -r --nimcache:build/nimcache/bench --hints:off -d:release -o:build/bench bench/bench.nim
 
 clean:
 	rm -rf bin build nimcache
