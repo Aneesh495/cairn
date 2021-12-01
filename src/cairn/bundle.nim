@@ -14,6 +14,8 @@ type BundleResult* = object
   snapshots*: int
 
 proc exportBundle*(repo: Repository; label, destination: string): BundleResult =
+  ## Export one complete snapshot with every surviving validated shard. The
+  ## caller gets a transport file, not additional independent failure domains.
   withRepoLock(repo.root, lmShared):
     let snapshot = repo.loadSnapshot(label)
     let report = repo.assess(snapshot)
@@ -54,6 +56,8 @@ proc exportBundle*(repo: Repository; label, destination: string): BundleResult =
     finally: output.abort
 
 proc importBundle*(bundle, destination: string): BundleResult =
+  ## Publish a new repository only after frame, transcript, and complete-file
+  ## checks succeed. Truncation leaves no final destination repository.
   let target = absolutePath(destination).normalizedPath
   require(not existsAny(target) and dirExists(parentDir(target)), ekConflict,
           "bundle import destination must be new with an existing parent")

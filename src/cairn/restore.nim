@@ -84,5 +84,7 @@ proc restoreUnlocked(repo: Repository; label, destination: string): RestoreStats
   syncDirectory(parent)
 
 proc restore*(repo: Repository; label, destination: string): RestoreStats =
+  ## Hold a reader lock through verified tree publication. The destination
+  ## must be new; this function never merges with or erases an existing tree.
   withRepoLock(repo.root, lmShared):
     result = restoreUnlocked(repo, label, destination)

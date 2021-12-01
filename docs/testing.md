@@ -171,6 +171,12 @@ counts, and debug/release suite agreement. It fails on missing or stale inputs.
 into a temporary directory and reconstructs its snapshots with the independent
 reader across all sufficient shard subsets.
 
+After freezing, `tools/test_evidence.py` runs eight rejection controls against
+private copies: changed source, edited artifacts, missing raw logs, false
+rechecksummed counts, reduced workloads, edited raw outputs, altered crash
+statuses, and disagreeing debug/release logs. Updating an outer artifact hash
+must not conceal an inconsistent inner record.
+
 This is a reproducible integrity receipt, not a signed third-party attestation.
 A malicious party able to rewrite all source and evidence can construct a new
 receipt. The purpose is to make stale, missing, edited, or unsupported local

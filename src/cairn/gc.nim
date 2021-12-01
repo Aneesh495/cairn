@@ -61,6 +61,8 @@ proc planGcUnlocked(repo: Repository): GcPlan =
   result.fingerprint = digest.digest
 
 proc planGc*(repo: Repository): GcPlan =
+  ## Take a reader lock and derive exact unreachable objects and preimages.
+  ## Missing media or unreadable discovered roots prevent destructive planning.
   withRepoLock(repo.root, lmShared): result = planGcUnlocked(repo)
 
 proc payload(plan: GcPlan): JsonNode =
@@ -100,6 +102,8 @@ proc decodeGcPlan*(bytes: string): GcPlan =
   canonical(bytes, result.encodeGcPlan)
 
 proc applyGc*(repo: Repository; plan: GcPlan): int64 =
+  ## Recompute the complete plan under the writer lock before unlinking.
+  ## Return actual packet bytes reclaimed; an interruption requires replanning.
   withRepoLock(repo.root, lmExclusive):
     let expected = planGcUnlocked(repo)
     require(plan.encodeGcPlan == expected.encodeGcPlan, ekConflict,

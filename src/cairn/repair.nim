@@ -110,6 +110,8 @@ proc decodeRepairPlan*(bytes: string): RepairPlan =
   canonical(bytes, result.encodeRepairPlan)
 
 proc applyRepair*(repo: Repository; plan: RepairPlan): RepairResult =
+  ## Preflight every target before writing any replacement. A caller-supplied
+  ## plan is evidence to validate, never authority to skip reconstruction.
   withRepoLock(repo.root, lmExclusive):
     require(plan.repositoryId == repo.config.repositoryId, ekConflict, "repair plan belongs to another archive")
     let snapshot = repo.loadSnapshot(plan.label)

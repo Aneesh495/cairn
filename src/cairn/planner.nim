@@ -45,6 +45,8 @@ proc cheapestBound(constraints: seq[Constraint]; selected, remaining: uint64;
     result = max(result, cost)
 
 proc planRecovery*(report: DamageReport; costs: seq[int64]; maxStates = 1_000_000): RecoveryPlan =
+  ## Return a feasible media set and a separately stated optimality result.
+  ## Exhausting the state budget preserves the upper bound, not a proof.
   require(costs.len in 2..32 and maxStates > 0, ekInvalid, "invalid recovery planner dimensions")
   for cost in costs:
     require(cost >= 0 and cost <= 1_000_000_000, ekInvalid, "volume costs must be in 0..1000000000")

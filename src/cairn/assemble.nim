@@ -44,6 +44,8 @@ proc importReference*(repo: Repository; bytes: string; index: int): bool =
   true
 
 proc assemble*(destination: string; volumes: seq[string]): AssemblyResult =
+  ## Read surviving detached media into a new private repository. Corrupt
+  ## packets are reported, while conflicting valid identities abort assembly.
   require(volumes.len > 0 and volumes.len <= MaxShards*4, ekInvalid, "assembly needs 1..128 input volumes")
   let target = absolutePath(destination).normalizedPath
   require(not existsAny(target) and dirExists(parentDir(target)), ekConflict,

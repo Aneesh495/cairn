@@ -2,7 +2,6 @@
 """Freeze, verify, or independently replay source-bound local acceptance evidence."""
 from __future__ import annotations
 import argparse
-import io
 import json
 import pathlib
 import re
@@ -67,6 +66,7 @@ def verify(root=ROOT):
     destination = root / 'evidence' / 'local'
     binding = json.loads((destination/'binding.json').read_text())
     need(binding['version']==1, 'unsupported evidence binding')
+    need(set(binding['files'])==set(REQUIRED)|{'commands.tar.gz','oracles.tar.gz'}, 'evidence artifact set mismatch')
     for name, digest in binding['files'].items():
         need('/' not in name and name not in ('.','..'), 'unsafe evidence filename')
         need(sha((destination/name).read_bytes())==digest, 'artifact checksum mismatch: '+name)

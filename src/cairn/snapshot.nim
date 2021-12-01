@@ -8,12 +8,16 @@ type Snapshot* = object
   manifest*: Manifest
 
 proc loadSnapshot*(repo: Repository; label: string): Snapshot =
+  ## Resolve agreed roots and validate their complete manifest structure.
+  ## File content verification is separate; the caller keeps a repository lock.
   let read = repo.readReference(label)
   result.reference = read.reference
   result.manifest = decodeManifest(repo.loadObject(read.reference.manifestId, okManifest))
   require(result.manifest.label == label, ekCorrupt, "snapshot manifest label differs from root")
 
 proc verifyContent*(repo: Repository; manifest: Manifest) =
+  ## Stream each file's referenced chunks through its ordinary file digest.
+  ## This checks dependency existence and assembly, beyond manifest structure.
   manifest.validate
   for entry in manifest.entries:
     if entry.kind != enFile: continue
@@ -26,6 +30,8 @@ proc verifyContent*(repo: Repository; manifest: Manifest) =
             "file digest does not match the content graph: " & entry.path)
 
 proc publishSnapshot*(repo: Repository; manifest: Manifest): Snapshot =
+  ## Low-level publication under a caller-held writer lock. The first root
+  ## cannot become visible before the complete file graph has been checked.
   repo.assertNewLabel(manifest.label)
   repo.verifyContent(manifest)
   let stored = repo.storeObject(okManifest, manifest.encodeManifest)

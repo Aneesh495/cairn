@@ -31,6 +31,7 @@ check: verify
 
 acceptance: verify
 	python3 tools/evidence.py freeze
+	python3 tools/test_evidence.py
 
 verify-evidence:
 	python3 tools/evidence.py verify

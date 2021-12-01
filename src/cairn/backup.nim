@@ -137,5 +137,7 @@ proc backupUnlocked(repo: Repository; source, label: string; exclusions: seq[
   BackupResult(snapshot: published, stats: stats)
 
 proc backup*(repo: Repository; source, label: string; exclusions: seq[string] = @[]): BackupResult =
+  ## Acquire an immutable snapshot under the writer lock. Already written
+  ## capsules can remain unreachable if source validation or publication fails.
   withRepoLock(repo.root, lmExclusive):
     result = backupUnlocked(repo, source, label, exclusions)

@@ -27,6 +27,8 @@ proc recoverable*(read: ObjectRead; repo: Repository): bool =
   read.goodCount >= repo.config.geometry.data
 
 proc readPackets*(repo: Repository; id: string; expected: ObjectKind): ObjectRead =
+  ## Collect evidence for every configured position without hiding erasures.
+  ## A caller doing a multi-step read must already hold a shared or writer lock.
   require(validId(id), ekInvalid, "invalid content ID")
   result.id = id
   for index in 0..<repo.config.geometry.total:
@@ -61,6 +63,8 @@ proc loadObject*(repo: Repository; id: string; kind: ObjectKind): string =
   recover(read.packets)
 
 proc storeObject*(repo: Repository; kind: ObjectKind; bytes: string): StoreResult =
+  ## Store all positions, compare existing packets exactly, and heal damaged
+  ## copies from these trusted source bytes. The caller holds the writer lock.
   let packets = makePackets(kind, bytes, repo.config.geometry)
   result.id = packets[0].id
   for packet in packets:
