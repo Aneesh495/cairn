@@ -35,6 +35,18 @@ Offline mode succeeds with a supported compiler already available. Otherwise
 it fails with an installation instruction rather than silently downloading.
 The native executable itself performs no network requests.
 
+The Nimble package also builds the same executable under `bin/`:
+
+```sh
+nimble check
+nimble build
+```
+
+The package has no dependencies beyond the compiler. Nimble can maintain its
+own package-list cache. Use `CAIRN_OFFLINE=1 make build` after compiler setup
+for the enforced offline path. Make also owns complete verification and
+evidence generation.
+
 ## Build targets
 
 | Target | Purpose |

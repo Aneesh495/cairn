@@ -3,6 +3,7 @@ author = "Aneesh Krishna"
 description = "Damage-aware, deduplicated archives with index-free recovery"
 license = "MIT"
 srcDir = "src"
+binDir = "bin"
 bin = @["cairn"]
 requires "nim >= 2.2.6"
 skipDirs = @["tests", "docs", "tools", "bench", "evidence", "examples", ".github"]
