@@ -1,0 +1,1918 @@
+[
+  {
+    "command": [
+      "init",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/archive",
+      "--chunk-min",
+      "1024",
+      "--chunk-avg",
+      "4096",
+      "--chunk-max",
+      "16384"
+    ],
+    "exit": 0,
+    "seconds": 0.17680416599614546,
+    "stdout_sha256": "5a55cef9f390b417096e5566d6dde75b1fc41dc3b72227550623b3c80deb8450",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "backup",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/source",
+      "first"
+    ],
+    "exit": 0,
+    "seconds": 0.24718124998616986,
+    "stdout_sha256": "a3cdce0db81a47967545120b14b1ea854378d07f16964ffed08bfc6158cec90a",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "backup",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/source",
+      "first"
+    ],
+    "exit": 4,
+    "seconds": 0.0070747919962741435,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "a07d53ead8dcb423f72d249c2d5b15c19b08efc87d0e2d737891bd13d1588cd6"
+  },
+  {
+    "command": [
+      "inspect",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/archive",
+      "first"
+    ],
+    "exit": 0,
+    "seconds": 0.008610457996837795,
+    "stdout_sha256": "df134df8b707bc98b0718eb45d7a52fb7717f8d78c952fd45ac34384126f8901",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "snapshots",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/archive"
+    ],
+    "exit": 0,
+    "seconds": 0.011219332984182984,
+    "stdout_sha256": "2dc3e5c151e8cbc99855755778581053f493b0d8233691963f7893787e005335",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "check",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/archive",
+      "first"
+    ],
+    "exit": 0,
+    "seconds": 0.12279229197883978,
+    "stdout_sha256": "36eb338a2d4b6f0a053f42395c95f56b03e0387ce05e3dd3178df7a1be805f45",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "find",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/archive",
+      "first",
+      "**/*.bin"
+    ],
+    "exit": 0,
+    "seconds": 0.007143249997170642,
+    "stdout_sha256": "29fc0476243928de96b71911dab13f34f2992084d37503c41bce2f3121fc359e",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "history",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/archive",
+      "a.bin"
+    ],
+    "exit": 0,
+    "seconds": 0.010491666995221749,
+    "stdout_sha256": "fc68cc2ebe3cfc8fbe5d8b8bef69894d5d60d0a199ecb91e09183dfa02277ab3",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "stats",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/archive"
+    ],
+    "exit": 0,
+    "seconds": 0.053342833009082824,
+    "stdout_sha256": "2401c181cbdacdd4c1f911f96fd3f5089dc19845d61ef342c8817a4d901b197a",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "extract",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/archive",
+      "first",
+      "a.bin",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/extracted"
+    ],
+    "exit": 0,
+    "seconds": 0.04197500000009313,
+    "stdout_sha256": "663c27df1791327db73e56c2d083ff54e2309c46e71d4f43cf783662ec1c086f",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "restore",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/archive",
+      "first",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/restored"
+    ],
+    "exit": 0,
+    "seconds": 0.07357495799078606,
+    "stdout_sha256": "f792a36a80f5a612f2251798a3d4f4468702343e7b8d6cabb2cd3b2be45f6367",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "restore",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/archive",
+      "first",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/restored"
+    ],
+    "exit": 4,
+    "seconds": 0.008396208984777331,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "dbc720da6009d101b794a9a84f4122675b592da52d5a97fe0fdf6d9072f28ef0"
+  },
+  {
+    "command": [
+      "backup",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/source",
+      "second",
+      "--exclude",
+      "*.tmp"
+    ],
+    "exit": 0,
+    "seconds": 0.12291825001011603,
+    "stdout_sha256": "e4e8988a1704a81ed8549a866d924601c77c1d8599b146ef0f6c0de060c4c526",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "diff",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/archive",
+      "first",
+      "second"
+    ],
+    "exit": 0,
+    "seconds": 0.009740666981087998,
+    "stdout_sha256": "bb6d282f329c5cd011665bba6876840934aff230b1745ed179bfc27bcf70270e",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "retention",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/archive",
+      "--last",
+      "1",
+      "--pin",
+      "first"
+    ],
+    "exit": 0,
+    "seconds": 0.00977537501603365,
+    "stdout_sha256": "2b5a3d5c17cac0aae5bbea2d537007925dcf9508b3234bcd69185102520ba9f5",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "plan",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/archive",
+      "second",
+      "--costs",
+      "7,5,3,2,1,9"
+    ],
+    "exit": 0,
+    "seconds": 0.03926262498134747,
+    "stdout_sha256": "2eed0f743b63107c06799b699c6fa2adc58bbf178720f63930101757123ea0b1",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "simulate",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/archive",
+      "second",
+      "--unavailable",
+      "0,1"
+    ],
+    "exit": 0,
+    "seconds": 0.04003391700098291,
+    "stdout_sha256": "39688a172818bd26e4aeb679580a78b7000476b0235ad982372d7bbfca46c240",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "envelope",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/archive",
+      "second",
+      "--max-loss",
+      "3"
+    ],
+    "exit": 0,
+    "seconds": 0.03871587500907481,
+    "stdout_sha256": "adcb2425dc0931fed6331c320f714a301f6afd1c17ea2617907f03cdc346d4a0",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "report",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/archive",
+      "second",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/report.html"
+    ],
+    "exit": 0,
+    "seconds": 0.039815249998355284,
+    "stdout_sha256": "53d3fe032d3c0f02fd6dc673b55434b5999322986eedf1a841e80d0f7a06f086",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "inspect-packet",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/archive/volumes/00/objects/0d/0d90520c938a3d7b88d0f8a4c83cdcabe38f64069e06ef7afa741acafcccc809.cap"
+    ],
+    "exit": 0,
+    "seconds": 0.005086166987894103,
+    "stdout_sha256": "4da1d89d2b049dc07f1f051b9bdee53dd73e8d64024a81c307a58ca7cf061197",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "scan",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/archive"
+    ],
+    "exit": 0,
+    "seconds": 0.01903595798648894,
+    "stdout_sha256": "670ef7f0b44df301e0871ba4a22905e3264a99eba2f605763f9d12452872c6bf",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "backup",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/source",
+      "bad-option",
+      "--exlude",
+      "*.tmp"
+    ],
+    "exit": 2,
+    "seconds": 0.0054322500072885305,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "329b93310dcf8e28593fb3bc713093edbf6d996947146d973f73399bb6649bb0"
+  },
+  {
+    "command": [
+      "extract",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/archive",
+      "first",
+      "../escape",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/escape"
+    ],
+    "exit": 2,
+    "seconds": 0.006480459007434547,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "c227388db6a05a1bc35cc161e94b27156ea4fa31ecf189c8016a80420bcd0b58"
+  },
+  {
+    "command": [
+      "export",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/archive",
+      "second",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/snapshot.cairn"
+    ],
+    "exit": 0,
+    "seconds": 0.08046566700795665,
+    "stdout_sha256": "6c2a6b1d5977f384da0e1f5a303fd5a2445fa4ddae295afffbfb5639558bc6d6",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "import",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/snapshot.cairn",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/imported"
+    ],
+    "exit": 0,
+    "seconds": 0.29760199997690506,
+    "stdout_sha256": "6c2a6b1d5977f384da0e1f5a303fd5a2445fa4ddae295afffbfb5639558bc6d6",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "restore",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/imported",
+      "second",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/import-restored"
+    ],
+    "exit": 0,
+    "seconds": 0.07719241597806104,
+    "stdout_sha256": "2d73d523ddd787c26e7933d7a674873eb0c13be1c7aca1ecfc65e964dbcacf9b",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "import",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/bad.cairn",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/bad-import"
+    ],
+    "exit": 4,
+    "seconds": 0.12159345799591392,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "212854b0a8fb30e911a759192bdbcefc62dacd0133d85984aab32385abdf7e06"
+  },
+  {
+    "command": [
+      "import",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/bad.cairn",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/bad-import"
+    ],
+    "exit": 4,
+    "seconds": 0.23449912501382641,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e2b6507db459a7d2d49090a86feca5be92a384f144aa673374ad4ed030f2a8f2"
+  },
+  {
+    "command": [
+      "check",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-/archive",
+      "second"
+    ],
+    "exit": 0,
+    "seconds": 0.10011154101812281,
+    "stdout_sha256": "73b37b569ce15bd10225d2026af5272d283f129de661428927eb92fd9a49604f",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "restore",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-/archive",
+      "second",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-/restored"
+    ],
+    "exit": 0,
+    "seconds": 0.068408624996664,
+    "stdout_sha256": "2d73d523ddd787c26e7933d7a674873eb0c13be1c7aca1ecfc65e964dbcacf9b",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "check",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-0/archive",
+      "second"
+    ],
+    "exit": 4,
+    "seconds": 0.08153712499188259,
+    "stdout_sha256": "8b12e8a8e78c64b243fade4a6a74865628a3c5e8b216bbd0356b2216c7be8821",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "restore",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-0/archive",
+      "second",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-0/restored"
+    ],
+    "exit": 0,
+    "seconds": 0.06216620802297257,
+    "stdout_sha256": "2d73d523ddd787c26e7933d7a674873eb0c13be1c7aca1ecfc65e964dbcacf9b",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "check",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-1/archive",
+      "second"
+    ],
+    "exit": 4,
+    "seconds": 0.08166274998802692,
+    "stdout_sha256": "a25896fbfc68da1f5ebb5898d6f10c8512e5f6a74b0fcc6816bd8937b9007661",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "restore",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-1/archive",
+      "second",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-1/restored"
+    ],
+    "exit": 0,
+    "seconds": 0.057502250012476,
+    "stdout_sha256": "2d73d523ddd787c26e7933d7a674873eb0c13be1c7aca1ecfc65e964dbcacf9b",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "check",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-2/archive",
+      "second"
+    ],
+    "exit": 4,
+    "seconds": 0.08522566600004211,
+    "stdout_sha256": "303da52200f7368aa289cd9904bd9f2c791ad8eb83a9f8b01ebfcda332e39fe7",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "restore",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-2/archive",
+      "second",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-2/restored"
+    ],
+    "exit": 0,
+    "seconds": 0.05759195899008773,
+    "stdout_sha256": "2d73d523ddd787c26e7933d7a674873eb0c13be1c7aca1ecfc65e964dbcacf9b",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "check",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-3/archive",
+      "second"
+    ],
+    "exit": 4,
+    "seconds": 0.08153583301464096,
+    "stdout_sha256": "26ce9239377830f2124747b3651eda78f0a8c4e27e7f1021998642b8f661c92f",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "restore",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-3/archive",
+      "second",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-3/restored"
+    ],
+    "exit": 0,
+    "seconds": 0.05728058400563896,
+    "stdout_sha256": "2d73d523ddd787c26e7933d7a674873eb0c13be1c7aca1ecfc65e964dbcacf9b",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "check",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-4/archive",
+      "second"
+    ],
+    "exit": 4,
+    "seconds": 0.08319245799793862,
+    "stdout_sha256": "737dc504066038d3038c4132658f71ba4bd0b78436f5e7ab719d66bf48d03271",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "restore",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-4/archive",
+      "second",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-4/restored"
+    ],
+    "exit": 0,
+    "seconds": 0.05811145901679993,
+    "stdout_sha256": "2d73d523ddd787c26e7933d7a674873eb0c13be1c7aca1ecfc65e964dbcacf9b",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "check",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-5/archive",
+      "second"
+    ],
+    "exit": 4,
+    "seconds": 0.08190795802511275,
+    "stdout_sha256": "bf229f1d085d546fe87605708ea19a5c85c63935be3d52009b58f7cdffae2cfd",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "restore",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-5/archive",
+      "second",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-5/restored"
+    ],
+    "exit": 0,
+    "seconds": 0.05637458400451578,
+    "stdout_sha256": "2d73d523ddd787c26e7933d7a674873eb0c13be1c7aca1ecfc65e964dbcacf9b",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "check",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-0-1/archive",
+      "second"
+    ],
+    "exit": 4,
+    "seconds": 0.07047491701086983,
+    "stdout_sha256": "80808888e0cb6123176ccae50ea7f31f3dede6982468c46e5bfa03dcdc5b33fd",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "restore",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-0-1/archive",
+      "second",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-0-1/restored"
+    ],
+    "exit": 0,
+    "seconds": 0.04974562500137836,
+    "stdout_sha256": "2d73d523ddd787c26e7933d7a674873eb0c13be1c7aca1ecfc65e964dbcacf9b",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "check",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-0-2/archive",
+      "second"
+    ],
+    "exit": 4,
+    "seconds": 0.07371650001732633,
+    "stdout_sha256": "9ec48a67d01eb15f8566fe4bc600f0dd12fb3c6bfe213393852e905b6f9cb579",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "restore",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-0-2/archive",
+      "second",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-0-2/restored"
+    ],
+    "exit": 0,
+    "seconds": 0.05166100000496954,
+    "stdout_sha256": "2d73d523ddd787c26e7933d7a674873eb0c13be1c7aca1ecfc65e964dbcacf9b",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "check",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-0-3/archive",
+      "second"
+    ],
+    "exit": 4,
+    "seconds": 0.07372445799410343,
+    "stdout_sha256": "57f47415bb923284597fd1195c6492793bdd75aa69ccafc0adb117a09ad4e5a1",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "restore",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-0-3/archive",
+      "second",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-0-3/restored"
+    ],
+    "exit": 0,
+    "seconds": 0.05135933400015347,
+    "stdout_sha256": "2d73d523ddd787c26e7933d7a674873eb0c13be1c7aca1ecfc65e964dbcacf9b",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "check",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-0-4/archive",
+      "second"
+    ],
+    "exit": 4,
+    "seconds": 0.0715308329963591,
+    "stdout_sha256": "c428515e8c858abd4d665f715792ede681e8c497b94b4c142f0ef726679d7e91",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "restore",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-0-4/archive",
+      "second",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-0-4/restored"
+    ],
+    "exit": 0,
+    "seconds": 0.05072187498444691,
+    "stdout_sha256": "2d73d523ddd787c26e7933d7a674873eb0c13be1c7aca1ecfc65e964dbcacf9b",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "check",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-0-5/archive",
+      "second"
+    ],
+    "exit": 4,
+    "seconds": 0.06953583302674815,
+    "stdout_sha256": "ef39be7b8c6b6fc9292bf5b997c40b92927db1d2b16029ffd08a0d3e2017ed01",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "restore",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-0-5/archive",
+      "second",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-0-5/restored"
+    ],
+    "exit": 0,
+    "seconds": 0.05039583399775438,
+    "stdout_sha256": "2d73d523ddd787c26e7933d7a674873eb0c13be1c7aca1ecfc65e964dbcacf9b",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "check",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-1-2/archive",
+      "second"
+    ],
+    "exit": 4,
+    "seconds": 0.06964724999852479,
+    "stdout_sha256": "31b52f8ceae3c139ad45050407f0785f95385ed9d533700d1b3d8e10da8a43ef",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "restore",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-1-2/archive",
+      "second",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-1-2/restored"
+    ],
+    "exit": 0,
+    "seconds": 0.05118358298204839,
+    "stdout_sha256": "2d73d523ddd787c26e7933d7a674873eb0c13be1c7aca1ecfc65e964dbcacf9b",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "check",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-1-3/archive",
+      "second"
+    ],
+    "exit": 4,
+    "seconds": 0.07065104099456221,
+    "stdout_sha256": "0b0f4f5e75f563afe5f9ac01dbfcddc3ef9ebe465dc1f868455e7fb6fa4dd742",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "restore",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-1-3/archive",
+      "second",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-1-3/restored"
+    ],
+    "exit": 0,
+    "seconds": 0.06428662498365156,
+    "stdout_sha256": "2d73d523ddd787c26e7933d7a674873eb0c13be1c7aca1ecfc65e964dbcacf9b",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "check",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-1-4/archive",
+      "second"
+    ],
+    "exit": 4,
+    "seconds": 0.07819462500629015,
+    "stdout_sha256": "a0a8e012501913568c890927b64f18e7a43b85aceeb94f3b9857c4815c8d3e0b",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "restore",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-1-4/archive",
+      "second",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-1-4/restored"
+    ],
+    "exit": 0,
+    "seconds": 0.054921000002650544,
+    "stdout_sha256": "2d73d523ddd787c26e7933d7a674873eb0c13be1c7aca1ecfc65e964dbcacf9b",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "check",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-1-5/archive",
+      "second"
+    ],
+    "exit": 4,
+    "seconds": 0.07151941698975861,
+    "stdout_sha256": "62bf67bc9118edae60b4ebfc3c7d7da5436866c2182029ef8f64c76ecd92b2da",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "restore",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-1-5/archive",
+      "second",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-1-5/restored"
+    ],
+    "exit": 0,
+    "seconds": 0.051771124999504536,
+    "stdout_sha256": "2d73d523ddd787c26e7933d7a674873eb0c13be1c7aca1ecfc65e964dbcacf9b",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "check",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-2-3/archive",
+      "second"
+    ],
+    "exit": 4,
+    "seconds": 0.07269279201864265,
+    "stdout_sha256": "6d81d3968a4dfb7bc9a57b01687aa7803ebf75fdd3046088812e93e4022d708f",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "restore",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-2-3/archive",
+      "second",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-2-3/restored"
+    ],
+    "exit": 0,
+    "seconds": 0.05122737499186769,
+    "stdout_sha256": "2d73d523ddd787c26e7933d7a674873eb0c13be1c7aca1ecfc65e964dbcacf9b",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "check",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-2-4/archive",
+      "second"
+    ],
+    "exit": 4,
+    "seconds": 0.07129095800337382,
+    "stdout_sha256": "522215cc3a700ee887fffd078fc6170c095333897fe3a7f3fa85dbb26f840bc3",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "restore",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-2-4/archive",
+      "second",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-2-4/restored"
+    ],
+    "exit": 0,
+    "seconds": 0.05437991599319503,
+    "stdout_sha256": "2d73d523ddd787c26e7933d7a674873eb0c13be1c7aca1ecfc65e964dbcacf9b",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "check",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-2-5/archive",
+      "second"
+    ],
+    "exit": 4,
+    "seconds": 0.06981924999854527,
+    "stdout_sha256": "314ecf9f24302eb4ba9bd72b15686744f197317c327e198d177792af2292c3c6",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "restore",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-2-5/archive",
+      "second",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-2-5/restored"
+    ],
+    "exit": 0,
+    "seconds": 0.05032804197981022,
+    "stdout_sha256": "2d73d523ddd787c26e7933d7a674873eb0c13be1c7aca1ecfc65e964dbcacf9b",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "check",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-3-4/archive",
+      "second"
+    ],
+    "exit": 4,
+    "seconds": 0.06952908300445415,
+    "stdout_sha256": "fff080019067d1773d4e44d50b656d70984733b2e87d8cef94a49276e646d09e",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "restore",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-3-4/archive",
+      "second",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-3-4/restored"
+    ],
+    "exit": 0,
+    "seconds": 0.05103637499269098,
+    "stdout_sha256": "2d73d523ddd787c26e7933d7a674873eb0c13be1c7aca1ecfc65e964dbcacf9b",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "check",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-3-5/archive",
+      "second"
+    ],
+    "exit": 4,
+    "seconds": 0.070251625002129,
+    "stdout_sha256": "0759cde7ef69633118fcb1f65218afeb9d49625fcf061d8d0a86d8c0d78729e0",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "restore",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-3-5/archive",
+      "second",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-3-5/restored"
+    ],
+    "exit": 0,
+    "seconds": 0.05030191599507816,
+    "stdout_sha256": "2d73d523ddd787c26e7933d7a674873eb0c13be1c7aca1ecfc65e964dbcacf9b",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "check",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-4-5/archive",
+      "second"
+    ],
+    "exit": 4,
+    "seconds": 0.07303158298600465,
+    "stdout_sha256": "f9a8ff53680d7bad5ed8ed691f2144d26762252f048212f4a4c435d7697370a6",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "restore",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-4-5/archive",
+      "second",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-4-5/restored"
+    ],
+    "exit": 0,
+    "seconds": 0.05410358399967663,
+    "stdout_sha256": "2d73d523ddd787c26e7933d7a674873eb0c13be1c7aca1ecfc65e964dbcacf9b",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "inspect",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/local-corruption/archive",
+      "second"
+    ],
+    "exit": 0,
+    "seconds": 0.007462250010576099,
+    "stdout_sha256": "b42949b5ff78428bf51cb11ebc085fdc0ab341f9bf717b474d7a36e21cbd9614",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "check",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/local-corruption/archive",
+      "second"
+    ],
+    "exit": 4,
+    "seconds": 0.09349283302435651,
+    "stdout_sha256": "66c931fc3cf5593d5f1d921ee5f0f71fb09b56e040caeb6fc6b2d9833d1f42db",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "repair",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/local-corruption/archive",
+      "second",
+      "--max-packets",
+      "0",
+      "--apply"
+    ],
+    "exit": 4,
+    "seconds": 0.039628166996408254,
+    "stdout_sha256": "3c4b7149e372b0ba26da0191eb70baa28ce5095aeebf375a504319cef7fdfc67",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "repair",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/local-corruption/archive",
+      "second"
+    ],
+    "exit": 0,
+    "seconds": 0.0372831670101732,
+    "stdout_sha256": "95c1fa9ece61084950afc8227929ec6d0cca66a288f187bf62933a123c1e86ed",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "apply-repair",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/local-corruption/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/local-corruption/repair.json"
+    ],
+    "exit": 0,
+    "seconds": 0.011880500009283423,
+    "stdout_sha256": "aa36cec0b4354652c752a31105ce368f8489afc8a4dd6cd6774615b75a0ea805",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "apply-repair",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/local-corruption/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/local-corruption/repair.json"
+    ],
+    "exit": 4,
+    "seconds": 0.006809041980886832,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "6594be6f1f22dee6f512ea1acc7d199ad0f046df5fb27a79798ae8935971ee46"
+  },
+  {
+    "command": [
+      "check",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/local-corruption/archive",
+      "second"
+    ],
+    "exit": 0,
+    "seconds": 0.09274862500024028,
+    "stdout_sha256": "73b37b569ce15bd10225d2026af5272d283f129de661428927eb92fd9a49604f",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "restore",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/local-corruption/archive",
+      "second",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/local-corruption/impossible"
+    ],
+    "exit": 3,
+    "seconds": 0.007826416986063123,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "89236d1aaed87dac522d7095a195f679f62b331aa63462ffe26916e6ea59c6b2"
+  },
+  {
+    "command": [
+      "salvage",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/local-corruption/archive",
+      "second",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/local-corruption/salvaged"
+    ],
+    "exit": 0,
+    "seconds": 0.1147239999845624,
+    "stdout_sha256": "485393b150f86c3f0cb224176d870129fe7209dff3a8c100b024d78993af2753",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "inspect",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/surplus-parity",
+      "second"
+    ],
+    "exit": 0,
+    "seconds": 0.009503790992312133,
+    "stdout_sha256": "b42949b5ff78428bf51cb11ebc085fdc0ab341f9bf717b474d7a36e21cbd9614",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "check",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/surplus-parity",
+      "second"
+    ],
+    "exit": 3,
+    "seconds": 0.03972062500542961,
+    "stdout_sha256": "87e144131525098778e42b64e022ca7c71efc972411d3c487b813c7dbef22f0b",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "forget",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/maintenance/archive",
+      "second"
+    ],
+    "exit": 0,
+    "seconds": 0.010977167024975643,
+    "stdout_sha256": "4dbb23b93840d07c53e1b50b4b281e566b7dda8d871bb272afafda22e2af2ef9",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "snapshots",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/maintenance/archive"
+    ],
+    "exit": 0,
+    "seconds": 0.01488254201831296,
+    "stdout_sha256": "90311c427939e7aea4abc66e893885c4281abccc63f3d27014af5f3095fa4afe",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "forget",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/maintenance/archive",
+      "second",
+      "--apply"
+    ],
+    "exit": 0,
+    "seconds": 0.022154582984512672,
+    "stdout_sha256": "b4109129dda31c85b68ed86bc24ece530ee9b77879dfb8b6c06fc5203d1244ad",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "gc",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/maintenance/archive"
+    ],
+    "exit": 0,
+    "seconds": 0.045954625005833805,
+    "stdout_sha256": "784f455108d391098df2eccd3eefed84d8752d20059183950a658ac4196a41b0",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "backup",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/maintenance/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/source",
+      "third"
+    ],
+    "exit": 0,
+    "seconds": 0.1224819170020055,
+    "stdout_sha256": "ac589bffc5e6893156d4d5012a17d9d65276f9252d3666ec554ea9a668cc94d2",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "gc",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/maintenance/archive",
+      "--apply",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/maintenance/gc.json"
+    ],
+    "exit": 4,
+    "seconds": 0.03547854200587608,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "b2c254237410079882e54fa3e8fd607d927446b2c58e9cd1c145925c535c28a6"
+  },
+  {
+    "command": [
+      "gc",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/maintenance/archive"
+    ],
+    "exit": 0,
+    "seconds": 0.03430174998356961,
+    "stdout_sha256": "3884a5efa12e475a9b4459b36dd5ed7b2997a1c87efe93919b0c29f7f07062bf",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "gc",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/maintenance/archive",
+      "--apply",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/maintenance/gc.json"
+    ],
+    "exit": 0,
+    "seconds": 0.035253334004664794,
+    "stdout_sha256": "b44d984e1dcb08ccc0fac5d4f594272a23d9d72c035545eb2fa9c87a2f397c0b",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "check",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/maintenance/archive",
+      "first"
+    ],
+    "exit": 0,
+    "seconds": 0.08975674997782335,
+    "stdout_sha256": "36eb338a2d4b6f0a053f42395c95f56b03e0387ce05e3dd3178df7a1be805f45",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "discover-snapshots",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/lost-roots"
+    ],
+    "exit": 0,
+    "seconds": 0.07229329197434708,
+    "stdout_sha256": "1d0319455a5b1af547c8ab6713acec0ff4a3886c2d9eebd8ce4408c4e23c0c55",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "recover-root",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/lost-roots",
+      "2b32a7a6dbd009da877a54d5cedaacccf783d3d473a3e2ba6e6e61509beb4fbb"
+    ],
+    "exit": 0,
+    "seconds": 0.08125508300145157,
+    "stdout_sha256": "054176c039ff6358997c213d08df0c718da2d3c058a2046bfaec10f77214f912",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "assemble",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/assembled",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/lost-top-level/volumes/02",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/lost-top-level/volumes/03",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/lost-top-level/volumes/04",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/lost-top-level/volumes/05"
+    ],
+    "exit": 0,
+    "seconds": 0.20551720898947679,
+    "stdout_sha256": "79b2fefcf1185a98be94a6c8c6bc25a161830f7493c99f7ee195d116748f63a7",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "stats",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/archive"
+    ],
+    "exit": 5,
+    "seconds": 0.005153417005203664,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "41ddd4571fd6944b548d9cca093874272fd05a6b21b67a720689a93a951f1cae"
+  },
+  {
+    "command": [
+      "backup",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/source",
+      "locked"
+    ],
+    "exit": 5,
+    "seconds": 0.0053993340115994215,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "41ddd4571fd6944b548d9cca093874272fd05a6b21b67a720689a93a951f1cae"
+  },
+  {
+    "command": [
+      "check",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/archive",
+      "first"
+    ],
+    "exit": 0,
+    "seconds": 0.10225329201784916,
+    "stdout_sha256": "36eb338a2d4b6f0a053f42395c95f56b03e0387ce05e3dd3178df7a1be805f45",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "backup",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/source",
+      "locked"
+    ],
+    "exit": 5,
+    "seconds": 0.004982832993846387,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "41ddd4571fd6944b548d9cca093874272fd05a6b21b67a720689a93a951f1cae"
+  },
+  {
+    "command": [
+      "backup",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/special-source",
+      "fifo"
+    ],
+    "exit": 2,
+    "seconds": 0.0057369999994989485,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "017d1610f20c9db0131986523ead68c2b272755eed28935241485a7ddc991386"
+  },
+  {
+    "command": [
+      "backup",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-file-written/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/source",
+      "crashed"
+    ],
+    "exit": -9,
+    "seconds": 0.0520780420047231,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "check",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-file-written/archive",
+      "first"
+    ],
+    "exit": 0,
+    "seconds": 0.08832204199279658,
+    "stdout_sha256": "36eb338a2d4b6f0a053f42395c95f56b03e0387ce05e3dd3178df7a1be805f45",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "snapshots",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-file-written/archive"
+    ],
+    "exit": 0,
+    "seconds": 0.009712833008961752,
+    "stdout_sha256": "90311c427939e7aea4abc66e893885c4281abccc63f3d27014af5f3095fa4afe",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "gc",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-file-written/archive"
+    ],
+    "exit": 0,
+    "seconds": 0.03061916699516587,
+    "stdout_sha256": "0a8c08e3447c9cd009943f9f0f1370253f2397dd8ea8749805ca19dc0851c336",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "gc",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-file-written/archive",
+      "--apply",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-file-written/gc.json"
+    ],
+    "exit": 0,
+    "seconds": 0.03128404199378565,
+    "stdout_sha256": "9339bca8d45e2e4d8ac70f6c857f71765840ec6a6ab113d038a8145e0b121056",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "check",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-file-written/archive",
+      "first"
+    ],
+    "exit": 0,
+    "seconds": 0.09970349998911843,
+    "stdout_sha256": "36eb338a2d4b6f0a053f42395c95f56b03e0387ce05e3dd3178df7a1be805f45",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "backup",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-file-synced/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/source",
+      "crashed"
+    ],
+    "exit": -9,
+    "seconds": 0.06161612499272451,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "check",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-file-synced/archive",
+      "first"
+    ],
+    "exit": 0,
+    "seconds": 0.12451862500165589,
+    "stdout_sha256": "36eb338a2d4b6f0a053f42395c95f56b03e0387ce05e3dd3178df7a1be805f45",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "snapshots",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-file-synced/archive"
+    ],
+    "exit": 0,
+    "seconds": 0.014247750019421801,
+    "stdout_sha256": "90311c427939e7aea4abc66e893885c4281abccc63f3d27014af5f3095fa4afe",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "gc",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-file-synced/archive"
+    ],
+    "exit": 0,
+    "seconds": 0.03181370798847638,
+    "stdout_sha256": "0a8c08e3447c9cd009943f9f0f1370253f2397dd8ea8749805ca19dc0851c336",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "gc",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-file-synced/archive",
+      "--apply",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-file-synced/gc.json"
+    ],
+    "exit": 0,
+    "seconds": 0.03211720898980275,
+    "stdout_sha256": "9339bca8d45e2e4d8ac70f6c857f71765840ec6a6ab113d038a8145e0b121056",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "check",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-file-synced/archive",
+      "first"
+    ],
+    "exit": 0,
+    "seconds": 0.08862070899340324,
+    "stdout_sha256": "36eb338a2d4b6f0a053f42395c95f56b03e0387ce05e3dd3178df7a1be805f45",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "backup",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-file-published/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/source",
+      "crashed"
+    ],
+    "exit": -9,
+    "seconds": 0.04822974998387508,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "check",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-file-published/archive",
+      "first"
+    ],
+    "exit": 0,
+    "seconds": 0.09107987498282455,
+    "stdout_sha256": "36eb338a2d4b6f0a053f42395c95f56b03e0387ce05e3dd3178df7a1be805f45",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "snapshots",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-file-published/archive"
+    ],
+    "exit": 0,
+    "seconds": 0.008783124998444691,
+    "stdout_sha256": "90311c427939e7aea4abc66e893885c4281abccc63f3d27014af5f3095fa4afe",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "gc",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-file-published/archive"
+    ],
+    "exit": 0,
+    "seconds": 0.03114904201356694,
+    "stdout_sha256": "ca78d27ad3a55569f2aff14c29a81027d3cb9dc6417b6c0f4da955d6c8eab95f",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "gc",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-file-published/archive",
+      "--apply",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-file-published/gc.json"
+    ],
+    "exit": 0,
+    "seconds": 0.032197708991589025,
+    "stdout_sha256": "f5e7e136fd63431f365bf392819169a48bdc2fc9471a37e4e09d1e8e30e32288",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "check",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-file-published/archive",
+      "first"
+    ],
+    "exit": 0,
+    "seconds": 0.10445799998706207,
+    "stdout_sha256": "36eb338a2d4b6f0a053f42395c95f56b03e0387ce05e3dd3178df7a1be805f45",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "backup",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-directory-synced/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/source",
+      "crashed"
+    ],
+    "exit": -9,
+    "seconds": 0.05156566700316034,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "check",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-directory-synced/archive",
+      "first"
+    ],
+    "exit": 0,
+    "seconds": 0.10209450000547804,
+    "stdout_sha256": "36eb338a2d4b6f0a053f42395c95f56b03e0387ce05e3dd3178df7a1be805f45",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "snapshots",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-directory-synced/archive"
+    ],
+    "exit": 0,
+    "seconds": 0.009100041002966464,
+    "stdout_sha256": "90311c427939e7aea4abc66e893885c4281abccc63f3d27014af5f3095fa4afe",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "gc",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-directory-synced/archive"
+    ],
+    "exit": 0,
+    "seconds": 0.0372768749948591,
+    "stdout_sha256": "ca78d27ad3a55569f2aff14c29a81027d3cb9dc6417b6c0f4da955d6c8eab95f",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "gc",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-directory-synced/archive",
+      "--apply",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-directory-synced/gc.json"
+    ],
+    "exit": 0,
+    "seconds": 0.08340054200380109,
+    "stdout_sha256": "f5e7e136fd63431f365bf392819169a48bdc2fc9471a37e4e09d1e8e30e32288",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "check",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-directory-synced/archive",
+      "first"
+    ],
+    "exit": 0,
+    "seconds": 0.10654745902866125,
+    "stdout_sha256": "36eb338a2d4b6f0a053f42395c95f56b03e0387ce05e3dd3178df7a1be805f45",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "backup",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-object-packet/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/source",
+      "crashed"
+    ],
+    "exit": -9,
+    "seconds": 0.056896167021477595,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "check",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-object-packet/archive",
+      "first"
+    ],
+    "exit": 0,
+    "seconds": 0.10629366600187495,
+    "stdout_sha256": "36eb338a2d4b6f0a053f42395c95f56b03e0387ce05e3dd3178df7a1be805f45",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "snapshots",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-object-packet/archive"
+    ],
+    "exit": 0,
+    "seconds": 0.012749916990287602,
+    "stdout_sha256": "90311c427939e7aea4abc66e893885c4281abccc63f3d27014af5f3095fa4afe",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "gc",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-object-packet/archive"
+    ],
+    "exit": 0,
+    "seconds": 0.04078516599838622,
+    "stdout_sha256": "ca78d27ad3a55569f2aff14c29a81027d3cb9dc6417b6c0f4da955d6c8eab95f",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "gc",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-object-packet/archive",
+      "--apply",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-object-packet/gc.json"
+    ],
+    "exit": 0,
+    "seconds": 0.041000124998390675,
+    "stdout_sha256": "f5e7e136fd63431f365bf392819169a48bdc2fc9471a37e4e09d1e8e30e32288",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "check",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-object-packet/archive",
+      "first"
+    ],
+    "exit": 0,
+    "seconds": 0.09423970800708048,
+    "stdout_sha256": "36eb338a2d4b6f0a053f42395c95f56b03e0387ce05e3dd3178df7a1be805f45",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "backup",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-object-complete/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/source",
+      "crashed"
+    ],
+    "exit": -9,
+    "seconds": 0.008280999987618998,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "check",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-object-complete/archive",
+      "first"
+    ],
+    "exit": 0,
+    "seconds": 0.09207087499089539,
+    "stdout_sha256": "36eb338a2d4b6f0a053f42395c95f56b03e0387ce05e3dd3178df7a1be805f45",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "snapshots",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-object-complete/archive"
+    ],
+    "exit": 0,
+    "seconds": 0.010396124998806044,
+    "stdout_sha256": "90311c427939e7aea4abc66e893885c4281abccc63f3d27014af5f3095fa4afe",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "gc",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-object-complete/archive"
+    ],
+    "exit": 0,
+    "seconds": 0.03317366700503044,
+    "stdout_sha256": "0a8c08e3447c9cd009943f9f0f1370253f2397dd8ea8749805ca19dc0851c336",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "gc",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-object-complete/archive",
+      "--apply",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-object-complete/gc.json"
+    ],
+    "exit": 0,
+    "seconds": 0.03235966700594872,
+    "stdout_sha256": "9339bca8d45e2e4d8ac70f6c857f71765840ec6a6ab113d038a8145e0b121056",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "check",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-object-complete/archive",
+      "first"
+    ],
+    "exit": 0,
+    "seconds": 0.08757408300880343,
+    "stdout_sha256": "36eb338a2d4b6f0a053f42395c95f56b03e0387ce05e3dd3178df7a1be805f45",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "backup",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-source-validated/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/source",
+      "crashed"
+    ],
+    "exit": -9,
+    "seconds": 0.10254054199322127,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "check",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-source-validated/archive",
+      "first"
+    ],
+    "exit": 0,
+    "seconds": 0.09239712500129826,
+    "stdout_sha256": "36eb338a2d4b6f0a053f42395c95f56b03e0387ce05e3dd3178df7a1be805f45",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "snapshots",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-source-validated/archive"
+    ],
+    "exit": 0,
+    "seconds": 0.00906916699022986,
+    "stdout_sha256": "90311c427939e7aea4abc66e893885c4281abccc63f3d27014af5f3095fa4afe",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "gc",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-source-validated/archive"
+    ],
+    "exit": 0,
+    "seconds": 0.040843334019882604,
+    "stdout_sha256": "7251165bb913c98f138e21ef4ae4f4be9e9db97e2a844f162581132937cb59aa",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "gc",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-source-validated/archive",
+      "--apply",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-source-validated/gc.json"
+    ],
+    "exit": 0,
+    "seconds": 0.048644958005752414,
+    "stdout_sha256": "e2a6bcaf89899aea1bf42ab4774af994388c410ea5afe46457374164198cb2fd",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "check",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-source-validated/archive",
+      "first"
+    ],
+    "exit": 0,
+    "seconds": 0.09139316697837785,
+    "stdout_sha256": "36eb338a2d4b6f0a053f42395c95f56b03e0387ce05e3dd3178df7a1be805f45",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "backup",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-manifest-stored/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/source",
+      "crashed"
+    ],
+    "exit": -9,
+    "seconds": 0.177844499994535,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "check",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-manifest-stored/archive",
+      "first"
+    ],
+    "exit": 0,
+    "seconds": 0.09444183300365694,
+    "stdout_sha256": "36eb338a2d4b6f0a053f42395c95f56b03e0387ce05e3dd3178df7a1be805f45",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "snapshots",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-manifest-stored/archive"
+    ],
+    "exit": 0,
+    "seconds": 0.009274917014408857,
+    "stdout_sha256": "90311c427939e7aea4abc66e893885c4281abccc63f3d27014af5f3095fa4afe",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "gc",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-manifest-stored/archive"
+    ],
+    "exit": 0,
+    "seconds": 0.040649666014360264,
+    "stdout_sha256": "ab600127b6d874e444e9f51f22e9344dce0e7a9474367b91b89f65f21c312c3c",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "gc",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-manifest-stored/archive",
+      "--apply",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-manifest-stored/gc.json"
+    ],
+    "exit": 0,
+    "seconds": 0.049106999998912215,
+    "stdout_sha256": "f5d80bcf3b019cbdba0efa2888a930336143f995e1553c865a43bf5a74aec58a",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "check",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-manifest-stored/archive",
+      "first"
+    ],
+    "exit": 0,
+    "seconds": 0.08884983300231397,
+    "stdout_sha256": "36eb338a2d4b6f0a053f42395c95f56b03e0387ce05e3dd3178df7a1be805f45",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "backup",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-reference-published/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/source",
+      "crashed"
+    ],
+    "exit": -9,
+    "seconds": 0.18218662499566562,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "check",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-reference-published/archive",
+      "first"
+    ],
+    "exit": 0,
+    "seconds": 0.08943704201374203,
+    "stdout_sha256": "36eb338a2d4b6f0a053f42395c95f56b03e0387ce05e3dd3178df7a1be805f45",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "snapshots",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-reference-published/archive"
+    ],
+    "exit": 0,
+    "seconds": 0.011839874990982935,
+    "stdout_sha256": "1e61ef43666a98bd9d4b75dc35748156432910fdbe193c15b3789b415c1cbdf8",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "check",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-reference-published/archive",
+      "crashed"
+    ],
+    "exit": 4,
+    "seconds": 0.13223254200420342,
+    "stdout_sha256": "5fc7794b1b14e3685896d3854d835be25cc222f433f038034b62fd2b823b883e",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "gc",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-reference-published/archive"
+    ],
+    "exit": 0,
+    "seconds": 0.04347674999735318,
+    "stdout_sha256": "cce67889aed7e816ab37783372aa07ac959b12d1d89b2b07c2cc67f33790aa50",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "gc",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-reference-published/archive",
+      "--apply",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-reference-published/gc.json"
+    ],
+    "exit": 0,
+    "seconds": 0.04491229201084934,
+    "stdout_sha256": "9339bca8d45e2e4d8ac70f6c857f71765840ec6a6ab113d038a8145e0b121056",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "check",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-reference-published/archive",
+      "first"
+    ],
+    "exit": 0,
+    "seconds": 0.09199195800465532,
+    "stdout_sha256": "36eb338a2d4b6f0a053f42395c95f56b03e0387ce05e3dd3178df7a1be805f45",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "restore",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/archive",
+      "second",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-restore-tree-synced/restored"
+    ],
+    "exit": -9,
+    "seconds": 0.07187024998711422,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "restore",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/archive",
+      "second",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-restore-tree-synced/restored"
+    ],
+    "exit": 0,
+    "seconds": 0.11070720801944844,
+    "stdout_sha256": "2d73d523ddd787c26e7933d7a674873eb0c13be1c7aca1ecfc65e964dbcacf9b",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "restore",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/archive",
+      "second",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-restore-published/restored"
+    ],
+    "exit": -9,
+    "seconds": 0.07906162500148639,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "repair",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-repair/archive",
+      "second",
+      "--apply"
+    ],
+    "exit": -9,
+    "seconds": 0.09624641700065695,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "repair",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-repair/archive",
+      "second",
+      "--apply"
+    ],
+    "exit": 0,
+    "seconds": 0.19154625001829118,
+    "stdout_sha256": "0e420e2e95ae2da46a0f69f248306f2fa95a9d065c671d4733a2fd133d10dd19",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "check",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-repair/archive",
+      "second"
+    ],
+    "exit": 0,
+    "seconds": 0.09426312500727363,
+    "stdout_sha256": "73b37b569ce15bd10225d2026af5272d283f129de661428927eb92fd9a49604f",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "forget",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-forget/archive",
+      "second",
+      "--apply"
+    ],
+    "exit": -9,
+    "seconds": 0.007382874988252297,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "forget",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-forget/archive",
+      "second",
+      "--apply"
+    ],
+    "exit": 0,
+    "seconds": 0.0060634999827016145,
+    "stdout_sha256": "b4109129dda31c85b68ed86bc24ece530ee9b77879dfb8b6c06fc5203d1244ad",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "gc",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-forget/archive"
+    ],
+    "exit": 0,
+    "seconds": 0.027988083980744705,
+    "stdout_sha256": "784f455108d391098df2eccd3eefed84d8752d20059183950a658ac4196a41b0",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "gc",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-forget/archive",
+      "--apply",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-forget/gc.json"
+    ],
+    "exit": -9,
+    "seconds": 0.028654957975959405,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "gc",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-forget/archive"
+    ],
+    "exit": 0,
+    "seconds": 0.027957749989582226,
+    "stdout_sha256": "b2cf8b9e52e792233acafe7130837a66ad50e6421f95e140b74404885ff2a57e",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "gc",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-forget/archive",
+      "--apply",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-forget/gc.json"
+    ],
+    "exit": 0,
+    "seconds": 0.031524207995971665,
+    "stdout_sha256": "04db8dca52ce2858ef2bae55be749a0d21aaae0bba7c85cc09eb593d248fe46b",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "check",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-forget/archive",
+      "first"
+    ],
+    "exit": 0,
+    "seconds": 0.08780470900819637,
+    "stdout_sha256": "36eb338a2d4b6f0a053f42395c95f56b03e0387ce05e3dd3178df7a1be805f45",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+]

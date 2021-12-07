@@ -1,0 +1,6 @@
+{
+  "platform": "darwin",
+  "python": "3.14.2",
+  "compiler": "Nim Compiler Version 2.2.12 [MacOSX: arm64]\nCompiled at 2026-09-08\nCopyright (c) 2006-2026 by Andreas Rumpf\n\nactive boot switches: -d:release -d:nimUseLinenoise\n",
+  "c_compiler": "Apple clang version 21.0.0 (clang-2100.3.34.2)"
+}

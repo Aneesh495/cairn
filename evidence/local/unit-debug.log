@@ -1,0 +1,198 @@
+
+[Suite] bounded binary codec
+  [OK] unsigned fields preserve their full width
+  [OK] empty field does not consume the next byte
+  [OK] all truncations reject
+  [OK] untrusted allocation lengths reject before allocation
+  [OK] negative and oversized slices reject
+
+[Suite] SHA-256 known answers
+  [OK] FIPS vectors
+  [OK] incremental and one-shot hashes agree at padding boundaries
+  [OK] object domains and hex validation
+
+[Suite] CRC32C and deterministic fixtures
+  [OK] Castagnoli reference values
+  [OK] SplitMix64 reference output
+  [OK] fixtures are reproducible and include binary bytes
+
+[Suite] GF(256) and matrix inversion
+  [OK] all products match polynomial long multiplication
+  [OK] every nonzero field element has an inverse
+  [OK] powers agree with repeated multiplication
+  [OK] pivot swaps and input preservation
+  [OK] ragged, singular, and nonsquare matrices reject
+
+[Suite] systematic erasure coding
+  [OK] every sufficient subset for small geometries
+  [OK] randomized arbitrary order and maximum geometry
+  [OK] invalid geometries and shard sets reject
+  [OK] nonzero padding is rejected
+
+[Suite] streaming content-defined boundaries
+  [OK] empty and tiny streams
+  [OK] buffer partition does not change boundaries
+  [OK] a prefix insertion preserves most later chunks
+  [OK] repeated and zero data respect the maximum
+  [OK] invalid configurations reject
+
+[Suite] bounded capsule compression
+  [OK] runs, literals, and token boundaries round trip
+  [OK] random binary round trips
+  [OK] all truncated encodings fail expected-length verification
+  [OK] decompression bombs and trailing tokens reject
+
+[Suite] self-describing recovery capsules
+  [OK] surplus parity must agree with the recovered data
+  [OK] raw and compressed objects recover from parity
+  [OK] every packet truncation rejects
+  [OK] every single-byte header corruption rejects
+  [OK] payload corruption rejects before decode
+  [OK] valid CRC does not bypass schema checks
+  [OK] mixed objects, duplicate shards, and false payload reject
+
+[Suite] portable archive paths
+  [OK] ordinary UTF-8 paths remain exact
+  [OK] ambiguous and escaping names reject
+  [OK] labels cannot become filenames outside references
+  [OK] relative symlinks can ascend only within the tree
+  [OK] managed paths reject existing symlink ancestors
+  [OK] containment uses complete components
+
+[Suite] strict snapshot manifests
+  [OK] symbolic link chains cannot escape through an intermediate parent
+  [OK] canonical metadata round trip
+  [OK] cyclic symbolic links reject
+  [OK] unknown fields, duplicates, noncanonical whitespace, and types reject
+  [OK] traversal, missing parent, and child of symlink reject
+  [OK] wrong content lengths and duplicate paths reject
+  [OK] deep, invalid UTF-8, and malformed JSON reject
+
+[Suite] durable immutable publication
+  [OK] publish, reject overwrite, explicitly replace
+  [OK] managed symlinks cannot redirect reads or writes
+  [OK] directories are not managed files
+
+[Suite] repository advisory locks
+  [OK] shared readers coexist and exclude a writer
+  [OK] exception unwinding releases the lock
+
+[Suite] repository creation and volume identity
+  [OK] all lookup helpers reject positions outside configured volumes
+  [OK] configuration is replicated and immutable
+  [OK] missing volumes are recognizable and can be initialized for repair
+  [OK] a foreign volume is rejected
+  [OK] configuration schema rejects extra fields
+
+[Suite] content capsule storage
+  [OK] damaged volume metadata is an erasure, not an archive-wide failure
+  [OK] deduplication and catalog discovery
+  [OK] lost volumes and corrupt payloads become erasures
+  [OK] trusted source bytes heal damaged packets
+  [OK] wrong kind and invalid IDs reject
+
+[Suite] replicated snapshot roots
+  [OK] publishing an incomplete content graph must fail
+  [OK] one valid reference and sufficient shards recover a snapshot
+  [OK] corrupt references are reported and strict readers fail
+  [OK] conflicting valid references never elect a winner
+
+[Suite] directory acquisition and snapshot publication
+  [OK] archive files, empty directories, UTF-8 names, and relative links
+  [OK] source identity detects replacement after enumeration
+  [OK] escaping symlink and nested archive reject
+  [OK] nanosecond timestamps round trip including negative values
+
+[Suite] verified transactional restore
+  [OK] complete tree restores with bytes, permissions, and mtime
+  [OK] unrecoverable content leaves no destination or private stage
+  [OK] restore cannot overwrite a symlink or target the repository
+
+[Suite] physical damage to logical loss maps
+  [OK] healthy archive verifies every capsule
+  [OK] one lost shared chunk identifies every dependent file
+  [OK] volume failure simulation does not mutate storage
+
+[Suite] evidence-bound repair plans
+  [OK] lost volume and corrupt shard are reconstructed exactly
+  [OK] stale preconditions reject the whole plan before mutation
+  [OK] packet and byte budgets defer work without overstating completion
+  [OK] plan checksum rejects edits
+
+[Suite] weighted recovery media selection
+  [OK] randomized plans match independent exhaustive subset oracle
+  [OK] state exhaustion preserves a feasible plan and discloses uncertainty
+  [OK] impossible archives are not called recoverable
+
+[Suite] honest partial recovery
+  [OK] missing chunks become offset fragments, never fabricated files
+  [OK] healthy salvage emits only verified complete files
+
+[Suite] content-aware snapshot differences
+  [OK] content, metadata, additions, and removals are distinct
+  [OK] unique content pairs become moves
+  [OK] duplicate content does not invent a rename pairing
+
+[Suite] deterministic UTC retention planning
+  [OK] latest and unique calendar buckets compose
+  [OK] pins survive an otherwise empty policy
+  [OK] ties use labels and invalid input fails
+
+[Suite] fail-closed archive garbage collection
+  [OK] only unreachable objects are reclaimed
+  [OK] new snapshot invalidates a previously generated plan
+  [OK] missing volume or damaged root disables collection
+  [OK] forget removes roots before later collection
+  [OK] edited deletion list cannot pass application preflight
+
+[Suite] index-free detached volume assembly
+  [OK] surviving volumes rebuild an archive without its top-level metadata
+  [OK] renamed capsule files remain discoverable
+  [OK] insufficient volumes produce an explicit incomplete result
+  [OK] foreign volumes cannot be combined
+
+[Suite] bounded exclusion globs
+  [OK] stars distinguish components and directory prefixes
+  [OK] ordered include rules and directory-only exclusions
+  [OK] archive traversal prunes excluded directories
+  [OK] invalid patterns reject
+
+[Suite] verified streaming archive transport
+  [OK] bundle import reconstructs a complete independent archive
+  [OK] truncation and payload corruption never publish a destination
+  [OK] transcript detects valid-frame omission and reordering
+
+[Suite] strict command line arguments
+  [OK] options, equals syntax, repeats, and literal operands
+  [OK] unknown, duplicate, missing, and malformed options reject
+  [OK] numeric validation rejects truncation and overflow
+
+[Suite] snapshot navigation and explicit root rescue
+  [OK] find, history, and targeted extraction
+  [OK] manifests survive complete reference-directory loss
+
+[Suite] correlated volume-loss envelopes
+  [OK] healthy three-plus-two archive survives every two-volume loss
+  [OK] existing local damage reduces the additional failure margin
+  [OK] case budget is explicit and never called exhaustive
+
+[Suite] offline recovery report rendering
+  [OK] report contains evidence and no external resources
+  [OK] archive text cannot inject markup
+  [OK] byte formatting has stable units
+
+[Suite] archive storage accounting
+  [OK] logical and physical byte domains remain separate
+  [OK] missing volumes make physical accounting explicitly incomplete
+
+[Suite] filesystem metadata range checks
+  [OK] filesystem timestamps beyond the int64 nanosecond range reject safely
+
+[Suite] bounded streaming frame parser
+  [OK] all frame truncations reject
+  [OK] maximum unsigned lengths reject without allocation
+  [OK] frame digest, type, magic, and trailing bytes reject
+
+[Suite] typed errors
+  [OK] category survives the exception boundary
+  [OK] requirements reject a false predicate

@@ -1,0 +1,16 @@
+{
+  "files": {
+    "acceptance.json": "3084db6ed895c4ac5fb42143beed0cd6cf6ba96a5d5a38be924e62435f3aba27",
+    "campaign.json": "7d6bd1bd82fff4c0ee04d68b9588c2e28995558c67f5052b31361140780fc1df",
+    "commands.json": "050ef95dffc0936ad1064671f5d61df0d82a4b279bff1509edf92661c4ed4a5a",
+    "commands.tar.gz": "0ebbaa9ff4ab4777bb7bd8d9f9bb3eddab85e321af75ebdabc4020b27e1c67b2",
+    "environment.json": "1201bad0b88482dba3bca24b4a58f3fed5d8017e7c9b1b7c317997e90f8b04c1",
+    "fixture.tar.gz": "a6e00fc71ad109888aa2c1490c8bc3daf20af02f156ef799c5fe9eeae4f61c4d",
+    "io-regression.log": "94c825fab96a8782205d59199c215f0140e9a1577772072f6195f72d5e1a0269",
+    "oracles.tar.gz": "657d842675bf71f4ed0087c5b69d0b6f8481953346393f24fb1284ca276ef768",
+    "source-manifest.json": "c5573bb931163b6abe48480d1844b14ac12755ad4339274af053a90a7036d1ad",
+    "unit-debug.log": "9f1e6b3aac603dbcddfd7a79311904d710eaf1c17c7e709b86ca2617cf73b747",
+    "unit-release.log": "9f1e6b3aac603dbcddfd7a79311904d710eaf1c17c7e709b86ca2617cf73b747"
+  },
+  "version": 1
+}
