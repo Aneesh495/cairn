@@ -48,14 +48,14 @@ def source_manifest():
     return bound_source_manifest(ROOT)
 
 
-def invoke(*args, expected=0, env=None, timeout=60):
+def invoke(*args, expected=0, env=None, timeout=60, cwd=None):
     command = [str(BIN), *map(str, args)]
     started = time.monotonic()
-    process = subprocess.run(command, capture_output=True, env=env, timeout=timeout)
+    process = subprocess.run(command, capture_output=True, env=env, timeout=timeout, cwd=cwd)
     index = len(LOG)
     (COMMANDS / f'{index:04d}.stdout').write_bytes(process.stdout)
     (COMMANDS / f'{index:04d}.stderr').write_bytes(process.stderr)
-    entry = dict(command=command[1:], exit=process.returncode,
+    entry = dict(command=command[1:], cwd=str(cwd) if cwd is not None else None, exit=process.returncode,
                  seconds=time.monotonic()-started, stdout_sha256=sha(process.stdout),
                  stderr_sha256=sha(process.stderr))
     LOG.append(entry)
@@ -96,6 +96,7 @@ def fixture(root):
     (source / 'empty').write_bytes(b'')
     (source / 'link').symlink_to('nested/unicode-日本語')
     os.chmod(source / 'a.bin', 0o700)
+    os.utime(source / 'a.bin', ns=(1_700_000_000_123_456_789, 1_700_000_000_123_456_789))
     repo = root / 'archive'
     invoke('init', repo, '--chunk-min', 1024, '--chunk-avg', 4096, '--chunk-max', 16384)
     first = invoke('backup', repo, source, 'first')
@@ -365,6 +366,9 @@ def main():
                     archive.addfile(info)
         print('acceptance: streaming transport and corruption controls', flush=True)
         transport(root, repo)
+        first_demo = invoke('demo', cwd=root)
+        second_demo = invoke('demo', cwd=root)
+        need(first_demo['root'] != second_demo['root'] and second_demo['byte_comparison']=='passed', 'repeated default demos must choose distinct owned outputs')
         print('acceptance: all zero-, one-, and two-volume loss subsets', flush=True)
         physical_damage(root, source, repo)
         algebraic_negative(root, repo)

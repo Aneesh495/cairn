@@ -41,7 +41,7 @@ replay-evidence:
 
 demo: build
 	@mkdir -p .runtime
-	./bin/cairn demo .runtime/demo
+	./bin/cairn demo
 
 bench: build
 	$(NIM) c -r --nimcache:build/nimcache/bench --hints:off -d:release -o:build/bench bench/bench.nim

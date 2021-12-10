@@ -82,6 +82,10 @@ file bytes are preserved, including the logical zero bytes of sparse files.
 Relative symlink targets are preserved; symlink-specific mode and timestamp
 semantics are not promised across platforms.
 
+Restore reads back ordinary mode bits and nanosecond mtimes before publication.
+A destination filesystem that cannot preserve the stored precision or modes
+causes an explicit failure instead of silently weakening that metadata claim.
+
 Backup is not an application snapshot service. Quiesce mutable writers or
 archive an external filesystem snapshot when transactional consistency matters.
 

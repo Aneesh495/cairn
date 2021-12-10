@@ -25,6 +25,11 @@ suite "verified transactional restore":
     check expandSymlink(root / "restored" / "link") == "sub/data"
     check stamp(root / "restored" / "sub" / "data").mode == 0o700
     check stamp(root / "restored" / "sub" / "data").mtimeNs == 1_700_000_000_000_000_000
+    for entry in backed.snapshot.manifest.entries:
+      if entry.kind in {enFile, enDirectory}:
+        let restoredPath = if entry.path == ".": root / "restored" else: root / "restored" / entry.path
+        check stamp(restoredPath).mtimeNs == entry.mtimeNs
+        check stamp(restoredPath).mode == entry.mode
     expect CairnError: discard repo.restore("first", root / "restored")
   test "unrecoverable content leaves no destination or private stage":
     let root = createTempDir("cairn-restore-", "")

@@ -304,6 +304,7 @@ def inspect_archive(root, restored=None, label=None, exhaustive=False):
                 target = pathlib.Path(restored).joinpath(*path.split('/'))
                 need(not target.is_symlink() and target.read_bytes() == data, 'restored file bytes')
                 need(target.stat().st_mode & 0o777 == entry['mode'], 'restored permissions')
+                need(target.stat().st_mtime_ns == entry['mtime_ns'], 'restored nanosecond mtime')
         snapshots[name] = {'manifest_id': copies[0]['manifest_id'], 'files': len(files), 'reference_copies': len(copies)}
     if label is not None:
         need(label in snapshots, 'requested snapshot not found')

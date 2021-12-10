@@ -15,7 +15,7 @@ proc applyDirectory(path: string; entry: Entry) =
   let fd = posix.open(path.cstring, O_RDONLY or NoFollow)
   require(fd >= 0, ekIo, "cannot open restored directory")
   defer: discard posix.close(fd)
-  applyMetadata(path, entry.mode, entry.mtimeNs)
+  applyMetadata(fd, entry.mode, entry.mtimeNs)
   syncFd(fd, path)
 
 proc cleanupTree*(root: string) =

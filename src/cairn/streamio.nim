@@ -22,7 +22,7 @@ proc append*(file: StagedFile; bytes: string) =
 
 proc finish*(file: StagedFile; mode: int; mtimeNs: int64) =
   require(file.open and not file.published, ekInvalid, "staged file is closed")
-  applyMetadata(file.temporary, mode, mtimeNs)
+  applyMetadata(file.fd, mode, mtimeNs)
   syncFd(file.fd, file.temporary)
   require(posix.close(file.fd) == 0, ekIo, "cannot close staged restore file")
   file.open = false

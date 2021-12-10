@@ -75,3 +75,19 @@ are not counted as behavioral regressions.
 - Cause: packet/reference path helpers checked IDs and labels but relied on callers to check the position
 - Correction: validate both position bounds at each public path helper and repair application boundary
 - Permanent check: `tests/test_repository.nim` for both helper families and both invalid bounds
+
+## B010: the standard timestamp setter truncated stored nanoseconds
+
+- Reproduction: `make test`, `filesystem metadata range checks / restored modification time preserves sub-microsecond precision`
+- Observed failure: stored `1700000000123456789` became `1700000000123456000`
+- Cause: Nim's standard POSIX setter calls `utimes`, which accepts only microseconds
+- Correction: use descriptor-based `futimens`, preserve atime with `UTIME_OMIT`, and read back exact mode/mtime before publication
+- Permanent checks: `tests/test_fsmeta.nim`, every regular-file/directory timestamp in `tests/test_restore.nim`, and independent Python restored-mtime checks
+
+## B011: conservative time guards rejected valid int64 endpoints
+
+- Reproduction: `make test`, `filesystem metadata range checks / the complete representable int64 nanosecond domain round trips`
+- Observed failure: valid minimum and maximum nanosecond values raised a range error
+- Cause: the initial overflow guard reserved an unnecessary second at each endpoint
+- Correction: check the endpoint fractions exactly and compute the negative floor-second case relative to the representable minimum
+- Permanent check: both int64 endpoints, adjacent values, zero, and signed single-nanosecond values in `tests/test_fsmeta.nim`

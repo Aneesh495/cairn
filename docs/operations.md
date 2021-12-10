@@ -11,8 +11,9 @@ make build
 make demo
 ```
 
-The demo owns a newly created `.runtime/demo` directory. It never operates on
-an existing user archive. A second run needs a new destination, for example:
+The demo chooses a new `.runtime/demo`, `.runtime/demo-2`, or subsequent
+directory automatically. It never operates on an existing user archive.
+An explicit destination is also available:
 
 ```sh
 ./bin/cairn demo .runtime/another-run

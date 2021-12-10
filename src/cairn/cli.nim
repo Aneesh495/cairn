@@ -39,7 +39,7 @@ Usage:
   cairn recover-root REPO MANIFEST_ID
   cairn export REPO LABEL BUNDLE.cairn
   cairn import BUNDLE.cairn NEW_REPO
-  cairn demo NEW_DIRECTORY
+  cairn demo [NEW_DIRECTORY]
 
 Output is JSON except help and version. Use -- to separate literal operands.
 Exit statuses: 0 success, 1 I/O, 2 invalid input, 3 unrecoverable,
@@ -286,8 +286,19 @@ proc execute*(argv: seq[string]): int =
     else: emit(importBundle(args.operands[0], args.operands[1]).toJson)
   of "demo":
     let args = parseArguments(tail, @[])
-    args.arity(1)
-    emit(runDemo(args.operands[0]))
+    require(args.operands.len <= 1, ekInvalid, "demo accepts at most one new destination")
+    var destination: string
+    if args.operands.len == 1: destination = args.operands[0]
+    else:
+      let parent = absolutePath(".runtime")
+      ensureDirectory(parent)
+      destination = parent / "demo"
+      var suffix = 2
+      while existsAny(destination):
+        require(suffix <= 10000, ekLimit, "too many demonstration directories")
+        destination = parent / ("demo-" & $suffix)
+        inc suffix
+    emit(runDemo(destination))
   else: fail(ekInvalid, "unknown command: " & command & "; use cairn help")
   0
 
