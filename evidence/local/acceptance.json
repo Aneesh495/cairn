@@ -1,6 +1,6 @@
 {
   "counts": {
-    "commands": 168,
+    "commands": 170,
     "crash_cases": 14,
     "independent_decodes": 1146,
     "independent_subset_checks": 1706,
@@ -10,7 +10,7 @@
   "platform": "darwin",
   "python": "3.14.2",
   "scope": "process crashes and real filesystem damage; no power-loss or hardware durability claim",
-  "source_manifest_sha256": "c5573bb931163b6abe48480d1844b14ac12755ad4339274af053a90a7036d1ad",
+  "source_manifest_sha256": "315353d319e947461dbfc3a7c619a717cd9f7f9c543fb5618ae2f15def16537f",
   "status": "passed",
-  "wall_seconds": 20.98318466701312
+  "wall_seconds": 23.454494500008877
 }

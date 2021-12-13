@@ -186,6 +186,8 @@
   [OK] missing volumes make physical accounting explicitly incomplete
 
 [Suite] filesystem metadata range checks
+  [OK] the complete representable int64 nanosecond domain round trips
+  [OK] restored modification time preserves sub-microsecond precision
   [OK] filesystem timestamps beyond the int64 nanosecond range reject safely
 
 [Suite] bounded streaming frame parser

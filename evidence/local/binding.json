@@ -1,16 +1,16 @@
 {
   "files": {
-    "acceptance.json": "3084db6ed895c4ac5fb42143beed0cd6cf6ba96a5d5a38be924e62435f3aba27",
-    "campaign.json": "7d6bd1bd82fff4c0ee04d68b9588c2e28995558c67f5052b31361140780fc1df",
-    "commands.json": "050ef95dffc0936ad1064671f5d61df0d82a4b279bff1509edf92661c4ed4a5a",
-    "commands.tar.gz": "0ebbaa9ff4ab4777bb7bd8d9f9bb3eddab85e321af75ebdabc4020b27e1c67b2",
+    "acceptance.json": "738bdb86c13d9f42f33b806ea231ee01ba56a342ad8636d28126fa9bee08f5ab",
+    "campaign.json": "52aa280cfc4a425c8efe61480cc1d184d398192e8f8265baac41112c7a2b4acb",
+    "commands.json": "16196b995b03bacc76709aebae930fc9ecf4c5e270fcde1c3fd763a78f28cb44",
+    "commands.tar.gz": "ca907162cd309b78fd58913eb5acfcec2107eb62d335ec57d64bc7d200ca24c7",
     "environment.json": "1201bad0b88482dba3bca24b4a58f3fed5d8017e7c9b1b7c317997e90f8b04c1",
-    "fixture.tar.gz": "a6e00fc71ad109888aa2c1490c8bc3daf20af02f156ef799c5fe9eeae4f61c4d",
-    "io-regression.log": "94c825fab96a8782205d59199c215f0140e9a1577772072f6195f72d5e1a0269",
-    "oracles.tar.gz": "657d842675bf71f4ed0087c5b69d0b6f8481953346393f24fb1284ca276ef768",
-    "source-manifest.json": "c5573bb931163b6abe48480d1844b14ac12755ad4339274af053a90a7036d1ad",
-    "unit-debug.log": "9f1e6b3aac603dbcddfd7a79311904d710eaf1c17c7e709b86ca2617cf73b747",
-    "unit-release.log": "9f1e6b3aac603dbcddfd7a79311904d710eaf1c17c7e709b86ca2617cf73b747"
+    "fixture.tar.gz": "e5e1d553a9693d5f58c2cfa576b2dace47b0048d5712b0f56f55f1ad780ba173",
+    "io-regression.log": "abfeee42a0ba57eec18c390a74f7d7c6645f9b9d70473ca09d51a1f9df644512",
+    "oracles.tar.gz": "a1413e53644eaea863e1ef5966c6fcfb35d97babe786f7ac4318480099124648",
+    "source-manifest.json": "315353d319e947461dbfc3a7c619a717cd9f7f9c543fb5618ae2f15def16537f",
+    "unit-debug.log": "4da40d3e08c1e91273a2ad29eb9ef1feae4f8e6589c6f8e4c526eaf8845d95f2",
+    "unit-release.log": "4da40d3e08c1e91273a2ad29eb9ef1feae4f8e6589c6f8e4c526eaf8845d95f2"
   },
   "version": 1
 }

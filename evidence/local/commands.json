@@ -2,7 +2,7 @@
   {
     "command": [
       "init",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/archive",
       "--chunk-min",
       "1024",
       "--chunk-avg",
@@ -10,1909 +10,2097 @@
       "--chunk-max",
       "16384"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.17680416599614546,
-    "stdout_sha256": "5a55cef9f390b417096e5566d6dde75b1fc41dc3b72227550623b3c80deb8450",
+    "seconds": 0.27319641699432395,
+    "stdout_sha256": "c2bde0b8eb63c7085cac9350d94730e4cb9274dbd4d7573f08397e6530e3e145",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "backup",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/archive",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/source",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/source",
       "first"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.24718124998616986,
-    "stdout_sha256": "a3cdce0db81a47967545120b14b1ea854378d07f16964ffed08bfc6158cec90a",
+    "seconds": 0.24169116700068116,
+    "stdout_sha256": "3874007106fd0dedde9da1e5b95cd62943b45cde06d5e6473c4595b3187d0211",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "backup",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/archive",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/source",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/source",
       "first"
     ],
+    "cwd": null,
     "exit": 4,
-    "seconds": 0.0070747919962741435,
+    "seconds": 0.005312791996402666,
     "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "stderr_sha256": "a07d53ead8dcb423f72d249c2d5b15c19b08efc87d0e2d737891bd13d1588cd6"
   },
   {
     "command": [
       "inspect",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/archive",
       "first"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.008610457996837795,
-    "stdout_sha256": "df134df8b707bc98b0718eb45d7a52fb7717f8d78c952fd45ac34384126f8901",
+    "seconds": 0.006190457992488518,
+    "stdout_sha256": "acf9a22f38401ec5179c151379f7a1e4fcdd7e108ec9ce66347a58f1df75617c",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "snapshots",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/archive"
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/archive"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.011219332984182984,
-    "stdout_sha256": "2dc3e5c151e8cbc99855755778581053f493b0d8233691963f7893787e005335",
+    "seconds": 0.007286625012056902,
+    "stdout_sha256": "221fe564e310c217d0b3b630a4dab42de992dba8eb55f7f476afdc423b41b8e1",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "check",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/archive",
       "first"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.12279229197883978,
-    "stdout_sha256": "36eb338a2d4b6f0a053f42395c95f56b03e0387ce05e3dd3178df7a1be805f45",
+    "seconds": 0.09371883299900219,
+    "stdout_sha256": "5ab450e0f929fb856b37501c456ec160261df44c39cb5cb6e82767b7bba9bf5c",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "find",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/archive",
       "first",
       "**/*.bin"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.007143249997170642,
+    "seconds": 0.00784949999069795,
     "stdout_sha256": "29fc0476243928de96b71911dab13f34f2992084d37503c41bce2f3121fc359e",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "history",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/archive",
       "a.bin"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.010491666995221749,
-    "stdout_sha256": "fc68cc2ebe3cfc8fbe5d8b8bef69894d5d60d0a199ecb91e09183dfa02277ab3",
+    "seconds": 0.00963566597783938,
+    "stdout_sha256": "0ff308b45ce1d8d838c9fb0f439dfa736180280a7c777837663e29579eb4eded",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "stats",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/archive"
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/archive"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.053342833009082824,
-    "stdout_sha256": "2401c181cbdacdd4c1f911f96fd3f5089dc19845d61ef342c8817a4d901b197a",
+    "seconds": 0.04718591700657271,
+    "stdout_sha256": "00f73066fe1b5519a9b91ad9278568de8d9421d858c4688d5909b509c4fcefd6",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "extract",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/archive",
       "first",
       "a.bin",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/extracted"
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/extracted"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.04197500000009313,
+    "seconds": 0.035908374993596226,
     "stdout_sha256": "663c27df1791327db73e56c2d083ff54e2309c46e71d4f43cf783662ec1c086f",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "restore",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/archive",
       "first",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/restored"
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/restored"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.07357495799078606,
+    "seconds": 0.06757933399057947,
     "stdout_sha256": "f792a36a80f5a612f2251798a3d4f4468702343e7b8d6cabb2cd3b2be45f6367",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "restore",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/archive",
       "first",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/restored"
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/restored"
     ],
+    "cwd": null,
     "exit": 4,
-    "seconds": 0.008396208984777331,
+    "seconds": 0.007270667003467679,
     "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "stderr_sha256": "dbc720da6009d101b794a9a84f4122675b592da52d5a97fe0fdf6d9072f28ef0"
+    "stderr_sha256": "92deb6ecfab6ededa67b1cad3e70cf39c3fd2d5fb3a78017d375ae5d7adab3d3"
   },
   {
     "command": [
       "backup",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/archive",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/source",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/source",
       "second",
       "--exclude",
       "*.tmp"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.12291825001011603,
-    "stdout_sha256": "e4e8988a1704a81ed8549a866d924601c77c1d8599b146ef0f6c0de060c4c526",
+    "seconds": 0.11400133298593573,
+    "stdout_sha256": "68b63815c94cf42bda1966b59361b18adc43b1e2856e63b0a79cdbebc60ceaf4",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "diff",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/archive",
       "first",
       "second"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.009740666981087998,
+    "seconds": 0.00918074999935925,
     "stdout_sha256": "bb6d282f329c5cd011665bba6876840934aff230b1745ed179bfc27bcf70270e",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "retention",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/archive",
       "--last",
       "1",
       "--pin",
       "first"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.00977537501603365,
+    "seconds": 0.008572250022552907,
     "stdout_sha256": "2b5a3d5c17cac0aae5bbea2d537007925dcf9508b3234bcd69185102520ba9f5",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "plan",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/archive",
       "second",
       "--costs",
       "7,5,3,2,1,9"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.03926262498134747,
+    "seconds": 0.036524833005387336,
     "stdout_sha256": "2eed0f743b63107c06799b699c6fa2adc58bbf178720f63930101757123ea0b1",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "simulate",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/archive",
       "second",
       "--unavailable",
       "0,1"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.04003391700098291,
-    "stdout_sha256": "39688a172818bd26e4aeb679580a78b7000476b0235ad982372d7bbfca46c240",
+    "seconds": 0.03857666699332185,
+    "stdout_sha256": "ab0a1eb33537f41808d10a3edb1a1c07ca971b77ad287839dd2e86ff0e1866c6",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "envelope",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/archive",
       "second",
       "--max-loss",
       "3"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.03871587500907481,
+    "seconds": 0.03821058297762647,
     "stdout_sha256": "adcb2425dc0931fed6331c320f714a301f6afd1c17ea2617907f03cdc346d4a0",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "report",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/archive",
       "second",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/report.html"
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/report.html"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.039815249998355284,
-    "stdout_sha256": "53d3fe032d3c0f02fd6dc673b55434b5999322986eedf1a841e80d0f7a06f086",
+    "seconds": 0.03795254198485054,
+    "stdout_sha256": "d6ca0494e4e6c22b1944f5c97ef111fc7c4c110520b8a477f7170bfc55c55f68",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "inspect-packet",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/archive/volumes/00/objects/0d/0d90520c938a3d7b88d0f8a4c83cdcabe38f64069e06ef7afa741acafcccc809.cap"
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/archive/volumes/00/objects/03/031ae22c15847a7c5d1ff43b42a6ded5f1da4befff64d9123fac67c22220103a.cap"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.005086166987894103,
-    "stdout_sha256": "4da1d89d2b049dc07f1f051b9bdee53dd73e8d64024a81c307a58ca7cf061197",
+    "seconds": 0.005682250019162893,
+    "stdout_sha256": "ecb6a5e4710e5572fba0325fac9f1811311c380bfdfa7c508004cfb64529f026",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "scan",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/archive"
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/archive"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.01903595798648894,
-    "stdout_sha256": "670ef7f0b44df301e0871ba4a22905e3264a99eba2f605763f9d12452872c6bf",
+    "seconds": 0.017892667005071416,
+    "stdout_sha256": "71bfc7722d247ba2ad61e4eb7961d14d036064f9b0f94cddd74b3c83e6ce6f68",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "backup",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/archive",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/source",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/source",
       "bad-option",
       "--exlude",
       "*.tmp"
     ],
+    "cwd": null,
     "exit": 2,
-    "seconds": 0.0054322500072885305,
+    "seconds": 0.004854667000472546,
     "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "stderr_sha256": "329b93310dcf8e28593fb3bc713093edbf6d996947146d973f73399bb6649bb0"
   },
   {
     "command": [
       "extract",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/archive",
       "first",
       "../escape",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/escape"
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/escape"
     ],
+    "cwd": null,
     "exit": 2,
-    "seconds": 0.006480459007434547,
+    "seconds": 0.006530166981974617,
     "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "stderr_sha256": "c227388db6a05a1bc35cc161e94b27156ea4fa31ecf189c8016a80420bcd0b58"
   },
   {
     "command": [
       "export",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/archive",
       "second",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/snapshot.cairn"
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/snapshot.cairn"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.08046566700795665,
+    "seconds": 0.0791530410060659,
     "stdout_sha256": "6c2a6b1d5977f384da0e1f5a303fd5a2445fa4ddae295afffbfb5639558bc6d6",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "import",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/snapshot.cairn",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/imported"
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/snapshot.cairn",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/imported"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.29760199997690506,
+    "seconds": 0.2845052090124227,
     "stdout_sha256": "6c2a6b1d5977f384da0e1f5a303fd5a2445fa4ddae295afffbfb5639558bc6d6",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "restore",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/imported",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/imported",
       "second",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/import-restored"
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/import-restored"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.07719241597806104,
+    "seconds": 0.07167083298554644,
     "stdout_sha256": "2d73d523ddd787c26e7933d7a674873eb0c13be1c7aca1ecfc65e964dbcacf9b",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "import",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/bad.cairn",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/bad-import"
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/bad.cairn",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/bad-import"
     ],
+    "cwd": null,
     "exit": 4,
-    "seconds": 0.12159345799591392,
+    "seconds": 0.11543120900751092,
     "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "stderr_sha256": "212854b0a8fb30e911a759192bdbcefc62dacd0133d85984aab32385abdf7e06"
   },
   {
     "command": [
       "import",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/bad.cairn",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/bad-import"
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/bad.cairn",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/bad-import"
     ],
+    "cwd": null,
     "exit": 4,
-    "seconds": 0.23449912501382641,
+    "seconds": 0.22685525001725182,
     "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "stderr_sha256": "e2b6507db459a7d2d49090a86feca5be92a384f144aa673374ad4ed030f2a8f2"
   },
   {
     "command": [
+      "demo"
+    ],
+    "cwd": "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc",
+    "exit": 0,
+    "seconds": 1.2829032079898752,
+    "stdout_sha256": "4ce274bb772a948deac5fd52cedd1031c07fc03d711f5a34c010ad8d37a59d32",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "demo"
+    ],
+    "cwd": "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc",
+    "exit": 0,
+    "seconds": 1.2730124160007108,
+    "stdout_sha256": "fd0da063302337980c846a716fb7fd3081e0a4978f047091dded3fb984a31a74",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
       "check",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/loss-/archive",
       "second"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.10011154101812281,
-    "stdout_sha256": "73b37b569ce15bd10225d2026af5272d283f129de661428927eb92fd9a49604f",
+    "seconds": 0.08704487499198876,
+    "stdout_sha256": "27f838401d6a7f64a4434624785d155a56da75890f53a90e6d600bb2f9ee3397",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "restore",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/loss-/archive",
       "second",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-/restored"
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/loss-/restored"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.068408624996664,
+    "seconds": 0.06325125001603737,
     "stdout_sha256": "2d73d523ddd787c26e7933d7a674873eb0c13be1c7aca1ecfc65e964dbcacf9b",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "check",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-0/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/loss-0/archive",
       "second"
     ],
+    "cwd": null,
     "exit": 4,
-    "seconds": 0.08153712499188259,
-    "stdout_sha256": "8b12e8a8e78c64b243fade4a6a74865628a3c5e8b216bbd0356b2216c7be8821",
+    "seconds": 0.08061800000723451,
+    "stdout_sha256": "f208d070d273b7f8e77a7afa2d74d77e8c4e5debdde1b253fc903c17a57cf169",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "restore",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-0/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/loss-0/archive",
       "second",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-0/restored"
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/loss-0/restored"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.06216620802297257,
+    "seconds": 0.056172165990574285,
     "stdout_sha256": "2d73d523ddd787c26e7933d7a674873eb0c13be1c7aca1ecfc65e964dbcacf9b",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "check",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-1/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/loss-1/archive",
       "second"
     ],
+    "cwd": null,
     "exit": 4,
-    "seconds": 0.08166274998802692,
-    "stdout_sha256": "a25896fbfc68da1f5ebb5898d6f10c8512e5f6a74b0fcc6816bd8937b9007661",
+    "seconds": 0.07943808301934041,
+    "stdout_sha256": "dfed8cee11d862abe51b67eb8d05bcb46bcf92d8d615b57b4cc6666f09daa6c2",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "restore",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-1/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/loss-1/archive",
       "second",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-1/restored"
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/loss-1/restored"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.057502250012476,
+    "seconds": 0.0566044999868609,
     "stdout_sha256": "2d73d523ddd787c26e7933d7a674873eb0c13be1c7aca1ecfc65e964dbcacf9b",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "check",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-2/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/loss-2/archive",
       "second"
     ],
+    "cwd": null,
     "exit": 4,
-    "seconds": 0.08522566600004211,
-    "stdout_sha256": "303da52200f7368aa289cd9904bd9f2c791ad8eb83a9f8b01ebfcda332e39fe7",
+    "seconds": 0.07995895898784511,
+    "stdout_sha256": "ec5400c25c95d25a7e7381a715f5cef01eacbf2a26a3189ebee05e49b09a3bbf",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "restore",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-2/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/loss-2/archive",
       "second",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-2/restored"
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/loss-2/restored"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.05759195899008773,
+    "seconds": 0.05549200001405552,
     "stdout_sha256": "2d73d523ddd787c26e7933d7a674873eb0c13be1c7aca1ecfc65e964dbcacf9b",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "check",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-3/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/loss-3/archive",
       "second"
     ],
+    "cwd": null,
     "exit": 4,
-    "seconds": 0.08153583301464096,
-    "stdout_sha256": "26ce9239377830f2124747b3651eda78f0a8c4e27e7f1021998642b8f661c92f",
+    "seconds": 0.08090158301638439,
+    "stdout_sha256": "1dc90c6ff9106d717b8b6d8fac0abd15575f3bd835fe9458b568472eeb306796",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "restore",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-3/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/loss-3/archive",
       "second",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-3/restored"
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/loss-3/restored"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.05728058400563896,
+    "seconds": 0.05774845799896866,
     "stdout_sha256": "2d73d523ddd787c26e7933d7a674873eb0c13be1c7aca1ecfc65e964dbcacf9b",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "check",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-4/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/loss-4/archive",
       "second"
     ],
+    "cwd": null,
     "exit": 4,
-    "seconds": 0.08319245799793862,
-    "stdout_sha256": "737dc504066038d3038c4132658f71ba4bd0b78436f5e7ab719d66bf48d03271",
+    "seconds": 0.0857905829907395,
+    "stdout_sha256": "a450a6a6f8437aa6ca1ad537e65533dbb305baf070cf1bc9fcf29ff13cec266b",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "restore",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-4/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/loss-4/archive",
       "second",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-4/restored"
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/loss-4/restored"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.05811145901679993,
+    "seconds": 0.057476208021398634,
     "stdout_sha256": "2d73d523ddd787c26e7933d7a674873eb0c13be1c7aca1ecfc65e964dbcacf9b",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "check",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-5/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/loss-5/archive",
       "second"
     ],
+    "cwd": null,
     "exit": 4,
-    "seconds": 0.08190795802511275,
-    "stdout_sha256": "bf229f1d085d546fe87605708ea19a5c85c63935be3d52009b58f7cdffae2cfd",
+    "seconds": 0.0808615839923732,
+    "stdout_sha256": "ebd2cefb0fc587946f8ee4b58f8d5f197d2d78a0e95def13a15368d7126c6d52",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "restore",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-5/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/loss-5/archive",
       "second",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-5/restored"
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/loss-5/restored"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.05637458400451578,
+    "seconds": 0.057186374993762,
     "stdout_sha256": "2d73d523ddd787c26e7933d7a674873eb0c13be1c7aca1ecfc65e964dbcacf9b",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "check",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-0-1/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/loss-0-1/archive",
       "second"
     ],
+    "cwd": null,
     "exit": 4,
-    "seconds": 0.07047491701086983,
-    "stdout_sha256": "80808888e0cb6123176ccae50ea7f31f3dede6982468c46e5bfa03dcdc5b33fd",
+    "seconds": 0.07041104100062512,
+    "stdout_sha256": "81bcfbc54fd267fb69d173c06f3996fabecd1bb5efe0c6d3ad8506e9850a5cc9",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "restore",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-0-1/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/loss-0-1/archive",
       "second",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-0-1/restored"
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/loss-0-1/restored"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.04974562500137836,
+    "seconds": 0.05009308300213888,
     "stdout_sha256": "2d73d523ddd787c26e7933d7a674873eb0c13be1c7aca1ecfc65e964dbcacf9b",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "check",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-0-2/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/loss-0-2/archive",
       "second"
     ],
+    "cwd": null,
     "exit": 4,
-    "seconds": 0.07371650001732633,
-    "stdout_sha256": "9ec48a67d01eb15f8566fe4bc600f0dd12fb3c6bfe213393852e905b6f9cb579",
+    "seconds": 0.07334362500114366,
+    "stdout_sha256": "0640ea7b38d6ff82e53ad0ba47d1fedb1b766d7bd1b5fa547a859ca467da0bd0",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "restore",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-0-2/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/loss-0-2/archive",
       "second",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-0-2/restored"
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/loss-0-2/restored"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.05166100000496954,
+    "seconds": 0.05273054199642502,
     "stdout_sha256": "2d73d523ddd787c26e7933d7a674873eb0c13be1c7aca1ecfc65e964dbcacf9b",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "check",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-0-3/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/loss-0-3/archive",
       "second"
     ],
+    "cwd": null,
     "exit": 4,
-    "seconds": 0.07372445799410343,
-    "stdout_sha256": "57f47415bb923284597fd1195c6492793bdd75aa69ccafc0adb117a09ad4e5a1",
+    "seconds": 0.06978929199976847,
+    "stdout_sha256": "65d4eefdc78c93ab85e6e3dbb2e39bdc1e57728945359d5dc6f823a267177afa",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "restore",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-0-3/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/loss-0-3/archive",
       "second",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-0-3/restored"
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/loss-0-3/restored"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.05135933400015347,
+    "seconds": 0.04917879099957645,
     "stdout_sha256": "2d73d523ddd787c26e7933d7a674873eb0c13be1c7aca1ecfc65e964dbcacf9b",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "check",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-0-4/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/loss-0-4/archive",
       "second"
     ],
+    "cwd": null,
     "exit": 4,
-    "seconds": 0.0715308329963591,
-    "stdout_sha256": "c428515e8c858abd4d665f715792ede681e8c497b94b4c142f0ef726679d7e91",
+    "seconds": 0.06776012500631623,
+    "stdout_sha256": "b69c1ef5f9606e62f7282b03e174512b86feab5e637abe881aa67ccf9b83b718",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "restore",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-0-4/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/loss-0-4/archive",
       "second",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-0-4/restored"
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/loss-0-4/restored"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.05072187498444691,
+    "seconds": 0.04941899998812005,
     "stdout_sha256": "2d73d523ddd787c26e7933d7a674873eb0c13be1c7aca1ecfc65e964dbcacf9b",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "check",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-0-5/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/loss-0-5/archive",
       "second"
     ],
+    "cwd": null,
     "exit": 4,
-    "seconds": 0.06953583302674815,
-    "stdout_sha256": "ef39be7b8c6b6fc9292bf5b997c40b92927db1d2b16029ffd08a0d3e2017ed01",
+    "seconds": 0.07045950001338497,
+    "stdout_sha256": "39b41a85dbf951b87e53704ee61e76e450264d4f70dbcfede4c18239d65ad5b3",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "restore",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-0-5/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/loss-0-5/archive",
       "second",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-0-5/restored"
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/loss-0-5/restored"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.05039583399775438,
+    "seconds": 0.04978737499914132,
     "stdout_sha256": "2d73d523ddd787c26e7933d7a674873eb0c13be1c7aca1ecfc65e964dbcacf9b",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "check",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-1-2/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/loss-1-2/archive",
       "second"
     ],
+    "cwd": null,
     "exit": 4,
-    "seconds": 0.06964724999852479,
-    "stdout_sha256": "31b52f8ceae3c139ad45050407f0785f95385ed9d533700d1b3d8e10da8a43ef",
+    "seconds": 0.08351854200009257,
+    "stdout_sha256": "920ef1e874cdcc64591556e9cbfecd17eea54405a2be00d0058e7d6cd5e9d61f",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "restore",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-1-2/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/loss-1-2/archive",
       "second",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-1-2/restored"
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/loss-1-2/restored"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.05118358298204839,
+    "seconds": 0.05872487497981638,
     "stdout_sha256": "2d73d523ddd787c26e7933d7a674873eb0c13be1c7aca1ecfc65e964dbcacf9b",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "check",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-1-3/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/loss-1-3/archive",
       "second"
     ],
+    "cwd": null,
     "exit": 4,
-    "seconds": 0.07065104099456221,
-    "stdout_sha256": "0b0f4f5e75f563afe5f9ac01dbfcddc3ef9ebe465dc1f868455e7fb6fa4dd742",
+    "seconds": 0.06917083301232196,
+    "stdout_sha256": "6554a6dbb20a3918a7c41046683a794036d65925aacee8ed1f4321c97a67e1bd",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "restore",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-1-3/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/loss-1-3/archive",
       "second",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-1-3/restored"
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/loss-1-3/restored"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.06428662498365156,
+    "seconds": 0.049779958004364744,
     "stdout_sha256": "2d73d523ddd787c26e7933d7a674873eb0c13be1c7aca1ecfc65e964dbcacf9b",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "check",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-1-4/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/loss-1-4/archive",
       "second"
     ],
+    "cwd": null,
     "exit": 4,
-    "seconds": 0.07819462500629015,
-    "stdout_sha256": "a0a8e012501913568c890927b64f18e7a43b85aceeb94f3b9857c4815c8d3e0b",
+    "seconds": 0.14251866700942628,
+    "stdout_sha256": "50c4e1cddbad75ac8ec8f5e2dd6d223cb5acc80b69ce39de6f05d7eab0710c0a",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "restore",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-1-4/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/loss-1-4/archive",
       "second",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-1-4/restored"
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/loss-1-4/restored"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.054921000002650544,
+    "seconds": 0.0674172920116689,
     "stdout_sha256": "2d73d523ddd787c26e7933d7a674873eb0c13be1c7aca1ecfc65e964dbcacf9b",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "check",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-1-5/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/loss-1-5/archive",
       "second"
     ],
+    "cwd": null,
     "exit": 4,
-    "seconds": 0.07151941698975861,
-    "stdout_sha256": "62bf67bc9118edae60b4ebfc3c7d7da5436866c2182029ef8f64c76ecd92b2da",
+    "seconds": 0.06877308399998583,
+    "stdout_sha256": "6a831d443d5d8e387a10013f0087f84e69a1b4651f9b9454fa3b9a7deaa71378",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "restore",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-1-5/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/loss-1-5/archive",
       "second",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-1-5/restored"
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/loss-1-5/restored"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.051771124999504536,
+    "seconds": 0.048912416998064145,
     "stdout_sha256": "2d73d523ddd787c26e7933d7a674873eb0c13be1c7aca1ecfc65e964dbcacf9b",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "check",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-2-3/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/loss-2-3/archive",
       "second"
     ],
+    "cwd": null,
     "exit": 4,
-    "seconds": 0.07269279201864265,
-    "stdout_sha256": "6d81d3968a4dfb7bc9a57b01687aa7803ebf75fdd3046088812e93e4022d708f",
+    "seconds": 0.06844908301718533,
+    "stdout_sha256": "2fbc5bbe61399874a893723827aa0f1262dac1124d0b602c492657b7e95639fc",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "restore",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-2-3/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/loss-2-3/archive",
       "second",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-2-3/restored"
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/loss-2-3/restored"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.05122737499186769,
+    "seconds": 0.049023250001482666,
     "stdout_sha256": "2d73d523ddd787c26e7933d7a674873eb0c13be1c7aca1ecfc65e964dbcacf9b",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "check",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-2-4/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/loss-2-4/archive",
       "second"
     ],
+    "cwd": null,
     "exit": 4,
-    "seconds": 0.07129095800337382,
-    "stdout_sha256": "522215cc3a700ee887fffd078fc6170c095333897fe3a7f3fa85dbb26f840bc3",
+    "seconds": 0.06866441702004522,
+    "stdout_sha256": "28361d4bbad5b8b31bf637cf0a4b01c62011212cbb150a09753671bf50b3cc8e",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "restore",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-2-4/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/loss-2-4/archive",
       "second",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-2-4/restored"
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/loss-2-4/restored"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.05437991599319503,
+    "seconds": 0.0868611250189133,
     "stdout_sha256": "2d73d523ddd787c26e7933d7a674873eb0c13be1c7aca1ecfc65e964dbcacf9b",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "check",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-2-5/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/loss-2-5/archive",
       "second"
     ],
+    "cwd": null,
     "exit": 4,
-    "seconds": 0.06981924999854527,
-    "stdout_sha256": "314ecf9f24302eb4ba9bd72b15686744f197317c327e198d177792af2292c3c6",
+    "seconds": 0.06973604200175032,
+    "stdout_sha256": "bebc1026a8614531b42be4086723a8d391415f67c2a1ea8bcad80c877f980aa8",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "restore",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-2-5/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/loss-2-5/archive",
       "second",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-2-5/restored"
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/loss-2-5/restored"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.05032804197981022,
+    "seconds": 0.05050808298983611,
     "stdout_sha256": "2d73d523ddd787c26e7933d7a674873eb0c13be1c7aca1ecfc65e964dbcacf9b",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "check",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-3-4/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/loss-3-4/archive",
       "second"
     ],
+    "cwd": null,
     "exit": 4,
-    "seconds": 0.06952908300445415,
-    "stdout_sha256": "fff080019067d1773d4e44d50b656d70984733b2e87d8cef94a49276e646d09e",
+    "seconds": 0.06962599998223595,
+    "stdout_sha256": "351b7ed9a98ed726acc573ab22f2ac93a5e5f6bf5623caaab6c86a87feddb314",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "restore",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-3-4/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/loss-3-4/archive",
       "second",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-3-4/restored"
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/loss-3-4/restored"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.05103637499269098,
+    "seconds": 0.05005795799661428,
     "stdout_sha256": "2d73d523ddd787c26e7933d7a674873eb0c13be1c7aca1ecfc65e964dbcacf9b",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "check",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-3-5/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/loss-3-5/archive",
       "second"
     ],
+    "cwd": null,
     "exit": 4,
-    "seconds": 0.070251625002129,
-    "stdout_sha256": "0759cde7ef69633118fcb1f65218afeb9d49625fcf061d8d0a86d8c0d78729e0",
+    "seconds": 0.2984265840204898,
+    "stdout_sha256": "1b2c35b258717a2e1909505bec5377aa6d35c16c479050af4127fe9b19e093c0",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "restore",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-3-5/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/loss-3-5/archive",
       "second",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-3-5/restored"
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/loss-3-5/restored"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.05030191599507816,
+    "seconds": 0.15529512500506826,
     "stdout_sha256": "2d73d523ddd787c26e7933d7a674873eb0c13be1c7aca1ecfc65e964dbcacf9b",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "check",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-4-5/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/loss-4-5/archive",
       "second"
     ],
+    "cwd": null,
     "exit": 4,
-    "seconds": 0.07303158298600465,
-    "stdout_sha256": "f9a8ff53680d7bad5ed8ed691f2144d26762252f048212f4a4c435d7697370a6",
+    "seconds": 0.0974740420060698,
+    "stdout_sha256": "3196f557127a1a52bb3f9cdffafe696f9328a8c49c785e254c21c26914e25d62",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "restore",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-4-5/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/loss-4-5/archive",
       "second",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/loss-4-5/restored"
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/loss-4-5/restored"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.05410358399967663,
+    "seconds": 0.05985175000387244,
     "stdout_sha256": "2d73d523ddd787c26e7933d7a674873eb0c13be1c7aca1ecfc65e964dbcacf9b",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "inspect",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/local-corruption/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/local-corruption/archive",
       "second"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.007462250010576099,
-    "stdout_sha256": "b42949b5ff78428bf51cb11ebc085fdc0ab341f9bf717b474d7a36e21cbd9614",
+    "seconds": 0.007210333016701043,
+    "stdout_sha256": "cc962637b428a86c7f6e8d46e4b7b7415f5e5fe541f9a1f2e0e32c0b278517c0",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "check",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/local-corruption/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/local-corruption/archive",
       "second"
     ],
+    "cwd": null,
     "exit": 4,
-    "seconds": 0.09349283302435651,
-    "stdout_sha256": "66c931fc3cf5593d5f1d921ee5f0f71fb09b56e040caeb6fc6b2d9833d1f42db",
+    "seconds": 0.0930205839977134,
+    "stdout_sha256": "ca049c1f3f1b13b08c5b9c4d8950c37f1be21485d31751cb957b2bfb85c27ece",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "repair",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/local-corruption/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/local-corruption/archive",
       "second",
       "--max-packets",
       "0",
       "--apply"
     ],
+    "cwd": null,
     "exit": 4,
-    "seconds": 0.039628166996408254,
+    "seconds": 0.037937582994345576,
     "stdout_sha256": "3c4b7149e372b0ba26da0191eb70baa28ce5095aeebf375a504319cef7fdfc67",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "repair",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/local-corruption/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/local-corruption/archive",
       "second"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.0372831670101732,
-    "stdout_sha256": "95c1fa9ece61084950afc8227929ec6d0cca66a288f187bf62933a123c1e86ed",
+    "seconds": 0.035722000000532717,
+    "stdout_sha256": "e30631054bdd1f0c39ac62ecdc77e0c2b89523f5578b177548023bed73ad0cd7",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "apply-repair",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/local-corruption/archive",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/local-corruption/repair.json"
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/local-corruption/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/local-corruption/repair.json"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.011880500009283423,
+    "seconds": 0.009813333017518744,
     "stdout_sha256": "aa36cec0b4354652c752a31105ce368f8489afc8a4dd6cd6774615b75a0ea805",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "apply-repair",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/local-corruption/archive",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/local-corruption/repair.json"
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/local-corruption/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/local-corruption/repair.json"
     ],
+    "cwd": null,
     "exit": 4,
-    "seconds": 0.006809041980886832,
+    "seconds": 0.007239458005642518,
     "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "stderr_sha256": "6594be6f1f22dee6f512ea1acc7d199ad0f046df5fb27a79798ae8935971ee46"
   },
   {
     "command": [
       "check",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/local-corruption/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/local-corruption/archive",
       "second"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.09274862500024028,
-    "stdout_sha256": "73b37b569ce15bd10225d2026af5272d283f129de661428927eb92fd9a49604f",
+    "seconds": 0.08716095899580978,
+    "stdout_sha256": "27f838401d6a7f64a4434624785d155a56da75890f53a90e6d600bb2f9ee3397",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "restore",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/local-corruption/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/local-corruption/archive",
       "second",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/local-corruption/impossible"
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/local-corruption/impossible"
     ],
+    "cwd": null,
     "exit": 3,
-    "seconds": 0.007826416986063123,
+    "seconds": 0.007833917014067993,
     "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "stderr_sha256": "89236d1aaed87dac522d7095a195f679f62b331aa63462ffe26916e6ea59c6b2"
   },
   {
     "command": [
       "salvage",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/local-corruption/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/local-corruption/archive",
       "second",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/local-corruption/salvaged"
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/local-corruption/salvaged"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.1147239999845624,
-    "stdout_sha256": "485393b150f86c3f0cb224176d870129fe7209dff3a8c100b024d78993af2753",
+    "seconds": 0.1160340000060387,
+    "stdout_sha256": "efa3f52d1ba2f61e5bcd94b452eb8138457cb3f966ff2944b9016a18e894b5c9",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "inspect",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/surplus-parity",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/surplus-parity",
       "second"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.009503790992312133,
-    "stdout_sha256": "b42949b5ff78428bf51cb11ebc085fdc0ab341f9bf717b474d7a36e21cbd9614",
+    "seconds": 0.009179499989841133,
+    "stdout_sha256": "cc962637b428a86c7f6e8d46e4b7b7415f5e5fe541f9a1f2e0e32c0b278517c0",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "check",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/surplus-parity",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/surplus-parity",
       "second"
     ],
+    "cwd": null,
     "exit": 3,
-    "seconds": 0.03972062500542961,
-    "stdout_sha256": "87e144131525098778e42b64e022ca7c71efc972411d3c487b813c7dbef22f0b",
+    "seconds": 0.042076417012140155,
+    "stdout_sha256": "dbd80a8d02cc33c56a5671f414449bdd9a28fd07ed1d08cf31dd15f5e1015024",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "forget",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/maintenance/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/maintenance/archive",
       "second"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.010977167024975643,
+    "seconds": 0.007493000011891127,
     "stdout_sha256": "4dbb23b93840d07c53e1b50b4b281e566b7dda8d871bb272afafda22e2af2ef9",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "snapshots",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/maintenance/archive"
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/maintenance/archive"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.01488254201831296,
-    "stdout_sha256": "90311c427939e7aea4abc66e893885c4281abccc63f3d27014af5f3095fa4afe",
+    "seconds": 0.008052624994888902,
+    "stdout_sha256": "4cf9a3f37599c32701edefd93bfa3317a1fbe963d6590c1941ab877212836276",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "forget",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/maintenance/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/maintenance/archive",
       "second",
       "--apply"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.022154582984512672,
+    "seconds": 0.00743287499062717,
     "stdout_sha256": "b4109129dda31c85b68ed86bc24ece530ee9b77879dfb8b6c06fc5203d1244ad",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "gc",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/maintenance/archive"
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/maintenance/archive"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.045954625005833805,
-    "stdout_sha256": "784f455108d391098df2eccd3eefed84d8752d20059183950a658ac4196a41b0",
+    "seconds": 0.029154749994631857,
+    "stdout_sha256": "3fd0f7c37aa4c3dc9e40c468341ba6b9c4f760c0da7ef459b8b1e05164de5c38",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "backup",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/maintenance/archive",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/source",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/maintenance/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/source",
       "third"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.1224819170020055,
-    "stdout_sha256": "ac589bffc5e6893156d4d5012a17d9d65276f9252d3666ec554ea9a668cc94d2",
+    "seconds": 0.10978433402488008,
+    "stdout_sha256": "ea263be4a7fe8e844f4c2a561bbe6f626c94d9abffa45c4aa2cad6dc0c8f67de",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "gc",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/maintenance/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/maintenance/archive",
       "--apply",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/maintenance/gc.json"
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/maintenance/gc.json"
     ],
+    "cwd": null,
     "exit": 4,
-    "seconds": 0.03547854200587608,
+    "seconds": 0.032468708988744766,
     "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "stderr_sha256": "b2c254237410079882e54fa3e8fd607d927446b2c58e9cd1c145925c535c28a6"
   },
   {
     "command": [
       "gc",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/maintenance/archive"
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/maintenance/archive"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.03430174998356961,
-    "stdout_sha256": "3884a5efa12e475a9b4459b36dd5ed7b2997a1c87efe93919b0c29f7f07062bf",
+    "seconds": 0.032580125000094995,
+    "stdout_sha256": "996faebc606437b793ca34fc0a54543c73ae13d291f8e569693e0df9c4d98bca",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "gc",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/maintenance/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/maintenance/archive",
       "--apply",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/maintenance/gc.json"
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/maintenance/gc.json"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.035253334004664794,
+    "seconds": 0.03305075000389479,
     "stdout_sha256": "b44d984e1dcb08ccc0fac5d4f594272a23d9d72c035545eb2fa9c87a2f397c0b",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "check",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/maintenance/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/maintenance/archive",
       "first"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.08975674997782335,
-    "stdout_sha256": "36eb338a2d4b6f0a053f42395c95f56b03e0387ce05e3dd3178df7a1be805f45",
+    "seconds": 0.11295045798760839,
+    "stdout_sha256": "5ab450e0f929fb856b37501c456ec160261df44c39cb5cb6e82767b7bba9bf5c",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "discover-snapshots",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/lost-roots"
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/lost-roots"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.07229329197434708,
-    "stdout_sha256": "1d0319455a5b1af547c8ab6713acec0ff4a3886c2d9eebd8ce4408c4e23c0c55",
+    "seconds": 0.07337620801990852,
+    "stdout_sha256": "8a8bfbd379a7bc06b80aca4e5b31a73d96bdd81c0a7d321ee1d44e882c4589f6",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "recover-root",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/lost-roots",
-      "2b32a7a6dbd009da877a54d5cedaacccf783d3d473a3e2ba6e6e61509beb4fbb"
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/lost-roots",
+      "29baa7705323577a56de0876141625fe5921585b554f1afd7f40b13d8333d80f"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.08125508300145157,
-    "stdout_sha256": "054176c039ff6358997c213d08df0c718da2d3c058a2046bfaec10f77214f912",
+    "seconds": 0.08891099999891594,
+    "stdout_sha256": "bc641d4aa489d04809192a5eae40758da5a6d7dc75a7b6963951eef27deb25b6",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "assemble",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/assembled",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/lost-top-level/volumes/02",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/lost-top-level/volumes/03",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/lost-top-level/volumes/04",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/lost-top-level/volumes/05"
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/assembled",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/lost-top-level/volumes/02",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/lost-top-level/volumes/03",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/lost-top-level/volumes/04",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/lost-top-level/volumes/05"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.20551720898947679,
-    "stdout_sha256": "79b2fefcf1185a98be94a6c8c6bc25a161830f7493c99f7ee195d116748f63a7",
+    "seconds": 0.2074328750022687,
+    "stdout_sha256": "e02fcfd3fd1ec84677dff103df8a3b21e0bffbc45399fb09e7cdadf09c929c43",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "stats",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/archive"
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/archive"
     ],
+    "cwd": null,
     "exit": 5,
-    "seconds": 0.005153417005203664,
+    "seconds": 0.005580500001087785,
     "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "stderr_sha256": "41ddd4571fd6944b548d9cca093874272fd05a6b21b67a720689a93a951f1cae"
   },
   {
     "command": [
       "backup",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/archive",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/source",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/source",
       "locked"
     ],
+    "cwd": null,
     "exit": 5,
-    "seconds": 0.0053993340115994215,
+    "seconds": 0.005863166996277869,
     "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "stderr_sha256": "41ddd4571fd6944b548d9cca093874272fd05a6b21b67a720689a93a951f1cae"
   },
   {
     "command": [
       "check",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/archive",
       "first"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.10225329201784916,
-    "stdout_sha256": "36eb338a2d4b6f0a053f42395c95f56b03e0387ce05e3dd3178df7a1be805f45",
+    "seconds": 0.09790420799981803,
+    "stdout_sha256": "5ab450e0f929fb856b37501c456ec160261df44c39cb5cb6e82767b7bba9bf5c",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "backup",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/archive",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/source",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/source",
       "locked"
     ],
+    "cwd": null,
     "exit": 5,
-    "seconds": 0.004982832993846387,
+    "seconds": 0.005366249999497086,
     "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "stderr_sha256": "41ddd4571fd6944b548d9cca093874272fd05a6b21b67a720689a93a951f1cae"
   },
   {
     "command": [
       "backup",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/archive",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/special-source",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/special-source",
       "fifo"
     ],
+    "cwd": null,
     "exit": 2,
-    "seconds": 0.0057369999994989485,
+    "seconds": 0.004963500017765909,
     "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "stderr_sha256": "017d1610f20c9db0131986523ead68c2b272755eed28935241485a7ddc991386"
   },
   {
     "command": [
       "backup",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-file-written/archive",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/source",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/crash-file-written/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/source",
       "crashed"
     ],
+    "cwd": null,
     "exit": -9,
-    "seconds": 0.0520780420047231,
+    "seconds": 0.0450892910012044,
     "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "check",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-file-written/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/crash-file-written/archive",
       "first"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.08832204199279658,
-    "stdout_sha256": "36eb338a2d4b6f0a053f42395c95f56b03e0387ce05e3dd3178df7a1be805f45",
+    "seconds": 0.08773833297891542,
+    "stdout_sha256": "5ab450e0f929fb856b37501c456ec160261df44c39cb5cb6e82767b7bba9bf5c",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "snapshots",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-file-written/archive"
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/crash-file-written/archive"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.009712833008961752,
-    "stdout_sha256": "90311c427939e7aea4abc66e893885c4281abccc63f3d27014af5f3095fa4afe",
+    "seconds": 0.008881084009772167,
+    "stdout_sha256": "4cf9a3f37599c32701edefd93bfa3317a1fbe963d6590c1941ab877212836276",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "gc",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-file-written/archive"
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/crash-file-written/archive"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.03061916699516587,
-    "stdout_sha256": "0a8c08e3447c9cd009943f9f0f1370253f2397dd8ea8749805ca19dc0851c336",
+    "seconds": 0.03052270898479037,
+    "stdout_sha256": "9346d91c0cbdd3c96629d805497a8f6601cef66326bff45002d4410e3838825e",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "gc",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-file-written/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/crash-file-written/archive",
       "--apply",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-file-written/gc.json"
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/crash-file-written/gc.json"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.03128404199378565,
+    "seconds": 0.031471916008740664,
     "stdout_sha256": "9339bca8d45e2e4d8ac70f6c857f71765840ec6a6ab113d038a8145e0b121056",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "check",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-file-written/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/crash-file-written/archive",
       "first"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.09970349998911843,
-    "stdout_sha256": "36eb338a2d4b6f0a053f42395c95f56b03e0387ce05e3dd3178df7a1be805f45",
+    "seconds": 0.08744812500663102,
+    "stdout_sha256": "5ab450e0f929fb856b37501c456ec160261df44c39cb5cb6e82767b7bba9bf5c",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "backup",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-file-synced/archive",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/source",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/crash-file-synced/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/source",
       "crashed"
     ],
+    "cwd": null,
     "exit": -9,
-    "seconds": 0.06161612499272451,
+    "seconds": 0.048840959003428,
     "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "check",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-file-synced/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/crash-file-synced/archive",
       "first"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.12451862500165589,
-    "stdout_sha256": "36eb338a2d4b6f0a053f42395c95f56b03e0387ce05e3dd3178df7a1be805f45",
+    "seconds": 0.09070262499153614,
+    "stdout_sha256": "5ab450e0f929fb856b37501c456ec160261df44c39cb5cb6e82767b7bba9bf5c",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "snapshots",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-file-synced/archive"
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/crash-file-synced/archive"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.014247750019421801,
-    "stdout_sha256": "90311c427939e7aea4abc66e893885c4281abccc63f3d27014af5f3095fa4afe",
+    "seconds": 0.00886912498390302,
+    "stdout_sha256": "4cf9a3f37599c32701edefd93bfa3317a1fbe963d6590c1941ab877212836276",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "gc",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-file-synced/archive"
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/crash-file-synced/archive"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.03181370798847638,
-    "stdout_sha256": "0a8c08e3447c9cd009943f9f0f1370253f2397dd8ea8749805ca19dc0851c336",
+    "seconds": 0.031093207973754033,
+    "stdout_sha256": "9346d91c0cbdd3c96629d805497a8f6601cef66326bff45002d4410e3838825e",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "gc",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-file-synced/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/crash-file-synced/archive",
       "--apply",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-file-synced/gc.json"
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/crash-file-synced/gc.json"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.03211720898980275,
+    "seconds": 0.032047207991126925,
     "stdout_sha256": "9339bca8d45e2e4d8ac70f6c857f71765840ec6a6ab113d038a8145e0b121056",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "check",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-file-synced/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/crash-file-synced/archive",
       "first"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.08862070899340324,
-    "stdout_sha256": "36eb338a2d4b6f0a053f42395c95f56b03e0387ce05e3dd3178df7a1be805f45",
+    "seconds": 0.08784558399929665,
+    "stdout_sha256": "5ab450e0f929fb856b37501c456ec160261df44c39cb5cb6e82767b7bba9bf5c",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "backup",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-file-published/archive",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/source",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/crash-file-published/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/source",
       "crashed"
     ],
+    "cwd": null,
     "exit": -9,
-    "seconds": 0.04822974998387508,
+    "seconds": 0.045657165988814086,
     "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "check",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-file-published/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/crash-file-published/archive",
       "first"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.09107987498282455,
-    "stdout_sha256": "36eb338a2d4b6f0a053f42395c95f56b03e0387ce05e3dd3178df7a1be805f45",
+    "seconds": 0.0862056250043679,
+    "stdout_sha256": "5ab450e0f929fb856b37501c456ec160261df44c39cb5cb6e82767b7bba9bf5c",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "snapshots",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-file-published/archive"
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/crash-file-published/archive"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.008783124998444691,
-    "stdout_sha256": "90311c427939e7aea4abc66e893885c4281abccc63f3d27014af5f3095fa4afe",
+    "seconds": 0.008856375003233552,
+    "stdout_sha256": "4cf9a3f37599c32701edefd93bfa3317a1fbe963d6590c1941ab877212836276",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "gc",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-file-published/archive"
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/crash-file-published/archive"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.03114904201356694,
-    "stdout_sha256": "ca78d27ad3a55569f2aff14c29a81027d3cb9dc6417b6c0f4da955d6c8eab95f",
+    "seconds": 0.029956084006698802,
+    "stdout_sha256": "c0c198959bf08462df7e575afb8f0cdc5e66b3dda81fd528e1f1fda395b91e03",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "gc",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-file-published/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/crash-file-published/archive",
       "--apply",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-file-published/gc.json"
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/crash-file-published/gc.json"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.032197708991589025,
+    "seconds": 0.03053020898369141,
     "stdout_sha256": "f5e7e136fd63431f365bf392819169a48bdc2fc9471a37e4e09d1e8e30e32288",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "check",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-file-published/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/crash-file-published/archive",
       "first"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.10445799998706207,
-    "stdout_sha256": "36eb338a2d4b6f0a053f42395c95f56b03e0387ce05e3dd3178df7a1be805f45",
+    "seconds": 0.08474033401580527,
+    "stdout_sha256": "5ab450e0f929fb856b37501c456ec160261df44c39cb5cb6e82767b7bba9bf5c",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "backup",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-directory-synced/archive",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/source",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/crash-directory-synced/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/source",
       "crashed"
     ],
+    "cwd": null,
     "exit": -9,
-    "seconds": 0.05156566700316034,
+    "seconds": 0.045655541005544364,
     "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "check",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-directory-synced/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/crash-directory-synced/archive",
       "first"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.10209450000547804,
-    "stdout_sha256": "36eb338a2d4b6f0a053f42395c95f56b03e0387ce05e3dd3178df7a1be805f45",
+    "seconds": 0.08611675002612174,
+    "stdout_sha256": "5ab450e0f929fb856b37501c456ec160261df44c39cb5cb6e82767b7bba9bf5c",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "snapshots",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-directory-synced/archive"
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/crash-directory-synced/archive"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.009100041002966464,
-    "stdout_sha256": "90311c427939e7aea4abc66e893885c4281abccc63f3d27014af5f3095fa4afe",
+    "seconds": 0.009679709008196369,
+    "stdout_sha256": "4cf9a3f37599c32701edefd93bfa3317a1fbe963d6590c1941ab877212836276",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "gc",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-directory-synced/archive"
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/crash-directory-synced/archive"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.0372768749948591,
-    "stdout_sha256": "ca78d27ad3a55569f2aff14c29a81027d3cb9dc6417b6c0f4da955d6c8eab95f",
+    "seconds": 0.030564624990802258,
+    "stdout_sha256": "c0c198959bf08462df7e575afb8f0cdc5e66b3dda81fd528e1f1fda395b91e03",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "gc",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-directory-synced/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/crash-directory-synced/archive",
       "--apply",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-directory-synced/gc.json"
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/crash-directory-synced/gc.json"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.08340054200380109,
+    "seconds": 0.031087541981833056,
     "stdout_sha256": "f5e7e136fd63431f365bf392819169a48bdc2fc9471a37e4e09d1e8e30e32288",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "check",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-directory-synced/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/crash-directory-synced/archive",
       "first"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.10654745902866125,
-    "stdout_sha256": "36eb338a2d4b6f0a053f42395c95f56b03e0387ce05e3dd3178df7a1be805f45",
+    "seconds": 0.08883737499127164,
+    "stdout_sha256": "5ab450e0f929fb856b37501c456ec160261df44c39cb5cb6e82767b7bba9bf5c",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "backup",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-object-packet/archive",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/source",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/crash-object-packet/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/source",
       "crashed"
     ],
+    "cwd": null,
     "exit": -9,
-    "seconds": 0.056896167021477595,
+    "seconds": 0.046113791002426296,
     "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "check",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-object-packet/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/crash-object-packet/archive",
       "first"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.10629366600187495,
-    "stdout_sha256": "36eb338a2d4b6f0a053f42395c95f56b03e0387ce05e3dd3178df7a1be805f45",
+    "seconds": 0.08792962500592694,
+    "stdout_sha256": "5ab450e0f929fb856b37501c456ec160261df44c39cb5cb6e82767b7bba9bf5c",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "snapshots",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-object-packet/archive"
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/crash-object-packet/archive"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.012749916990287602,
-    "stdout_sha256": "90311c427939e7aea4abc66e893885c4281abccc63f3d27014af5f3095fa4afe",
+    "seconds": 0.009222541993949562,
+    "stdout_sha256": "4cf9a3f37599c32701edefd93bfa3317a1fbe963d6590c1941ab877212836276",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "gc",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-object-packet/archive"
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/crash-object-packet/archive"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.04078516599838622,
-    "stdout_sha256": "ca78d27ad3a55569f2aff14c29a81027d3cb9dc6417b6c0f4da955d6c8eab95f",
+    "seconds": 0.03123108300496824,
+    "stdout_sha256": "c0c198959bf08462df7e575afb8f0cdc5e66b3dda81fd528e1f1fda395b91e03",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "gc",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-object-packet/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/crash-object-packet/archive",
       "--apply",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-object-packet/gc.json"
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/crash-object-packet/gc.json"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.041000124998390675,
+    "seconds": 0.0315912080113776,
     "stdout_sha256": "f5e7e136fd63431f365bf392819169a48bdc2fc9471a37e4e09d1e8e30e32288",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "check",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-object-packet/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/crash-object-packet/archive",
       "first"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.09423970800708048,
-    "stdout_sha256": "36eb338a2d4b6f0a053f42395c95f56b03e0387ce05e3dd3178df7a1be805f45",
+    "seconds": 0.0877876250015106,
+    "stdout_sha256": "5ab450e0f929fb856b37501c456ec160261df44c39cb5cb6e82767b7bba9bf5c",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "backup",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-object-complete/archive",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/source",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/crash-object-complete/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/source",
       "crashed"
     ],
+    "cwd": null,
     "exit": -9,
-    "seconds": 0.008280999987618998,
+    "seconds": 0.007706875010626391,
     "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "check",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-object-complete/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/crash-object-complete/archive",
       "first"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.09207087499089539,
-    "stdout_sha256": "36eb338a2d4b6f0a053f42395c95f56b03e0387ce05e3dd3178df7a1be805f45",
+    "seconds": 0.08762866700999439,
+    "stdout_sha256": "5ab450e0f929fb856b37501c456ec160261df44c39cb5cb6e82767b7bba9bf5c",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "snapshots",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-object-complete/archive"
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/crash-object-complete/archive"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.010396124998806044,
-    "stdout_sha256": "90311c427939e7aea4abc66e893885c4281abccc63f3d27014af5f3095fa4afe",
+    "seconds": 0.009367542021209374,
+    "stdout_sha256": "4cf9a3f37599c32701edefd93bfa3317a1fbe963d6590c1941ab877212836276",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "gc",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-object-complete/archive"
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/crash-object-complete/archive"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.03317366700503044,
-    "stdout_sha256": "0a8c08e3447c9cd009943f9f0f1370253f2397dd8ea8749805ca19dc0851c336",
+    "seconds": 0.03161891698255204,
+    "stdout_sha256": "9346d91c0cbdd3c96629d805497a8f6601cef66326bff45002d4410e3838825e",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "gc",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-object-complete/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/crash-object-complete/archive",
       "--apply",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-object-complete/gc.json"
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/crash-object-complete/gc.json"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.03235966700594872,
+    "seconds": 0.03259329200955108,
     "stdout_sha256": "9339bca8d45e2e4d8ac70f6c857f71765840ec6a6ab113d038a8145e0b121056",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "check",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-object-complete/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/crash-object-complete/archive",
       "first"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.08757408300880343,
-    "stdout_sha256": "36eb338a2d4b6f0a053f42395c95f56b03e0387ce05e3dd3178df7a1be805f45",
+    "seconds": 0.10025674998178147,
+    "stdout_sha256": "5ab450e0f929fb856b37501c456ec160261df44c39cb5cb6e82767b7bba9bf5c",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "backup",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-source-validated/archive",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/source",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/crash-source-validated/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/source",
       "crashed"
     ],
+    "cwd": null,
     "exit": -9,
-    "seconds": 0.10254054199322127,
+    "seconds": 0.10127595899393782,
     "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "check",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-source-validated/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/crash-source-validated/archive",
       "first"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.09239712500129826,
-    "stdout_sha256": "36eb338a2d4b6f0a053f42395c95f56b03e0387ce05e3dd3178df7a1be805f45",
+    "seconds": 0.0916237499914132,
+    "stdout_sha256": "5ab450e0f929fb856b37501c456ec160261df44c39cb5cb6e82767b7bba9bf5c",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "snapshots",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-source-validated/archive"
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/crash-source-validated/archive"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.00906916699022986,
-    "stdout_sha256": "90311c427939e7aea4abc66e893885c4281abccc63f3d27014af5f3095fa4afe",
+    "seconds": 0.009254542004782706,
+    "stdout_sha256": "4cf9a3f37599c32701edefd93bfa3317a1fbe963d6590c1941ab877212836276",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "gc",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-source-validated/archive"
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/crash-source-validated/archive"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.040843334019882604,
-    "stdout_sha256": "7251165bb913c98f138e21ef4ae4f4be9e9db97e2a844f162581132937cb59aa",
+    "seconds": 0.039754875004291534,
+    "stdout_sha256": "f1dca250f9de06844ef859a6ca90b596c00b62bfb65ec1f05972c548a60410b5",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "gc",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-source-validated/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/crash-source-validated/archive",
       "--apply",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-source-validated/gc.json"
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/crash-source-validated/gc.json"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.048644958005752414,
+    "seconds": 0.04860858301981352,
     "stdout_sha256": "e2a6bcaf89899aea1bf42ab4774af994388c410ea5afe46457374164198cb2fd",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "check",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-source-validated/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/crash-source-validated/archive",
       "first"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.09139316697837785,
-    "stdout_sha256": "36eb338a2d4b6f0a053f42395c95f56b03e0387ce05e3dd3178df7a1be805f45",
+    "seconds": 0.0891429579933174,
+    "stdout_sha256": "5ab450e0f929fb856b37501c456ec160261df44c39cb5cb6e82767b7bba9bf5c",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "backup",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-manifest-stored/archive",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/source",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/crash-manifest-stored/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/source",
       "crashed"
     ],
+    "cwd": null,
     "exit": -9,
-    "seconds": 0.177844499994535,
+    "seconds": 0.16906779201235622,
     "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "check",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-manifest-stored/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/crash-manifest-stored/archive",
       "first"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.09444183300365694,
-    "stdout_sha256": "36eb338a2d4b6f0a053f42395c95f56b03e0387ce05e3dd3178df7a1be805f45",
+    "seconds": 0.0862384159991052,
+    "stdout_sha256": "5ab450e0f929fb856b37501c456ec160261df44c39cb5cb6e82767b7bba9bf5c",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "snapshots",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-manifest-stored/archive"
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/crash-manifest-stored/archive"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.009274917014408857,
-    "stdout_sha256": "90311c427939e7aea4abc66e893885c4281abccc63f3d27014af5f3095fa4afe",
+    "seconds": 0.008940041996538639,
+    "stdout_sha256": "4cf9a3f37599c32701edefd93bfa3317a1fbe963d6590c1941ab877212836276",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "gc",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-manifest-stored/archive"
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/crash-manifest-stored/archive"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.040649666014360264,
-    "stdout_sha256": "ab600127b6d874e444e9f51f22e9344dce0e7a9474367b91b89f65f21c312c3c",
+    "seconds": 0.040206417004810646,
+    "stdout_sha256": "89df707ffeab63d8b146bfbb060a50341dd82f5c2c361c2f875fe6ec08d1fc1b",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "gc",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-manifest-stored/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/crash-manifest-stored/archive",
       "--apply",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-manifest-stored/gc.json"
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/crash-manifest-stored/gc.json"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.049106999998912215,
+    "seconds": 0.047260999999707565,
     "stdout_sha256": "f5d80bcf3b019cbdba0efa2888a930336143f995e1553c865a43bf5a74aec58a",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "check",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-manifest-stored/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/crash-manifest-stored/archive",
       "first"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.08884983300231397,
-    "stdout_sha256": "36eb338a2d4b6f0a053f42395c95f56b03e0387ce05e3dd3178df7a1be805f45",
+    "seconds": 0.08591195801272988,
+    "stdout_sha256": "5ab450e0f929fb856b37501c456ec160261df44c39cb5cb6e82767b7bba9bf5c",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "backup",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-reference-published/archive",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/source",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/crash-reference-published/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/source",
       "crashed"
     ],
+    "cwd": null,
     "exit": -9,
-    "seconds": 0.18218662499566562,
+    "seconds": 0.1724813750188332,
     "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "check",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-reference-published/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/crash-reference-published/archive",
       "first"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.08943704201374203,
-    "stdout_sha256": "36eb338a2d4b6f0a053f42395c95f56b03e0387ce05e3dd3178df7a1be805f45",
+    "seconds": 0.09076287501375191,
+    "stdout_sha256": "5ab450e0f929fb856b37501c456ec160261df44c39cb5cb6e82767b7bba9bf5c",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "snapshots",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-reference-published/archive"
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/crash-reference-published/archive"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.011839874990982935,
-    "stdout_sha256": "1e61ef43666a98bd9d4b75dc35748156432910fdbe193c15b3789b415c1cbdf8",
+    "seconds": 0.011025792016880587,
+    "stdout_sha256": "106d914ee335856442bd2d25e3ff03809694c0da796a6d0958661c7980145f41",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "check",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-reference-published/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/crash-reference-published/archive",
       "crashed"
     ],
+    "cwd": null,
     "exit": 4,
-    "seconds": 0.13223254200420342,
-    "stdout_sha256": "5fc7794b1b14e3685896d3854d835be25cc222f433f038034b62fd2b823b883e",
+    "seconds": 0.10653054199065082,
+    "stdout_sha256": "c1cd2436aca003a4fae3ac17b1302653952592c5dc4e58e824ef5aab57dc629f",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "gc",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-reference-published/archive"
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/crash-reference-published/archive"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.04347674999735318,
-    "stdout_sha256": "cce67889aed7e816ab37783372aa07ac959b12d1d89b2b07c2cc67f33790aa50",
+    "seconds": 0.04095866598072462,
+    "stdout_sha256": "cb2868f5b909dd948a643ee5dd1ddd5cc1cbbac88a0965467973343c05b4bbb9",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "gc",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-reference-published/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/crash-reference-published/archive",
       "--apply",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-reference-published/gc.json"
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/crash-reference-published/gc.json"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.04491229201084934,
+    "seconds": 0.04084483298356645,
     "stdout_sha256": "9339bca8d45e2e4d8ac70f6c857f71765840ec6a6ab113d038a8145e0b121056",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "check",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-reference-published/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/crash-reference-published/archive",
       "first"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.09199195800465532,
-    "stdout_sha256": "36eb338a2d4b6f0a053f42395c95f56b03e0387ce05e3dd3178df7a1be805f45",
+    "seconds": 0.08760850000544451,
+    "stdout_sha256": "5ab450e0f929fb856b37501c456ec160261df44c39cb5cb6e82767b7bba9bf5c",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "restore",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/archive",
       "second",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-restore-tree-synced/restored"
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/crash-restore-tree-synced/restored"
     ],
+    "cwd": null,
     "exit": -9,
-    "seconds": 0.07187024998711422,
+    "seconds": 0.07019554200815037,
     "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "restore",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/archive",
       "second",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-restore-tree-synced/restored"
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/crash-restore-tree-synced/restored"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.11070720801944844,
+    "seconds": 0.07138766700518318,
     "stdout_sha256": "2d73d523ddd787c26e7933d7a674873eb0c13be1c7aca1ecfc65e964dbcacf9b",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "restore",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/archive",
       "second",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-restore-published/restored"
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/crash-restore-published/restored"
     ],
+    "cwd": null,
     "exit": -9,
-    "seconds": 0.07906162500148639,
+    "seconds": 0.07562145800329745,
     "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "repair",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-repair/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/crash-repair/archive",
       "second",
       "--apply"
     ],
+    "cwd": null,
     "exit": -9,
-    "seconds": 0.09624641700065695,
+    "seconds": 0.112251666985685,
     "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "repair",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-repair/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/crash-repair/archive",
       "second",
       "--apply"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.19154625001829118,
+    "seconds": 0.46815629198681563,
     "stdout_sha256": "0e420e2e95ae2da46a0f69f248306f2fa95a9d065c671d4733a2fd133d10dd19",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "check",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-repair/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/crash-repair/archive",
       "second"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.09426312500727363,
-    "stdout_sha256": "73b37b569ce15bd10225d2026af5272d283f129de661428927eb92fd9a49604f",
+    "seconds": 0.08926683399477042,
+    "stdout_sha256": "27f838401d6a7f64a4434624785d155a56da75890f53a90e6d600bb2f9ee3397",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "forget",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-forget/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/crash-forget/archive",
       "second",
       "--apply"
     ],
+    "cwd": null,
     "exit": -9,
-    "seconds": 0.007382874988252297,
+    "seconds": 0.007513082993682474,
     "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "forget",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-forget/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/crash-forget/archive",
       "second",
       "--apply"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.0060634999827016145,
+    "seconds": 0.006285124982241541,
     "stdout_sha256": "b4109129dda31c85b68ed86bc24ece530ee9b77879dfb8b6c06fc5203d1244ad",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "gc",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-forget/archive"
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/crash-forget/archive"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.027988083980744705,
-    "stdout_sha256": "784f455108d391098df2eccd3eefed84d8752d20059183950a658ac4196a41b0",
+    "seconds": 0.028756874991813675,
+    "stdout_sha256": "3fd0f7c37aa4c3dc9e40c468341ba6b9c4f760c0da7ef459b8b1e05164de5c38",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "gc",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-forget/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/crash-forget/archive",
       "--apply",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-forget/gc.json"
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/crash-forget/gc.json"
     ],
+    "cwd": null,
     "exit": -9,
-    "seconds": 0.028654957975959405,
+    "seconds": 0.029686041991226375,
     "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "gc",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-forget/archive"
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/crash-forget/archive"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.027957749989582226,
-    "stdout_sha256": "b2cf8b9e52e792233acafe7130837a66ad50e6421f95e140b74404885ff2a57e",
+    "seconds": 0.028712708997773007,
+    "stdout_sha256": "557bfa068da809fa29b0669db59047cefae989ee397947536ea43a9f518a6fd7",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "gc",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-forget/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/crash-forget/archive",
       "--apply",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-forget/gc.json"
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/crash-forget/gc.json"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.031524207995971665,
+    "seconds": 0.03163641598075628,
     "stdout_sha256": "04db8dca52ce2858ef2bae55be749a0d21aaae0bba7c85cc09eb593d248fe46b",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   {
     "command": [
       "check",
-      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-kky1z72g/crash-forget/archive",
+      "/var/folders/2t/65zz6xzn5s77mnqllrjt8xtc0000gn/T/cairn-acceptance-puagrshc/crash-forget/archive",
       "first"
     ],
+    "cwd": null,
     "exit": 0,
-    "seconds": 0.08780470900819637,
-    "stdout_sha256": "36eb338a2d4b6f0a053f42395c95f56b03e0387ce05e3dd3178df7a1be805f45",
+    "seconds": 0.08772862498881295,
+    "stdout_sha256": "5ab450e0f929fb856b37501c456ec160261df44c39cb5cb6e82767b7bba9bf5c",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   }
 ]
