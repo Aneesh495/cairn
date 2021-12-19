@@ -10,7 +10,7 @@
   "platform": "darwin",
   "python": "3.14.2",
   "scope": "process crashes and real filesystem damage; no power-loss or hardware durability claim",
-  "source_manifest_sha256": "315353d319e947461dbfc3a7c619a717cd9f7f9c543fb5618ae2f15def16537f",
+  "source_manifest_sha256": "f43a61a5309aa335fe35160ba59bb31d23e3e2602e0008dc2f4dfde74e3bea23",
   "status": "passed",
-  "wall_seconds": 23.454494500008877
+  "wall_seconds": 21.13475387499784
 }

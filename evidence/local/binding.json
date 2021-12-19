@@ -1,14 +1,14 @@
 {
   "files": {
-    "acceptance.json": "738bdb86c13d9f42f33b806ea231ee01ba56a342ad8636d28126fa9bee08f5ab",
-    "campaign.json": "52aa280cfc4a425c8efe61480cc1d184d398192e8f8265baac41112c7a2b4acb",
-    "commands.json": "16196b995b03bacc76709aebae930fc9ecf4c5e270fcde1c3fd763a78f28cb44",
-    "commands.tar.gz": "ca907162cd309b78fd58913eb5acfcec2107eb62d335ec57d64bc7d200ca24c7",
+    "acceptance.json": "ba7abb55ace67514cdb94594fab7899ed1f163507fb82d036f21897db5b37193",
+    "campaign.json": "5736838e13d8c882339e2af019de5a03a6a610255db92d9ad82fac3b9565e9cc",
+    "commands.json": "854e5e64e79638aeac9394197875b3a3694bfc9c9958833c15efda38c52e7b43",
+    "commands.tar.gz": "d52dd6d2813715179d88456126d45e92be62e4f1be672d6fd40e0372007d6e36",
     "environment.json": "1201bad0b88482dba3bca24b4a58f3fed5d8017e7c9b1b7c317997e90f8b04c1",
-    "fixture.tar.gz": "e5e1d553a9693d5f58c2cfa576b2dace47b0048d5712b0f56f55f1ad780ba173",
-    "io-regression.log": "abfeee42a0ba57eec18c390a74f7d7c6645f9b9d70473ca09d51a1f9df644512",
-    "oracles.tar.gz": "a1413e53644eaea863e1ef5966c6fcfb35d97babe786f7ac4318480099124648",
-    "source-manifest.json": "315353d319e947461dbfc3a7c619a717cd9f7f9c543fb5618ae2f15def16537f",
+    "fixture.tar.gz": "d4165c4db27dfd9df6013bc0f8ce66d0ef1352ede0f1746bbbec4b1fa6399148",
+    "io-regression.log": "1115f3bdf60b59cdd06e98a07f0d7c8696e92e6fd77a607ec8fa27b768988bdf",
+    "oracles.tar.gz": "2e6e57d89b83f51dd9d7d1bcff23a513cb86da0e882e2a1cb16a12cc87c8d504",
+    "source-manifest.json": "f43a61a5309aa335fe35160ba59bb31d23e3e2602e0008dc2f4dfde74e3bea23",
     "unit-debug.log": "4da40d3e08c1e91273a2ad29eb9ef1feae4f8e6589c6f8e4c526eaf8845d95f2",
     "unit-release.log": "4da40d3e08c1e91273a2ad29eb9ef1feae4f8e6589c6f8e4c526eaf8845d95f2"
   },
